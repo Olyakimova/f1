@@ -1,5 +1,21 @@
-thead { color: red }
-
 body {
-    font-family:Georgia;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#nav {
+  display: flex;
+  justify-content: flex-start;
+  background-color: rgb(255, 221, 0);
+}
+#nav a {
+  color: white;
+}
+#nav a:hover {
+  color: white;
+  text-decoration: none;
+}
+.nav-item {
+  margin: 3px;
+  background-color: rgb(255, 30, 0);
+  padding: 7px;
 }
