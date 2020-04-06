@@ -4,7 +4,7 @@ import { App } from "./App";
 import { render } from "react-dom";
 
 render(
-  <BrowserRouter>
+  <BrowserRouter basename="f1/">
     <App />
   </BrowserRouter>,
   document.getElementById("app")
