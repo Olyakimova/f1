@@ -77,7 +77,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/f1/";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -33486,7 +33486,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-Object(react_dom__WEBPACK_IMPORTED_MODULE_3__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_App__WEBPACK_IMPORTED_MODULE_2__["App"], null)), document.getElementById("app"));
+Object(react_dom__WEBPACK_IMPORTED_MODULE_3__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"], {
+  basename: "f1/"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_App__WEBPACK_IMPORTED_MODULE_2__["App"], null)), document.getElementById("app"));
 
 /***/ })
 
