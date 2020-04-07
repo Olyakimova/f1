@@ -2,5 +2,5 @@ import * as React from "react";
 import "./home.css";
 
 export const Home = (props) => {
-    return <h1>Home</h1>;
+    return <h1>May be some NEWS</h1>;
 }

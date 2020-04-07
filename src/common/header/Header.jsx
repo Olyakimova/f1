@@ -16,7 +16,7 @@ export const Header = () => {
       <div id="nav">
         <div className="nav-item">
           <NavLink to="/" activeStyle={activeStyle} exact>
-            Home
+            May be some NEWS
           </NavLink>
         </div>
         <div className="nav-item">

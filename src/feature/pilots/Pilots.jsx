@@ -1,35 +1,13 @@
 import * as React from "react";
+import { Switch, Route, Redirect } from "react-router"
 import "./pilots.css";
+import { PilotsStat } from "./stat/PilotsStat";
+import { Pilot } from "./pilot/Pilot";
 
-export const Pilots = (props) => {
-  return (
-    <div id="pilots">
-      <h3>Pilots</h3>
-      <div>
-        <table cellSpacing="3" cellPadding="4">
-          <thead>
-            <tr>
-              <th colSpan="4" style={{ color: "black" }}>
-                Статистика по пилотам
-              </th>
-              <th>2018</th>
-              <th>2019</th>
-              <th>2020</th>
-            </tr>
-
-            <tr>
-              <th>№</th>
-              <th>Пилот</th>
-              <th>Команда</th>
-              <th>Очки</th>
-              <th>Поулы</th>
-              <th>Лучший круг</th>
-              <th>Подиумы</th>
-              <th>Кругов</th>
-            </tr>
-          </thead>
-        </table>
-      </div>
-    </div>
-  );
-};
+export const Pilots = () => (
+  <Switch>
+    <Route exact path='/pilots' component={PilotsStat}/>
+    <Route path='/pilots/:year' component={PilotsStat}/>
+    <Route path='/pilots/pilot/:id' component={Pilot}/>
+  </Switch>
+)

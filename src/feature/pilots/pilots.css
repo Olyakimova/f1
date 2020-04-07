@@ -1,6 +1,28 @@
-#pilots table {
+#year-p {
   border: 1;
-  height: 100%;
+  /* height: 100%; */
   text-align: left;
+  background-color: white;
+}
+.year-stats {
+  border: 0;
+  /* height: 100%; */
+  text-align: left;
+  background-color: white;
+}
+.year-pilots {
+  border: 1;
+  /* height: 100%; */
+  text-align: center;
+  background-color: white;
+}
+#stat-p {
+  /* cellSpacin: 3; */
+  /* cellPadding: 4; */
+}
+.stat-pilots {
+  border: 1;
+  /* height: 100%; */
+  text-align: center;
   background-color: white;
 }
