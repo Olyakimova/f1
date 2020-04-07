@@ -210,7 +210,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ./1920px-F2.svg.png 
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, "#nav {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  background-color: rgb(255, 221, 0);\r\n}\r\n#nav a {\r\n  color: white;\r\n}\r\n#nav a:hover {\r\n  color: white;\r\n  text-decoration: none;\r\n}\r\n.nav-item {\r\n  margin: 3px;\r\n  background-color: rgb(255, 30, 0);\r\n  padding: 7px;\r\n}\r\n\r\n#cap {\r\n  height: 100px;\r\n  width: 100%;\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  background-repeat: no-repeat;\r\n  background-color: rgb(255, 221, 0);\r\n  /* #fde910 */\r\n  background-position: right;\r\n  color: rgb(255, 30, 0);\r\n  font-size: 41px;\r\n  text-shadow: 2px 2px 0px rgb(219, 28, 3);\r\n  /* text-shadow: 1px 1px 2px black, 0 0 1em red; Параметры тени */\r\n}\r\n\r\n#cap p {\r\n  margin: 0;\r\n  padding: 20px 3px 1px;\r\n}\r\n", ""]);
+exports.push([module.i, "#nav {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  background-color: rgb(255, 221, 0);\r\n}\r\n#nav a {\r\n  color: blue;\r\n  text-decoration:none;\r\n}\r\n#nav a:hover {\r\n  color: white;\r\n  text-decoration:underline;\r\n}\r\n.nav-item {\r\n  margin: 2px;\r\n  background-color: rgb(255, 30, 0);\r\n  padding: 7px;\r\n  border: rgb(255, 221, 0);\r\n}\r\n\r\n#cap {\r\n  height: 100px;\r\n  width: 100%;\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  background-repeat: no-repeat;\r\n  background-color: rgb(255, 221, 0);\r\n  /* #fde910 */\r\n  background-position: right;\r\n  color: rgb(255, 30, 0);\r\n  font-size: 45px;\r\n  text-shadow: 2px 2px 0px rgb(219, 28, 3);\r\n  /* text-shadow: 1px 1px 2px black, 0 0 1em red; Параметры тени */\r\n}\r\n\r\n#cap p {\r\n  margin: 0;\r\n  padding: 20px 3px 1px;\r\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -228,7 +228,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "#some {\r\n  width: 100%;\r\n  background-color: rgb(255, 221, 0);\r\n}\r\n", ""]);
+exports.push([module.i, "", ""]);
 // Exports
 module.exports = exports;
 
@@ -246,7 +246,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "#pilots table {\r\n  border: 1;\r\n  height: 100%;\r\n  text-align: left;\r\n  background-color: white;\r\n}\r\n", ""]);
+exports.push([module.i, "#year-p {\r\n  border: 1;\r\n  /* height: 100%; */\r\n  text-align: left;\r\n  background-color: white;\r\n}\r\n.year-stats {\r\n  border: 0;\r\n  /* height: 100%; */\r\n  text-align: left;\r\n  background-color: white;\r\n}\r\n.year-pilots {\r\n  border: 1;\r\n  /* height: 100%; */\r\n  text-align: center;\r\n  background-color: white;\r\n}\r\n#stat-p {\r\n  /* cellSpacin: 3; */\r\n  /* cellPadding: 4; */\r\n}\r\n.stat-pilots {\r\n  border: 1;\r\n  /* height: 100%; */\r\n  text-align: center;\r\n  background-color: white;\r\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -33295,7 +33295,7 @@ var Header = function Header() {
     to: "/",
     activeStyle: activeStyle,
     exact: true
-  }, "Home")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+  }, "May be some NEWS")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     className: "nav-item"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
     to: "/pilots",
@@ -33368,7 +33368,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Home = function Home(props) {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "Home");
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h1", null, "May be some NEWS");
 };
 
 /***/ }),
@@ -33416,22 +33416,49 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Pilots", function() { return Pilots; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _pilots_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pilots.css */ "./src/feature/pilots/pilots.css");
-/* harmony import */ var _pilots_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_pilots_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var _pilots_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pilots.css */ "./src/feature/pilots/pilots.css");
+/* harmony import */ var _pilots_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_pilots_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _stat_PilotsStat__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./stat/PilotsStat */ "./src/feature/pilots/stat/PilotsStat.jsx");
+/* harmony import */ var _pilot_Pilot__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pilot/Pilot */ "./src/feature/pilots/pilot/Pilot.jsx");
 
 
-var Pilots = function Pilots(props) {
+
+
+
+var Pilots = function Pilots() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/pilots",
+    component: _stat_PilotsStat__WEBPACK_IMPORTED_MODULE_3__["PilotsStat"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/pilots/:year",
+    component: _stat_PilotsStat__WEBPACK_IMPORTED_MODULE_3__["PilotsStat"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/pilots/pilot/:id",
+    component: _pilot_Pilot__WEBPACK_IMPORTED_MODULE_4__["Pilot"]
+  }));
+};
+
+/***/ }),
+
+/***/ "./src/feature/pilots/pilot/Pilot.jsx":
+/*!********************************************!*\
+  !*** ./src/feature/pilots/pilot/Pilot.jsx ***!
+  \********************************************/
+/*! exports provided: Pilot */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Pilot", function() { return Pilot; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+var Pilot = function Pilot(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
-    id: "pilots"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h3", null, "Pilots"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("table", {
-    cellSpacing: "3",
-    cellPadding: "4"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("thead", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("th", {
-    colSpan: "4",
-    style: {
-      color: "black"
-    }
-  }, "\u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430 \u043F\u043E \u043F\u0438\u043B\u043E\u0442\u0430\u043C"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("th", null, "2018"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("th", null, "2019"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("th", null, "2020")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("tr", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("th", null, "\u2116"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("th", null, "\u041F\u0438\u043B\u043E\u0442"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("th", null, "\u041A\u043E\u043C\u0430\u043D\u0434\u0430"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("th", null, "\u041E\u0447\u043A\u0438"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("th", null, "\u041F\u043E\u0443\u043B\u044B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("th", null, "\u041B\u0443\u0447\u0448\u0438\u0439 \u043A\u0440\u0443\u0433"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("th", null, "\u041F\u043E\u0434\u0438\u0443\u043C\u044B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("th", null, "\u041A\u0440\u0443\u0433\u043E\u0432"))))));
+    id: "pilot"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h3", null, props.name));
 };
 
 /***/ }),
@@ -33464,6 +33491,71 @@ var exported = content.locals ? content.locals : {};
 
 
 module.exports = exported;
+
+/***/ }),
+
+/***/ "./src/feature/pilots/stat/PilotsStat.jsx":
+/*!************************************************!*\
+  !*** ./src/feature/pilots/stat/PilotsStat.jsx ***!
+  \************************************************/
+/*! exports provided: PilotsStat */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PilotsStat", function() { return PilotsStat; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+
+
+var PilotsStat = function PilotsStat(props) {
+  var year = props.match.params.year;
+  if (!year) location.hash = '/pilots/2020';
+  var activeStyle = {
+    color: "green"
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    id: "pilots"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    id: "year-p"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "year-stats"
+  }, "\u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043A\u0430 \u043F\u043E \u043F\u0438\u043B\u043E\u0442\u0430\u043C"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "year-pilots"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+    to: "/pilots/2020",
+    activeStyle: activeStyle
+  }, "2020")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "year-pilots"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+    to: "/pilots/2019",
+    activeStyle: activeStyle
+  }, "2019")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "year-pilots"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], {
+    to: "/pilots/2018",
+    activeStyle: activeStyle
+  }, "2018"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    id: "stat-p"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "stat-pilots"
+  }, "\u2116"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "stat-pilots"
+  }, "\u041F\u0438\u043B\u043E\u0442"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "stat-pilots"
+  }, "\u041A\u043E\u043C\u0430\u043D\u0434\u0430"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "stat-pilots"
+  }, "\u041E\u0447\u043A\u0438"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "stat-pilots"
+  }, "\u041F\u043E\u0443\u043B\u044B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "stat-pilots"
+  }, "\u041B\u0443\u0447\u0448\u0438\u0439 \u043A\u0440\u0443\u0433"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "stat-pilots"
+  }, "\u041F\u043E\u0434\u0438\u0443\u043C\u044B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "stat-pilots"
+  }, "\u041A\u0440\u0443\u0433\u043E\u0432")));
+};
 
 /***/ }),
 
