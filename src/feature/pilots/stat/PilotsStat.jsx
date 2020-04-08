@@ -1,5 +1,6 @@
 import * as React from "react";
 import { NavLink } from "react-router-dom";
+import { getPilots } from "./pilots-data";
 
 export const PilotsStat = (props) => {
   const {year} = props.match.params;
@@ -7,11 +8,22 @@ export const PilotsStat = (props) => {
   if (!year) location.hash = '/pilots/2020';
   const activeStyle = { color: "green" };
 
+  const pilotView = (pilot) => {
+    return (
+      <div key={pilot.number}>
+        <div>{pilot.number}</div>
+        <div>{pilot.fio}</div>
+        <div>{pilot.team}</div>
+      </div>
+    );
+  };
+
   return (
     <div id="pilots">
+        
         <div id="year-p">
           <div className="year-stats">
-          Статистика по пилотам
+           Статистика по пилотам
           </div>
           <div className="year-pilots">
             <NavLink to="/pilots/2020" activeStyle={activeStyle}>
@@ -29,6 +41,7 @@ export const PilotsStat = (props) => {
             </NavLink>
           </div>
         </div>
+
         <div id="stat-p">
           <div className="stat-pilots">
             №
@@ -55,6 +68,8 @@ export const PilotsStat = (props) => {
             Кругов
           </div>
         </div>
+
+        {getPilots(year).map(pilot => pilotView(pilot))}
     </div>
   );
 };

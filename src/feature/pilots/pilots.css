@@ -1,28 +1,27 @@
 #year-p {
-  border: 1;
-  /* height: 100%; */
-  text-align: left;
+  margin: 25px 50px 10px 15px;
   background-color: white;
 }
 .year-stats {
   border: 0;
-  /* height: 100%; */
   text-align: left;
   background-color: white;
 }
 .year-pilots {
-  border: 1;
-  /* height: 100%; */
+  border: 1px solid black;
+  padding: 4px;
   text-align: center;
   background-color: white;
+  font-size: x-large;
+  font-weight: bolder;
+  color: #000;
 }
 #stat-p {
-  /* cellSpacin: 3; */
-  /* cellPadding: 4; */
-}
-.stat-pilots {
-  border: 1;
-  /* height: 100%; */
+  margin: 25px 50px 10px 15px;
+  padding: 4px;
   text-align: center;
-  background-color: white;
+  background-color: rgb(53, 45, 45);
+  /* font-size: x-large; */
+  font-weight: bolder;
+  color:white;
 }

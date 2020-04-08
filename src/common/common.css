@@ -1,5 +1,10 @@
+@font-face {
+  font-family: 'F1WebFont';
+  src: url('../../assets/font/Formula1-Regular.woff2') format('woff2'); /* Super Modern Browsers */
+}
+
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'F1WebFont', sans-serif;
 }
 
