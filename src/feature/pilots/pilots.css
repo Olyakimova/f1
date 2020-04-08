@@ -1,4 +1,6 @@
 #year-p {
+  display: flex;
+  justify-content: flex-start;
   margin: 25px 50px 10px 15px;
   background-color: white;
 }
@@ -16,12 +18,23 @@
   font-weight: bolder;
   color: #000;
 }
+
 #stat-p {
-  margin: 25px 50px 10px 15px;
-  padding: 4px;
-  text-align: center;
   background-color: rgb(53, 45, 45);
   /* font-size: x-large; */
   font-weight: bolder;
   color:white;
+}
+
+#stat-p, 
+.stat-p-row {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+  text-align: center;
+}
+
+#stat-p div,
+.stat-p-row div {
+  width: 12.5%;
 }

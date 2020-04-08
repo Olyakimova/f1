@@ -10,10 +10,15 @@ export const PilotsStat = (props) => {
 
   const pilotView = (pilot) => {
     return (
-      <div key={pilot.number}>
+      <div className="stat-p-row" key={pilot.number}>
         <div>{pilot.number}</div>
-        <div>{pilot.fio}</div>
+        <div>{pilot.name}</div>
         <div>{pilot.team}</div>
+        <div>{pilot.score}</div>
+        <div>{pilot.poles}</div>
+        <div>{pilot.bestLap}</div>
+        <div>{pilot.podiums}</div>
+        <div>{pilot.laps}</div>
       </div>
     );
   };
@@ -43,30 +48,14 @@ export const PilotsStat = (props) => {
         </div>
 
         <div id="stat-p">
-          <div className="stat-pilots">
-            №
-          </div>
-          <div className="stat-pilots">
-            Пилот
-          </div>
-          <div className="stat-pilots">
-            Команда
-          </div>
-          <div className="stat-pilots">
-            Очки
-          </div>
-          <div className="stat-pilots">
-            Поулы
-          </div>
-          <div className="stat-pilots">
-            Лучший круг
-          </div>
-          <div className="stat-pilots">
-            Подиумы
-          </div>
-          <div className="stat-pilots">
-            Кругов
-          </div>
+          <div>№</div>
+          <div>Пилот</div>
+          <div>Команда</div>
+          <div>Очки</div>
+          <div>Поулы</div>
+          <div>Лучший круг</div>
+          <div>Подиумы</div>
+          <div>Кругов</div>
         </div>
 
         {getPilots(year).map(pilot => pilotView(pilot))}

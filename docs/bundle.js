@@ -262,7 +262,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "#year-p {\r\n  margin: 25px 50px 10px 15px;\r\n  background-color: white;\r\n}\r\n.year-stats {\r\n  border: 0;\r\n  text-align: left;\r\n  background-color: white;\r\n}\r\n.year-pilots {\r\n  border: 1px solid black;\r\n  padding: 4px;\r\n  text-align: center;\r\n  background-color: white;\r\n  font-size: x-large;\r\n  font-weight: bolder;\r\n  color: #000;\r\n}\r\n#stat-p {\r\n  margin: 25px 50px 10px 15px;\r\n  padding: 4px;\r\n  text-align: center;\r\n  background-color: rgb(53, 45, 45);\r\n  /* font-size: x-large; */\r\n  font-weight: bolder;\r\n  color:white;\r\n}\r\n", ""]);
+exports.push([module.i, "#year-p {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  margin: 25px 50px 10px 15px;\r\n  background-color: white;\r\n}\r\n.year-stats {\r\n  border: 0;\r\n  text-align: left;\r\n  background-color: white;\r\n}\r\n.year-pilots {\r\n  border: 1px solid black;\r\n  padding: 4px;\r\n  text-align: center;\r\n  background-color: white;\r\n  font-size: x-large;\r\n  font-weight: bolder;\r\n  color: #000;\r\n}\r\n\r\n#stat-p {\r\n  background-color: rgb(53, 45, 45);\r\n  /* font-size: x-large; */\r\n  font-weight: bolder;\r\n  color:white;\r\n}\r\n\r\n#stat-p, \r\n.stat-p-row {\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  padding: 5px;\r\n  text-align: center;\r\n}\r\n\r\n#stat-p div,\r\n.stat-p-row div {\r\n  width: 12.5%;\r\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -33536,8 +33536,9 @@ var PilotsStat = function PilotsStat(props) {
 
   var pilotView = function pilotView(pilot) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+      className: "stat-p-row",
       key: pilot.number
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.number), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.fio), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.team));
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.number), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.team), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.score), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.poles), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.bestLap), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.podiums), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.laps));
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
@@ -33563,23 +33564,7 @@ var PilotsStat = function PilotsStat(props) {
     activeStyle: activeStyle
   }, "2018"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     id: "stat-p"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
-    className: "stat-pilots"
-  }, "\u2116"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
-    className: "stat-pilots"
-  }, "\u041F\u0438\u043B\u043E\u0442"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
-    className: "stat-pilots"
-  }, "\u041A\u043E\u043C\u0430\u043D\u0434\u0430"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
-    className: "stat-pilots"
-  }, "\u041E\u0447\u043A\u0438"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
-    className: "stat-pilots"
-  }, "\u041F\u043E\u0443\u043B\u044B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
-    className: "stat-pilots"
-  }, "\u041B\u0443\u0447\u0448\u0438\u0439 \u043A\u0440\u0443\u0433"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
-    className: "stat-pilots"
-  }, "\u041F\u043E\u0434\u0438\u0443\u043C\u044B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
-    className: "stat-pilots"
-  }, "\u041A\u0440\u0443\u0433\u043E\u0432")), Object(_pilots_data__WEBPACK_IMPORTED_MODULE_2__["getPilots"])(year).map(function (pilot) {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u2116"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041F\u0438\u043B\u043E\u0442"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041A\u043E\u043C\u0430\u043D\u0434\u0430"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041E\u0447\u043A\u0438"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041F\u043E\u0443\u043B\u044B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041B\u0443\u0447\u0448\u0438\u0439 \u043A\u0440\u0443\u0433"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041F\u043E\u0434\u0438\u0443\u043C\u044B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041A\u0440\u0443\u0433\u043E\u0432")), Object(_pilots_data__WEBPACK_IMPORTED_MODULE_2__["getPilots"])(year).map(function (pilot) {
     return pilotView(pilot);
   }));
 };
@@ -33608,11 +33593,21 @@ var getPilots = function getPilots(year) {
 var pilots2020 = [{
   number: 1,
   name: "fio",
-  team: "Red Bull"
+  team: "Red Bull",
+  score: 10,
+  poles: 1,
+  bestLap: "1:22",
+  podiums: 1,
+  laps: 100
 }, {
   number: 2,
-  fio: "Lecler",
-  team: "Ferrari"
+  name: "Lecler",
+  team: "Ferrari",
+  score: 10,
+  poles: 1,
+  bestLap: "1:22",
+  podiums: 1,
+  laps: 100
 }];
 
 /***/ }),

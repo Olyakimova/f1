@@ -12,11 +12,21 @@ const pilots2020 = [
     {
       number: 1,
       name: "fio",
-      team: "Red Bull"
+      team: "Red Bull",
+      score: 10,
+      poles: 1,
+      bestLap: "1:22",
+      podiums: 1,
+      laps: 100
     },
     {
       number: 2,
-      fio: "Lecler",
-      team: "Ferrari"
+      name: "Lecler",
+      team: "Ferrari",
+      score: 10,
+      poles: 1,
+      bestLap: "1:22",
+      podiums: 1,
+      laps: 100
     }
   ];
