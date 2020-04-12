@@ -12,7 +12,7 @@ export const App = () => {
             <Header/>
             <Switch>
                 <Route exact path="/" component={Home}/>
-                <Route path="/pilots" component={Pilots}/>
+                <Route path="/drivers" component={Pilots}/>
                 <Route component={PageNotFound}/>
             </Switch>
         </>

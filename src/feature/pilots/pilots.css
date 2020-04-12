@@ -1,26 +1,39 @@
 #year-p {
   display: flex;
   justify-content: flex-start;
-  margin: 25px 50px 10px 15px;
+  margin: 25px 50px 0px 15px;
   background-color: white;
 }
 .year-stats {
   border: 0;
+  padding: 5px 60px 5px 0px;
   text-align: left;
   background-color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  color: rgb(71, 61, 61);
 }
 .year-pilots {
-  border: 1px solid black;
-  padding: 4px;
-  text-align: center;
+  border-style:inset;
+  /* border-bottom:none; */
+  border: 2px solid rgb(71, 61, 61);
+  padding: 9px 9px 1px 9px;
   background-color: white;
-  font-size: x-large;
+  font-size: 18px;
   font-weight: bolder;
-  color: #000;
+  color: rgb(71, 61, 61);
+}
+.year-pilots a {
+  color: rgb(71, 61, 61);
+  text-decoration:none;
+}
+.year-pilots a:hover {
+  color: rgb(71, 61, 61);
+  text-decoration:underline;
 }
 
 #stat-p {
-  background-color: rgb(53, 45, 45);
+  background-color: rgb(71, 61, 61);
   /* font-size: x-large; */
   font-weight: bolder;
   color:white;
@@ -31,10 +44,17 @@
   display: flex;
   justify-content: space-evenly;
   padding: 5px;
-  text-align: center;
+  text-align: start;
 }
 
 #stat-p div,
 .stat-p-row div {
-  width: 12.5%;
+  width: 8%;
+  text-align: center;
+}
+
+#stat-p .stat-p-wider,
+.stat-p-row .stat-p-wider {
+  width: 22%;
+  text-align: left;
 }

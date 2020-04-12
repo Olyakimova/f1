@@ -1,0 +1,61 @@
+.driver-top {
+  display: flex;
+  justify-content: flex-start;
+  font-family: sans-serif;
+}
+
+.driver-top div {
+  padding: 1px 2px 2px 11px;
+}
+
+.driver-top .short-info {
+  width: calc(100% - 450px);
+  padding: 1px 2px 2px 0px;
+  margin: 1px 2px 2px 2px;
+}
+
+.driver-top .photo {
+  width: 500px;
+  margin: 10px 0px 10px 10px;
+}
+
+.driver-mid {
+  margin: 15px;
+  font-family: sans-serif;
+}
+
+#driver-header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#driver-header div {
+  padding: 0;
+}
+
+#driver-header .num {
+  text-align: center;
+  font-size: 40px;
+  font-family: "F1WebFont", sans-serif;
+  font-weight: bolder;
+  width: 10%;
+  color: grey;
+  margin: auto;
+}
+
+#driver-header .name {
+  text-align: left;
+  line-height: normal;
+  display: flex;
+  margin: auto;
+  font-size: 28px;
+  font-weight: bolder;
+  width: 74%;
+}
+
+#driver-header .flag {
+  text-align: right;
+  width: auto;
+}
+/* 73.77  -  557.22  -  100.02
+9.8%   -  74.1%  -  13.3% */

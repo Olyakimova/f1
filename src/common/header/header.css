@@ -4,7 +4,7 @@
   background-color: rgb(255, 221, 0);
 }
 #nav a {
-  color: blue;
+  color: white;
   text-decoration:none;
 }
 #nav a:hover {
@@ -15,7 +15,6 @@
   margin: 2px;
   background-color: rgb(255, 30, 0);
   padding: 7px;
-  border: rgb(255, 221, 0);
 }
 
 #cap {

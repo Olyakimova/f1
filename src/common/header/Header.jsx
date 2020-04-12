@@ -20,7 +20,7 @@ export const Header = () => {
           </NavLink>
         </div>
         <div className="nav-item">
-          <NavLink to="/pilots" activeStyle={activeStyle}>
+          <NavLink to="/drivers" activeStyle={activeStyle}>
             Пилоты
           </NavLink>
         </div>

@@ -2,12 +2,12 @@ import * as React from "react";
 import { Switch, Route, Redirect } from "react-router"
 import "./pilots.css";
 import { PilotsStat } from "./stat/PilotsStat";
-import { Pilot } from "./pilot/Pilot";
+import { Driver } from "./driver/Driver";
 
 export const Pilots = () => (
   <Switch>
-    <Route exact path='/pilots' component={PilotsStat}/>
-    <Route path='/pilots/:year' component={PilotsStat}/>
-    <Route path='/pilots/pilot/:id' component={Pilot}/>
+    <Route exact path='/drivers' component={PilotsStat}/>
+    <Route path='/drivers/driver/:num' component={Driver}/>
+    <Route path='/drivers/:year' component={PilotsStat}/>
   </Switch>
 )
