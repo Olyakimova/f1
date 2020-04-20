@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./header.css";
 
 export const Header = () => {
-  const activeStyle = { color: "green" };
+  const activeStyle = { color: "darkgrey" };
   return (
     <>
       <div id="cap">

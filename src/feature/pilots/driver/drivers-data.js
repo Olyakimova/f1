@@ -85,4 +85,36 @@ const driverMap = {
       "<p>В конце 2006 у команды Макларен появилась свободная вакансия в Ф1 и 30 сентября была подтверждена кандидатура Льюиса на место второго пилота, его напарником стал Фернандо Алонсо. И в 2007 состоялся дебют британца в Ф1, по итогам которого Хэмилтон оказался на втором месте в личном зачете, набрав одинаковое количество очков с его напарником Фернандо Алонсо (109 очков) и уступив Кими Райкконену всего одно очко. После выяснилось, что FIA проводит расследование связанное с температурой топлива в машинах Williams и Sauber, что может привести к их дисквалификации, в таком случае Льюис стал бы чемпионом мира уже в 2007, британец заявил, что такая победа ему не нужна и в итоге штраф не последовал и титул <em>достался Райкконену</em>.</p>" +
       "<p>Уже в 2008, на последнем круге последнего гран-при сезона, после эпических событий, титул всё же достался Льюису Хэмилтону, который чуть было не вырвал у него Фелипе Масса. На последнем круге той гонки Тимо Глок потерял темп и Хэмилтон смог его обойти на предпоследнем повороте, набрав тем самым необходимое для титула очко. В 2009-2012 года его выступления за Макларен продолжились, в каждом сезоне он одерживал победы, а по итогам занимал 4-5 места. В конце 2012 Льюис принял для себя решение покинуть Макларен и перейти в Mercedes, многие думали, что он совершает ошибку, но как выяснилось позже он не прогадал, так как в 2013 машина у Макларен получилась откровенно слабой. В 2014-2015 годах Льюис становится уже трёхкратным чемпионом мира вместе с Mercedes. В 2016 уступает титул Нико Росбергу, но в 2017 становится уже четырёхкратным чемпионом!</p>",
   },
+
+  5: {
+    number: 5,
+    name: "Себастьян Феттель | Sebastian Vettel",
+    flag: images + "flagGer.jpg",
+    imgUrl: images + "imgsv.jpg",
+    country: "Германия",
+    databirth: "03.07.1987",
+    season: 13,
+    champion: "2010, 2011, 2012, 2013",
+    debut: "2007, США, Индианаполис",
+    granprix: 241,
+    victory: 53,
+    first: "2008, Италия, Монца, № 22",
+    pouls: 57,
+    bestlap: 38,
+    podiums: 120,
+    startfirst: 101,
+    bestfinish: 1,
+    beststart: 1,
+    take: 31,
+    hattricks: 8,
+    scores: 2985,
+    granprixinscore: "195 из 241 (81%)",
+    totallaps: 13077,
+    info:
+      "<p>Born and raised a Bull, but now very much a Prancing Horse, F1's poster boy of early achievement had won more than all but two drivers in history by the time he was just 26, including back-to-back world titles between 2010 and 2013.</p>" +
+      "<p>Vettel&rsquo;s trademark is pure pace &ndash; and of course his one-finger victory salute. In the chase to the chequered flag, he likes to lead from the front and just like his hero, Michael Schumacher, Vettel has settled in as a race-winning leader at Ferrari.</p>" +
+      "<p>But for all his competitive streak, Vettel has a playful side too and has been known to let loose with a spot of Beatles karaoke - and baby can he drive a car. Alongside his four world crowns he can boast more than 50 pole positions and race victories, ranking him &ndash; statistically - above many of the biggest names in F1 history. No wonder then that he was hand-picked to return Grand Prix racing&rsquo;s oldest team to glory.&nbsp;</p>" +
+      "<p>Following his move to Maranello, Vettel&rsquo;s rivalry with Lewis Hamilton intensified. Opposites off track &ndash; Hamilton leading a glamorous public life while Vettel is a private family man &ndash; the duo have often been all too evenly matched on Sundays as they bid not just for more world titles, but to be hailed the best of their generation.&nbsp;&nbsp;</p>" +
+      "<p>But now he faces an additional thorn in his side &ndash; young-gun team mate Charles Leclerc, the first man to outscore him over a season at the Scuderia - and Vettel will need to call on all his speed and experience if he&rsquo;s to reassert himself over the &lsquo;new boy&rsquo; in 2020.</p>",
+  },
 };
