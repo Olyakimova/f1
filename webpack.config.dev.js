@@ -19,16 +19,16 @@ module.exports = {
     overlay: true,
     historyApiFallback: true,
     disableHostCheck: true,
-    https: false
+    https: false,
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "index.html",
-      favicon: "assets/favicon.ico"
+      favicon: "docs/assets/favicon.ico",
     }),
   ],
   resolve: {
-    extensions: [".jsx", ".js"]
+    extensions: [".jsx", ".js"],
   },
   module: {
     rules: [
@@ -38,15 +38,15 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-              babelrc: false,
-              presets: ['@babel/preset-react', '@babel/preset-env']
-          }
+            babelrc: false,
+            presets: ["@babel/preset-react", "@babel/preset-env"],
+          },
         },
       },
       {
         enforce: "pre",
         test: /\.js$/,
-        loader: "source-map-loader"
+        loader: "source-map-loader",
       },
       {
         test: /\.css$/,

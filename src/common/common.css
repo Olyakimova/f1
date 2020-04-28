@@ -1,6 +1,6 @@
 @font-face {
   font-family: "F1WebFont";
-  src: url("../../assets/font/Formula1-Regular.woff2") format("woff2"); /* Super Modern Browsers */
+  src: url("../../docs/assets/font/Formula1-Regular.woff2") format("woff2"); /* Super Modern Browsers */
 }
 
 body {

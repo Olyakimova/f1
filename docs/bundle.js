@@ -86,10 +86,10 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./assets/font/Formula1-Regular.woff2":
-/*!********************************************!*\
-  !*** ./assets/font/Formula1-Regular.woff2 ***!
-  \********************************************/
+/***/ "./docs/assets/font/Formula1-Regular.woff2":
+/*!*************************************************!*\
+  !*** ./docs/assets/font/Formula1-Regular.woff2 ***!
+  \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -5974,7 +5974,7 @@ function objectToString(o) {
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../../assets/font/Formula1-Regular.woff2 */ "./assets/font/Formula1-Regular.woff2");
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ../../docs/assets/font/Formula1-Regular.woff2 */ "./docs/assets/font/Formula1-Regular.woff2");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
@@ -56329,7 +56329,7 @@ var getDriverByNum = function getDriverByNum(num) {
     imgUrl: images + "car-racer-black-simple-icon.jpg"
   }, driverMap[num]);
 };
-var images = "../../../../assets/images/";
+var images = "../../../../docs/assets/images/";
 var driverMap = {
   7: {
     number: 7,

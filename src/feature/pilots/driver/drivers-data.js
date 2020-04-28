@@ -9,7 +9,7 @@ export const getDriverByNum = (num) => {
   );
 };
 
-const images = "../../../../assets/images/";
+const images = "../../../../docs/assets/images/";
 
 const driverMap = {
   7: {
