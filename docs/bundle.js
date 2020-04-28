@@ -56323,13 +56323,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getDriverByNum", function() { return getDriverByNum; });
 /* harmony import */ var body_parser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! body-parser */ "./node_modules/body-parser/index.js");
 /* harmony import */ var body_parser__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(body_parser__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _util_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../util/utils */ "./src/util/utils.js");
+
 
 var getDriverByNum = function getDriverByNum(num) {
   return Object.assign({
     imgUrl: images + "car-racer-black-simple-icon.jpg"
   }, driverMap[num]);
 };
-var images = "../../../../docs/assets/images/";
+var images = _util_utils__WEBPACK_IMPORTED_MODULE_1__["IS_PROD"] ? "assets/images/" : "/docs/assets/images/";
 var driverMap = {
   7: {
     number: 7,
@@ -57739,6 +57741,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 Object(react_dom__WEBPACK_IMPORTED_MODULE_3__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["HashRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_App__WEBPACK_IMPORTED_MODULE_2__["App"], null)), document.getElementById("app"));
+
+/***/ }),
+
+/***/ "./src/util/utils.js":
+/*!***************************!*\
+  !*** ./src/util/utils.js ***!
+  \***************************/
+/*! exports provided: IS_PROD */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IS_PROD", function() { return IS_PROD; });
+var IS_PROD = !location.host.startsWith("localhost");
 
 /***/ }),
 

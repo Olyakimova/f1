@@ -1,4 +1,5 @@
 import { text } from "body-parser";
+import { IS_PROD } from "../../../util/utils";
 
 export const getDriverByNum = (num) => {
   return Object.assign(
@@ -9,7 +10,7 @@ export const getDriverByNum = (num) => {
   );
 };
 
-const images = "../../../../docs/assets/images/";
+const images = IS_PROD ? "assets/images/" : "/docs/assets/images/";
 
 const driverMap = {
   7: {
