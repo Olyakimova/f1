@@ -7,10 +7,8 @@ export const Header = () => {
   return (
     <>
       <div id="cap">
-        <p>
-          <b>
-            <em>Formula 1 | Формула 1</em>
-          </b>
+        <p className="cap-logo">
+          <a href="#/">Formula 1 | Формула 1</a>
         </p>
       </div>
       <div id="nav">

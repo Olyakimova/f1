@@ -5,11 +5,11 @@
 }
 #nav a {
   color: white;
-  text-decoration:none;
+  text-decoration: none;
 }
 #nav a:hover {
   color: white;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 .nav-item {
   margin: 2px;
@@ -34,4 +34,9 @@
 #cap p {
   margin: 0;
   padding: 20px 3px 1px;
+}
+
+.cap-logo {
+  font-style: italic;
+  font-weight: bold;
 }

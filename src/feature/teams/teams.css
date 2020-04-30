@@ -1,0 +1,97 @@
+/* Color
+  mercedes: #00d2be
+  ferrari: #DC0000
+  red_bull: #0600ef
+  mclaren: #FF8700
+  renault: #FFF500
+  alpha_tauri: #ffffff
+  racing_point: #F596C8
+  haas: #787878
+  alfa_romeo: #960000
+  williams: #0082fa
+  серый #949498           */
+
+.team-container {
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 90px;
+  padding-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.team-list-item {
+  border-right: solid 2px #949498;
+  border-top: solid 2px #949498;
+  border-top-right-radius: 10px;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  padding-block-start: 0.35em;
+  padding-inline-start: 0.75em;
+  padding-inline-end: 0.75em;
+  padding-block-end: 1.5em;
+  width: 510px;
+  height: 220px;
+  float: left;
+}
+/* a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+} */
+.team-header {
+  display: flex;
+  justify-content: flex-start;
+  font-family: sans-serif;
+  border-bottom: solid 7px #8b9796;
+}
+
+.mercedes .team-header {
+  border-bottom: solid 7px #00d2be;
+}
+
+.ferrari .team-header {
+  border-bottom: solid 7px #e71717;
+}
+
+.team-drivers {
+  display: flex;
+  justify-content: flex-start;
+  font-family: sans-serif;
+}
+.team-driver {
+  border-right: solid 1px #949498;
+  border-bottom: solid 1px #949498;
+  border-bottom-right-radius: 10px;
+  padding-top: 5px;
+  padding-left: 10px;
+  font-weight: bold;
+  width: 244px;
+  height: 20px;
+}
+.team-logo {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  display: block;
+}
+.team-car {
+  position: relative;
+  width: 510px;
+  height: 150px;
+  overflow: hidden;
+  display: block;
+  margin-top: 5px;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.team-name {
+  width: 450px;
+  height: 35px;
+  padding: 15px 0px 0px 10px;
+  font-size: 25px;
+  font-weight: bold;
+}

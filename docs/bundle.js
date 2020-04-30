@@ -5999,7 +5999,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ./1920px-F2.svg.png 
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, "#nav {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  background-color: rgb(255, 221, 0);\r\n}\r\n#nav a {\r\n  color: white;\r\n  text-decoration:none;\r\n}\r\n#nav a:hover {\r\n  color: white;\r\n  text-decoration:underline;\r\n}\r\n.nav-item {\r\n  margin: 2px;\r\n  background-color: rgb(255, 30, 0);\r\n  padding: 7px;\r\n}\r\n\r\n#cap {\r\n  height: 100px;\r\n  width: 100%;\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  background-repeat: no-repeat;\r\n  background-color: rgb(255, 221, 0);\r\n  /* #fde910 */\r\n  background-position: right;\r\n  color: rgb(255, 30, 0);\r\n  font-size: 45px;\r\n  text-shadow: 2px 2px 0px rgb(219, 28, 3);\r\n  /* text-shadow: 1px 1px 2px black, 0 0 1em red; Параметры тени */\r\n}\r\n\r\n#cap p {\r\n  margin: 0;\r\n  padding: 20px 3px 1px;\r\n}\r\n", ""]);
+exports.push([module.i, "#nav {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  background-color: rgb(255, 221, 0);\r\n}\r\n#nav a {\r\n  color: white;\r\n  text-decoration: none;\r\n}\r\n#nav a:hover {\r\n  color: white;\r\n  text-decoration: underline;\r\n}\r\n.nav-item {\r\n  margin: 2px;\r\n  background-color: rgb(255, 30, 0);\r\n  padding: 7px;\r\n}\r\n\r\n#cap {\r\n  height: 100px;\r\n  width: 100%;\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  background-repeat: no-repeat;\r\n  background-color: rgb(255, 221, 0);\r\n  /* #fde910 */\r\n  background-position: right;\r\n  color: rgb(255, 30, 0);\r\n  font-size: 45px;\r\n  text-shadow: 2px 2px 0px rgb(219, 28, 3);\r\n  /* text-shadow: 1px 1px 2px black, 0 0 1em red; Параметры тени */\r\n}\r\n\r\n#cap p {\r\n  margin: 0;\r\n  padding: 20px 3px 1px;\r\n}\r\n\r\n.cap-logo {\r\n  font-style: italic;\r\n  font-weight: bold;\r\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -6054,6 +6054,24 @@ var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
 exports.push([module.i, "#year-p {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  margin: 25px 50px 0px 15px;\r\n  background-color: white;\r\n}\r\n.year-stats {\r\n  border: 0;\r\n  padding: 5px 60px 5px 0px;\r\n  text-align: left;\r\n  background-color: white;\r\n  font-size: 25px;\r\n  font-weight: bolder;\r\n  color: rgb(71, 61, 61);\r\n}\r\n.year-pilots {\r\n  border-style:inset;\r\n  /* border-bottom:none; */\r\n  border: 2px solid rgb(71, 61, 61);\r\n  padding: 9px 9px 1px 9px;\r\n  background-color: white;\r\n  font-size: 18px;\r\n  font-weight: bolder;\r\n  color: rgb(71, 61, 61);\r\n}\r\n.year-pilots a {\r\n  color: rgb(71, 61, 61);\r\n  text-decoration:none;\r\n}\r\n.year-pilots a:hover {\r\n  color: rgb(71, 61, 61);\r\n  text-decoration:underline;\r\n}\r\n\r\n#stat-p {\r\n  background-color: rgb(71, 61, 61);\r\n  /* font-size: x-large; */\r\n  font-weight: bolder;\r\n  color:white;\r\n}\r\n\r\n#stat-p, \r\n.stat-p-row {\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  padding: 5px;\r\n  text-align: start;\r\n}\r\n\r\n#stat-p div,\r\n.stat-p-row div {\r\n  width: 8%;\r\n  text-align: center;\r\n}\r\n\r\n#stat-p .stat-p-wider,\r\n.stat-p-row .stat-p-wider {\r\n  width: 22%;\r\n  text-align: left;\r\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./src/feature/teams/teams.css":
+/*!*************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-1!./src/feature/teams/teams.css ***!
+  \*************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "/* Color\r\n  mercedes: #00d2be\r\n  ferrari: #DC0000\r\n  red_bull: #0600ef\r\n  mclaren: #FF8700\r\n  renault: #FFF500\r\n  alpha_tauri: #ffffff\r\n  racing_point: #F596C8\r\n  haas: #787878\r\n  alfa_romeo: #960000\r\n  williams: #0082fa\r\n  серый #949498           */\r\n\r\n.team-container {\r\n  width: 100%;\r\n  padding-right: 10px;\r\n  padding-left: 90px;\r\n  padding-top: 10px;\r\n  margin-right: auto;\r\n  margin-left: auto;\r\n}\r\n.team-list-item {\r\n  border-right: solid 2px #949498;\r\n  border-top: solid 2px #949498;\r\n  border-top-right-radius: 10px;\r\n  margin-inline-start: 2px;\r\n  margin-inline-end: 2px;\r\n  padding-block-start: 0.35em;\r\n  padding-inline-start: 0.75em;\r\n  padding-inline-end: 0.75em;\r\n  padding-block-end: 1.5em;\r\n  width: 510px;\r\n  height: 220px;\r\n  float: left;\r\n}\r\n/* a:-webkit-any-link {\r\n    color: -webkit-link;\r\n    cursor: pointer;\r\n    text-decoration: underline;\r\n} */\r\n.team-header {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  font-family: sans-serif;\r\n  border-bottom: solid 7px #8b9796;\r\n}\r\n\r\n.mercedes .team-header {\r\n  border-bottom: solid 7px #00d2be;\r\n}\r\n\r\n.ferrari .team-header {\r\n  border-bottom: solid 7px #e71717;\r\n}\r\n\r\n.team-drivers {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  font-family: sans-serif;\r\n}\r\n.team-driver {\r\n  border-right: solid 1px #949498;\r\n  border-bottom: solid 1px #949498;\r\n  border-bottom-right-radius: 10px;\r\n  padding-top: 5px;\r\n  padding-left: 10px;\r\n  font-weight: bold;\r\n  width: 244px;\r\n  height: 20px;\r\n}\r\n.team-logo {\r\n  position: relative;\r\n  width: 50px;\r\n  height: 50px;\r\n  overflow: hidden;\r\n  display: block;\r\n}\r\n.team-car {\r\n  position: relative;\r\n  width: 510px;\r\n  height: 150px;\r\n  overflow: hidden;\r\n  display: block;\r\n  margin-top: 5px;\r\n}\r\nimg {\r\n  display: block;\r\n  width: 100%;\r\n  height: auto;\r\n}\r\n.team-name {\r\n  width: 450px;\r\n  height: 35px;\r\n  padding: 15px 0px 0px 10px;\r\n  font-size: 25px;\r\n  font-weight: bold;\r\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -55962,6 +55980,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_header_Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./common/header/Header */ "./src/common/header/Header.jsx");
 /* harmony import */ var _common_common_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./common/common.css */ "./src/common/common.css");
 /* harmony import */ var _common_common_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_common_common_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _feature_teams_Teams__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./feature/teams/Teams */ "./src/feature/teams/Teams.jsx");
+
 
 
 
@@ -55977,6 +55997,9 @@ var App = function App() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/drivers",
     component: _feature_pilots_Pilots__WEBPACK_IMPORTED_MODULE_3__["Pilots"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/teams",
+    component: _feature_teams_Teams__WEBPACK_IMPORTED_MODULE_7__["Teams"]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     component: _common_PageNotFound__WEBPACK_IMPORTED_MODULE_4__["PageNotFound"]
   })));
@@ -56071,7 +56094,11 @@ var Header = function Header() {
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     id: "cap"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("b", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("em", null, "Formula 1 | \u0424\u043E\u0440\u043C\u0443\u043B\u0430 1")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("p", {
+    className: "cap-logo"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
+    href: "#/"
+  }, "Formula 1 | \u0424\u043E\u0440\u043C\u0443\u043B\u0430 1"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     id: "nav"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     className: "nav-item"
@@ -56341,9 +56368,7 @@ var driverMap = {
     country: "Финляндия",
     databirth: "17.10.1979",
     season: 17,
-    champion: 2017,
-    // дважды вице-чемпион мира (в 2003 и 2005 годах)
-    // трижды бронзовый призёр (в 2008, 2012 и 2018 годах)
+    champion: "2017, Дважды вице-чемпион мира: 2003, 2005; Трижды бронзовый призёр: 2008, 2012, 2018",
     debut: "2001, Австралия, Альберт-Парк",
     granprix: 315,
     victory: 21,
@@ -56698,6 +56723,58 @@ var driverMap = {
     granprixinscore: "15 из 62 (24%)",
     totallaps: 3417,
     info: "<p>...</p>" + "<p>...</p>"
+  },
+  6: {
+    number: 6,
+    name: "Nico Rosberg | Нико Росберг",
+    flag: images + "flagGer.jpg",
+    imgUrl: images + "imgnr.jpg",
+    country: "Германия",
+    databirth: "27.06.1985",
+    season: 11,
+    champion: 2016,
+    debut: "2006,	Бахрейн, Сахир",
+    granprix: 206,
+    victory: 23,
+    first: "2012, Китай, Шанхай, 	№ 111",
+    pouls: 30,
+    bestlap: 20,
+    podiums: 57,
+    startfirst: 60,
+    bestfinish: 1,
+    beststart: 1,
+    take: 15,
+    hattricks: 3,
+    scores: 1594,
+    granprixinscore: "133 из 206 (65%)",
+    totallaps: 11088,
+    info: "<p>...</p>" + "<p>...</p>"
+  },
+  16: {
+    number: 16,
+    name: "Charles Leclerc | Шарль Леклер",
+    flag: images + "flagMon.jpg",
+    imgUrl: images + "imgcl.jpg",
+    country: "Монако",
+    databirth: "16.10.1997",
+    season: 2,
+    champion: "-",
+    debut: "2018,	Австралия, Альберт-Парк",
+    granprix: 42,
+    victory: 2,
+    first: "2019, Бельгия, Спа-Франкоршам, 	№ 34",
+    pouls: 7,
+    bestlap: 4,
+    podiums: 10,
+    startfirst: 8,
+    bestfinish: 1,
+    beststart: 1,
+    take: 2,
+    hattricks: 0,
+    scores: 303,
+    granprixinscore: "28 из 42 (67%)",
+    totallaps: 2214,
+    info: "<p>...</p>" + "<p>...</p>"
   }
 };
 
@@ -56831,8 +56908,8 @@ var pilotsAll = [{
   season: 17,
   team: "Alfa Romeo",
   points: 1859,
-  poles: 0,
-  bestLap: 0,
+  poles: 18,
+  bestLap: 46,
   podiums: 0,
   laps: 0
 }, {
@@ -56841,8 +56918,8 @@ var pilotsAll = [{
   season: 13,
   team: "Mercedes",
   points: 3431,
-  poles: 0,
-  bestLap: 0,
+  poles: 88,
+  bestLap: 47,
   podiums: 0,
   laps: 0
 }, {
@@ -56851,7 +56928,7 @@ var pilotsAll = [{
   season: 13,
   team: "Ferrari",
   points: 2985,
-  poles: 0,
+  poles: 57,
   bestLap: 0,
   podiums: 0,
   laps: 0
@@ -56871,7 +56948,7 @@ var pilotsAll = [{
   season: 9,
   team: "Renault",
   points: 1040,
-  poles: 0,
+  poles: 3,
   bestLap: 0,
   podiums: 0,
   laps: 0
@@ -56880,7 +56957,7 @@ var pilotsAll = [{
   name: "Romain Grosjean",
   season: 9,
   team: "Haas",
-  points: 0,
+  points: 389,
   poles: 0,
   bestLap: 0,
   podiums: 0,
@@ -56891,7 +56968,7 @@ var pilotsAll = [{
   season: 9,
   team: "Renault",
   points: 37,
-  poles: 0,
+  poles: 1,
   bestLap: 2,
   podiums: 0,
   laps: 9038
@@ -56901,7 +56978,7 @@ var pilotsAll = [{
   season: 7,
   team: "Mercedes",
   points: 1289,
-  poles: 0,
+  poles: 11,
   bestLap: 0,
   podiums: 0,
   laps: 0
@@ -56910,7 +56987,7 @@ var pilotsAll = [{
   name: "Kevin Magnussen",
   season: 6,
   team: "Haas",
-  points: 0,
+  points: 157,
   poles: 0,
   bestLap: 0,
   podiums: 0,
@@ -56920,7 +56997,7 @@ var pilotsAll = [{
   name: "Daniil Kvyat",
   season: 5,
   team: "Alpha Tauri",
-  points: 0,
+  points: 170,
   poles: 0,
   bestLap: 0,
   podiums: 0,
@@ -56931,7 +57008,7 @@ var pilotsAll = [{
   season: 5,
   team: "Red Bull Racing",
   points: 948,
-  poles: 0,
+  poles: 2,
   bestLap: 0,
   podiums: 0,
   laps: 0
@@ -56940,7 +57017,7 @@ var pilotsAll = [{
   name: "Carlos Sainz",
   season: 5,
   team: "McLaren",
-  points: 0,
+  points: 267,
   poles: 0,
   bestLap: 0,
   podiums: 0,
@@ -56950,7 +57027,7 @@ var pilotsAll = [{
   name: "Pier Gasli",
   season: 3,
   team: "Alpha Tauri",
-  points: 0,
+  points: 124,
   poles: 0,
   bestLap: 0,
   podiums: 0,
@@ -56960,7 +57037,7 @@ var pilotsAll = [{
   name: "Lance Stroll",
   season: 3,
   team: "Racing Point",
-  points: 0,
+  points: 67,
   poles: 0,
   bestLap: 0,
   podiums: 0,
@@ -56980,7 +57057,7 @@ var pilotsAll = [{
   name: "Antonio Giovinazzi",
   season: 2,
   team: "Alfa Romeo",
-  points: 0,
+  points: 14,
   poles: 0,
   bestLap: 0,
   podiums: 0,
@@ -56990,8 +57067,8 @@ var pilotsAll = [{
   name: "Charles Leclerc",
   season: 2,
   team: "Ferrari",
-  points: 0,
-  poles: 0,
+  points: 303,
+  poles: 7,
   bestLap: 0,
   podiums: 0,
   laps: 0
@@ -57010,7 +57087,7 @@ var pilotsAll = [{
   name: "Lando Norris",
   season: 1,
   team: "McLaren",
-  points: 0,
+  points: 49,
   poles: 0,
   bestLap: 0,
   podiums: 0,
@@ -57020,7 +57097,7 @@ var pilotsAll = [{
   name: "Alexander Albon",
   season: 1,
   team: "Red Bull Racing",
-  points: 0,
+  points: 92,
   poles: 0,
   bestLap: 0,
   podiums: 0,
@@ -57721,6 +57798,175 @@ var pilots2018 = [{
 
 /***/ }),
 
+/***/ "./src/feature/teams/Teams.jsx":
+/*!*************************************!*\
+  !*** ./src/feature/teams/Teams.jsx ***!
+  \*************************************/
+/*! exports provided: Teams */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Teams", function() { return Teams; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/esm/react-router.js");
+/* harmony import */ var _teams_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./teams.css */ "./src/feature/teams/teams.css");
+/* harmony import */ var _teams_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_teams_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _TeamsMain__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./TeamsMain */ "./src/feature/teams/TeamsMain.jsx");
+
+
+
+
+var Teams = function Teams() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/teams",
+    component: _TeamsMain__WEBPACK_IMPORTED_MODULE_3__["TeamsMain"]
+  }));
+};
+
+/***/ }),
+
+/***/ "./src/feature/teams/TeamsMain.jsx":
+/*!*****************************************!*\
+  !*** ./src/feature/teams/TeamsMain.jsx ***!
+  \*****************************************/
+/*! exports provided: TeamsMain */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TeamsMain", function() { return TeamsMain; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _util_assets__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../util/assets */ "./src/util/assets.js");
+/* harmony import */ var _teams_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./teams.css */ "./src/feature/teams/teams.css");
+/* harmony import */ var _teams_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_teams_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _team_data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./team-data */ "./src/feature/teams/team-data.js");
+
+
+
+
+
+var TeamsMain = function TeamsMain(props) {
+  var teamView = function teamView(teamKey) {
+    var team = _team_data__WEBPACK_IMPORTED_MODULE_3__["Teams"][teamKey];
+    var mainClassName = "team-container " + teamKey.toLowerCase();
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+      key: teamKey,
+      className: mainClassName
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+      className: "team-list-item"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
+      href: "#/teams/" + team.name
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+      className: "team-header"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+      className: "team-logo"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", {
+      src: team.logo
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+      className: "team-name"
+    }, team.name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+      className: "team-car"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", {
+      src: team.car
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+      className: "team-drivers"
+    }, team.drivers ? team.drivers.map(function (driver) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+        key: driver.number,
+        className: "team-driver"
+      }, driver.name);
+    }) : null)));
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "container listing team-listing"
+  }, _team_data__WEBPACK_IMPORTED_MODULE_3__["TeamKeys"].map(function (key) {
+    return teamView(key);
+  })));
+};
+
+/***/ }),
+
+/***/ "./src/feature/teams/team-data.js":
+/*!****************************************!*\
+  !*** ./src/feature/teams/team-data.js ***!
+  \****************************************/
+/*! exports provided: Teams, TeamKeys */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Teams", function() { return Teams; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TeamKeys", function() { return TeamKeys; });
+/* harmony import */ var _util_assets__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util/assets */ "./src/util/assets.js");
+/* harmony import */ var _pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pilots/driver/drivers-data */ "./src/feature/pilots/driver/drivers-data.js");
+
+
+var Teams = {
+  MERCEDES: {
+    logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].mercedes,
+    name: "Mercedes AMG Petronas",
+    car: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Car"].mercedes,
+    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByNum"])(44), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByNum"])(77)]
+  },
+  FERRARI: {
+    logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].ferrari,
+    name: "Scuderia Ferrari",
+    car: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Car"].ferrari,
+    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByNum"])(5), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByNum"])(16)]
+  },
+  RED_BULL: {
+    logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].red_bull,
+    name: "Aston Martin Red Bull Racing",
+    car: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Car"].red_bull,
+    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByNum"])(33), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByNum"])(23)]
+  },
+  RENAULT: {
+    logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].renault,
+    name: "Renault DP World F1 Team",
+    car: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Car"].renault,
+    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByNum"])(3), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByNum"])(31)]
+  }
+};
+var TeamKeys = Object.keys(Teams);
+
+/***/ }),
+
+/***/ "./src/feature/teams/teams.css":
+/*!*************************************!*\
+  !*** ./src/feature/teams/teams.css ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-1!./teams.css */ "./node_modules/css-loader/dist/cjs.js?!./src/feature/teams/teams.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -57741,6 +57987,47 @@ __webpack_require__.r(__webpack_exports__);
 
 
 Object(react_dom__WEBPACK_IMPORTED_MODULE_3__["render"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router_dom__WEBPACK_IMPORTED_MODULE_1__["HashRouter"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_App__WEBPACK_IMPORTED_MODULE_2__["App"], null)), document.getElementById("app"));
+
+/***/ }),
+
+/***/ "./src/util/assets.js":
+/*!****************************!*\
+  !*** ./src/util/assets.js ***!
+  \****************************/
+/*! exports provided: Logo, Car */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Logo", function() { return Logo; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Car", function() { return Car; });
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ "./src/util/utils.js");
+
+var images = _utils__WEBPACK_IMPORTED_MODULE_0__["IS_PROD"] ? "assets/images/" : "/docs/assets/images/";
+var Logo = {
+  mercedes: images + "logo-merc.png",
+  ferrari: images + "logo-fer.png",
+  red_bull: images + "logo-rb.png",
+  mclaren: images + "logo-mcl.png",
+  renault: images + "logo-ren.png",
+  alpha_tauri: images + "logo-torr.png",
+  racing_point: images + "logo-rp.png",
+  haas: images + "logo-haas.png",
+  alfa_romeo: images + "logo-alfa.png",
+  williams: images + "logo-will.png"
+};
+var Car = {
+  mercedes: images + "car-merc.jpg",
+  ferrari: images + "car-fer.jpg",
+  red_bull: images + "car-rb.jpg",
+  mclaren: images + "car-mcl.jpg",
+  renault: images + "car-ren.jpg",
+  alpha_tauri: images + "car-torr.jpg",
+  racing_point: images + "car-rp.jpg",
+  haas: images + "car-haas.jpg",
+  alfa_romeo: images + "car-alfa.jpg",
+  williams: images + "car-will.jpg"
+};
 
 /***/ }),
 
