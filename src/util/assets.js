@@ -24,6 +24,6 @@ export const Car = {
   alpha_tauri: images + "car-torr.jpg",
   racing_point: images + "car-rp.jpg",
   haas: images + "car-haas.jpg",
-  alfa_romeo: images + "car-alfa.jpg",
+  alfa_romeo: images + "car-alfa.png",
   williams: images + "car-will.jpg",
 };

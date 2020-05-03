@@ -14,7 +14,7 @@ export const Driver = (props) => {
           <div id="driver-header">
             <div className="num">{driver.number}</div>
             <div className="name">
-              <div>{driver.name}</div>
+              <div>{driver.fullname}</div>
             </div>
             <img className="flag" src={driver.flag} height="67"></img>
           </div>

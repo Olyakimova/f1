@@ -15,7 +15,8 @@
   width: 100%;
   padding-right: 10px;
   padding-left: 90px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
+  margin-top: 10px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -33,24 +34,104 @@
   height: 220px;
   float: left;
 }
-/* a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-} */
+
+.team-list-item a {
+  color: rgb(71, 61, 61);
+  cursor: pointer;
+  text-decoration: none;
+}
+.team-list-item a:hover {
+  color: rgb(71, 61, 61);
+  cursor: pointer;
+  text-decoration: line-through;
+}
+.mercedes .team-list-item a:hover {
+  color: #00d2be;
+  cursor: pointer;
+  text-decoration: none;
+}
+.ferrari .team-list-item a:hover {
+  color: #dc0000;
+  cursor: pointer;
+  text-decoration: none;
+}
+.red_bull .team-list-item a:hover {
+  color: #0600ef;
+  cursor: pointer;
+  text-decoration: none;
+}
+.renault .team-list-item a:hover {
+  color: #fff500;
+  cursor: pointer;
+  text-decoration: none;
+}
+.mclaren .team-list-item a:hover {
+  color: #ff8700;
+  cursor: pointer;
+  text-decoration: none;
+}
+.alpha_tauri .team-list-item a:hover {
+  color: #949498;
+  cursor: pointer;
+  text-decoration: none;
+}
+.racing_point .team-list-item a:hover {
+  color: #f596c8;
+  cursor: pointer;
+  text-decoration: none;
+}
+.haas .team-list-item a:hover {
+  color: #787878;
+  cursor: pointer;
+  text-decoration: none;
+}
+.alfa_romeo .team-list-item a:hover {
+  color: #960000;
+  cursor: pointer;
+  text-decoration: none;
+}
+.williams .team-list-item a:hover {
+  color: #0082fa;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .team-header {
   display: flex;
   justify-content: flex-start;
   font-family: sans-serif;
-  border-bottom: solid 7px #8b9796;
+  border-bottom: solid 7px #949498;
 }
 
 .mercedes .team-header {
   border-bottom: solid 7px #00d2be;
 }
-
 .ferrari .team-header {
-  border-bottom: solid 7px #e71717;
+  border-bottom: solid 7px #dc0000;
+}
+.red_bull .team-header {
+  border-bottom: solid 7px #0600ef;
+}
+.renault .team-header {
+  border-bottom: solid 7px #fff500;
+}
+.mclaren .team-header {
+  border-bottom: solid 7px #ff8700;
+}
+.alpha_tauri .team-header {
+  border-bottom: solid 7px #949498;
+}
+.racing_point .team-header {
+  border-bottom: solid 7px #f596c8;
+}
+.haas .team-header {
+  border-bottom: solid 7px #787878;
+}
+.alfa_romeo .team-header {
+  border-bottom: solid 7px #960000;
+}
+.williams .team-header {
+  border-bottom: solid 7px #0082fa;
 }
 
 .team-drivers {

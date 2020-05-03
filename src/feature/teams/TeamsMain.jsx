@@ -26,7 +26,9 @@ export const TeamsMain = (props) => {
             {team.drivers
               ? team.drivers.map((driver) => (
                   <div key={driver.number} className="team-driver">
-                    {driver.name}
+                    <a href={"#/drivers/driver/" + driver.name}>
+                      {driver.name}
+                    </a>
                   </div>
                 ))
               : null}

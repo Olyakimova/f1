@@ -245,7 +245,7 @@ const pilotsAll = [
 const pilots2020 = [
   {
     number: 7,
-    name: "Kimi Räikkönen",
+    name: "Kimi Raikkonen",
     season: 17,
     team: "Alfa Romeo",
     points: 0,
