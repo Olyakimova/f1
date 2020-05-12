@@ -5,7 +5,7 @@ import { Pilots } from "./feature/pilots/Pilots";
 import { PageNotFound } from "./common/PageNotFound";
 import { Header } from "./common/header/Header";
 import "./common/common.css";
-import { Teams } from "./feature/teams/Teams";
+import { TeamRouter } from "./feature/teams/TeamRouter";
 
 export const App = () => {
   return (
@@ -14,7 +14,7 @@ export const App = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/drivers" component={Pilots} />
-        <Route path="/teams" component={Teams} />
+        <Route path="/teams" component={TeamRouter} />
         <Route component={PageNotFound} />
       </Switch>
     </>

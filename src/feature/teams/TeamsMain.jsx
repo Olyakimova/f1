@@ -11,7 +11,7 @@ export const TeamsMain = (props) => {
     return (
       <div key={teamKey} className={mainClassName}>
         <div className="team-list-item">
-          <a href={"#/teams/" + team.name}>
+          <a href={"#/teams/" + teamKey.toLowerCase()}>
             <div className="team-header">
               <div className="team-logo">
                 <img src={team.logo}></img>
@@ -26,9 +26,7 @@ export const TeamsMain = (props) => {
             {team.drivers
               ? team.drivers.map((driver) => (
                   <div key={driver.number} className="team-driver">
-                    <a href={"#/drivers/driver/" + driver.name}>
-                      {driver.name}
-                    </a>
+                    <a href={driver.link}>{driver.name}</a>
                   </div>
                 ))
               : null}

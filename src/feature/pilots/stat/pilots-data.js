@@ -1,3 +1,5 @@
+import { DriverKey, getDriverByKey } from "../driver/drivers-data";
+
 export const getPilots = (year) => {
   if (2019 == year) {
     return pilots2019;
@@ -10,8 +12,9 @@ export const getPilots = (year) => {
 
 const pilotsAll = [
   {
+    driver: getDriverByKey(DriverKey.kimi_raikkonen),
     number: 7,
-    name: "Kimi Räikkönen",
+    name: "Kimi Raikkonen",
     season: 17,
     team: "Alfa Romeo",
     points: 1859,
@@ -21,6 +24,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.lewis_hamilton),
     number: 44,
     name: "Lewis Hamilton",
     season: 13,
@@ -32,6 +36,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.sebastian_vettel),
     number: 5,
     name: "Sebastian Vettel",
     season: 13,
@@ -43,6 +48,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.sergio_perez),
     number: 11,
     name: "Sergio Perez",
     season: 9,
@@ -54,6 +60,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.daniel_ricciardo),
     number: 3,
     name: "Daniel Ricciardo",
     season: 9,
@@ -65,6 +72,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.romain_grosjean),
     number: 8,
     name: "Romain Grosjean",
     season: 9,
@@ -76,6 +84,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.nico_hulkenberg),
     number: 8,
     name: "Nico Hulkenberg",
     season: 9,
@@ -87,6 +96,7 @@ const pilotsAll = [
     laps: 9038,
   },
   {
+    driver: getDriverByKey(DriverKey.valtteri_bottas),
     number: 77,
     name: "Valtteri Bottas",
     season: 7,
@@ -98,6 +108,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.kevin_magnussen),
     number: 20,
     name: "Kevin Magnussen",
     season: 6,
@@ -109,6 +120,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.daniil_kvyat),
     number: 26,
     name: "Daniil Kvyat",
     season: 5,
@@ -120,6 +132,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.max_verstappen),
     number: 33,
     name: "Max Verstappen",
     season: 5,
@@ -131,6 +144,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.carlos_sainz),
     number: 55,
     name: "Carlos Sainz",
     season: 5,
@@ -142,6 +156,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.pier_gasli),
     number: 10,
     name: "Pier Gasli",
     season: 3,
@@ -153,6 +168,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.lance_stroll),
     number: 18,
     name: "Lance Stroll",
     season: 3,
@@ -164,6 +180,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.esteban_ocon),
     number: 31,
     name: "Esteban Ocon",
     season: 3,
@@ -175,6 +192,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.antonio_giovinazzi),
     number: 99,
     name: "Antonio Giovinazzi",
     season: 2,
@@ -186,6 +204,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.charles_leclerc),
     number: 16,
     name: "Charles Leclerc",
     season: 2,
@@ -197,6 +216,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.george_russell),
     number: 63,
     name: "George Russell",
     season: 1,
@@ -208,6 +228,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.lando_norris),
     number: 4,
     name: "Lando Norris",
     season: 1,
@@ -219,6 +240,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.alexander_albon),
     number: 23,
     name: "Alexander Albon",
     season: 1,
@@ -230,6 +252,7 @@ const pilotsAll = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.nicholas_latifi),
     number: 6,
     name: "Nicholas Latifi",
     season: 0,
@@ -244,6 +267,7 @@ const pilotsAll = [
 
 const pilots2020 = [
   {
+    driver: getDriverByKey(DriverKey.kimi_raikkonen),
     number: 7,
     name: "Kimi Raikkonen",
     season: 17,
@@ -255,6 +279,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.lewis_hamilton),
     number: 44,
     name: "Lewis Hamilton",
     season: 13,
@@ -266,6 +291,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.sebastian_vettel),
     number: 5,
     name: "Sebastian Vettel",
     season: 13,
@@ -277,6 +303,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.sergio_perez),
     number: 11,
     name: "Sergio Perez",
     season: 9,
@@ -288,6 +315,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.daniel_ricciardo),
     number: 3,
     name: "Daniel Ricciardo",
     season: 9,
@@ -299,6 +327,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.romain_grosjean),
     number: 8,
     name: "Romain Grosjean",
     season: 9,
@@ -310,6 +339,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.valtteri_bottas),
     number: 77,
     name: "Valtteri Bottas",
     season: 7,
@@ -321,6 +351,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.kevin_magnussen),
     number: 20,
     name: "Kevin Magnussen",
     season: 6,
@@ -332,6 +363,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.daniil_kvyat),
     number: 26,
     name: "Daniil Kvyat",
     season: 5,
@@ -343,6 +375,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.max_verstappen),
     number: 33,
     name: "Max Verstappen",
     season: 5,
@@ -354,6 +387,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.carlos_sainz),
     number: 55,
     name: "Carlos Sainz",
     season: 5,
@@ -365,6 +399,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.pier_gasli),
     number: 10,
     name: "Pier Gasli",
     season: 3,
@@ -376,6 +411,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.lance_stroll),
     number: 18,
     name: "Lance Stroll",
     season: 3,
@@ -387,6 +423,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.esteban_ocon),
     number: 31,
     name: "Esteban Ocon",
     season: 3,
@@ -398,6 +435,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.antonio_giovinazzi),
     number: 99,
     name: "Antonio Giovinazzi",
     season: 2,
@@ -409,6 +447,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.charles_leclerc),
     number: 16,
     name: "Charles Leclerc",
     season: 2,
@@ -420,6 +459,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.george_russell),
     number: 63,
     name: "George Russell",
     season: 1,
@@ -431,6 +471,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.lando_norris),
     number: 4,
     name: "Lando Norris",
     season: 1,
@@ -442,6 +483,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.alexander_albon),
     number: 23,
     name: "Alexander Albon",
     season: 1,
@@ -453,6 +495,7 @@ const pilots2020 = [
     laps: 0,
   },
   {
+    driver: getDriverByKey(DriverKey.nicholas_latifi),
     number: 6,
     name: "Nicholas Latifi",
     season: 0,
@@ -467,6 +510,7 @@ const pilots2020 = [
 
 const pilots2019 = [
   {
+    driver: getDriverByKey(DriverKey.lewis_hamilton),
     number: 44,
     name: "Lewis Hamilton",
     season: 13,
@@ -480,6 +524,7 @@ const pilots2019 = [
     position: 1,
   },
   {
+    driver: getDriverByKey(DriverKey.valtteri_bottas),
     number: 77,
     name: "Valtteri Bottas",
     season: 7,
@@ -493,6 +538,7 @@ const pilots2019 = [
     position: 2,
   },
   {
+    driver: getDriverByKey(DriverKey.max_verstappen),
     number: 33,
     name: "Max Verstappen",
     season: 5,
@@ -506,6 +552,7 @@ const pilots2019 = [
     position: 3,
   },
   {
+    driver: getDriverByKey(DriverKey.charles_leclerc),
     number: 16,
     name: "Charles Leclerc",
     season: 2,
@@ -519,6 +566,7 @@ const pilots2019 = [
     position: 4,
   },
   {
+    driver: getDriverByKey(DriverKey.sebastian_vettel),
     number: 5,
     name: "Sebastian Vettel",
     season: 13,
@@ -532,6 +580,7 @@ const pilots2019 = [
     position: 5,
   },
   {
+    driver: getDriverByKey(DriverKey.carlos_sainz),
     number: 55,
     name: "Carlos Sainz",
     season: 5,
@@ -545,6 +594,7 @@ const pilots2019 = [
     position: 6,
   },
   {
+    driver: getDriverByKey(DriverKey.pier_gasli),
     number: 10,
     name: "Pier Gasli",
     season: 3,
@@ -558,6 +608,7 @@ const pilots2019 = [
     position: 7,
   },
   {
+    driver: getDriverByKey(DriverKey.alexander_albon),
     number: 23,
     name: "Alexander Albon",
     season: 1,
@@ -571,6 +622,7 @@ const pilots2019 = [
     position: 8,
   },
   {
+    driver: getDriverByKey(DriverKey.daniel_ricciardo),
     number: 3,
     name: "Daniel Ricciardo",
     season: 9,
@@ -584,6 +636,7 @@ const pilots2019 = [
     position: 9,
   },
   {
+    driver: getDriverByKey(DriverKey.sergio_perez),
     number: 11,
     name: "Sergio Perez",
     season: 9,
@@ -597,6 +650,7 @@ const pilots2019 = [
     position: 10,
   },
   {
+    driver: getDriverByKey(DriverKey.lando_norris),
     number: 4,
     name: "Lando Norris",
     season: 1,
@@ -610,6 +664,7 @@ const pilots2019 = [
     position: 11,
   },
   {
+    driver: getDriverByKey(DriverKey.kimi_raikkonen),
     number: 7,
     name: "Kimi Raikkonen",
     season: 17,
@@ -623,6 +678,7 @@ const pilots2019 = [
     position: 12,
   },
   {
+    driver: getDriverByKey(DriverKey.daniil_kvyat),
     number: 26,
     name: "Daniil Kvyat",
     season: 5,
@@ -636,7 +692,8 @@ const pilots2019 = [
     position: 13,
   },
   {
-    number: 8,
+    driver: getDriverByKey(DriverKey.nico_hulkenberg),
+    number: 27,
     name: "Nico Hulkenberg",
     season: 9,
     team: "Renault",
@@ -649,6 +706,7 @@ const pilots2019 = [
     position: 14,
   },
   {
+    driver: getDriverByKey(DriverKey.lance_stroll),
     number: 18,
     name: "Lance Stroll",
     season: 3,
@@ -662,6 +720,7 @@ const pilots2019 = [
     position: 15,
   },
   {
+    driver: getDriverByKey(DriverKey.kevin_magnussen),
     number: 20,
     name: "Kevin Magnussen",
     season: 6,
@@ -675,6 +734,7 @@ const pilots2019 = [
     position: 16,
   },
   {
+    driver: getDriverByKey(DriverKey.antonio_giovinazzi),
     number: 99,
     name: "Antonio Giovinazzi",
     season: 2,
@@ -688,6 +748,7 @@ const pilots2019 = [
     position: 17,
   },
   {
+    driver: getDriverByKey(DriverKey.romain_grosjean),
     number: 8,
     name: "Romain Grosjean",
     season: 9,
@@ -701,6 +762,7 @@ const pilots2019 = [
     position: 18,
   },
   {
+    driver: getDriverByKey(DriverKey.robert_kubica),
     number: 88,
     name: "Robert Kubica",
     season: 6,
@@ -714,6 +776,7 @@ const pilots2019 = [
     position: 19,
   },
   {
+    driver: getDriverByKey(DriverKey.george_russell),
     number: 63,
     name: "George Russell",
     season: 1,
@@ -730,6 +793,7 @@ const pilots2019 = [
 
 const pilots2018 = [
   {
+    driver: getDriverByKey(DriverKey.lewis_hamilton),
     number: 44,
     name: "Lewis Hamilton",
     season: 12,
@@ -743,6 +807,7 @@ const pilots2018 = [
     position: 1,
   },
   {
+    driver: getDriverByKey(DriverKey.sebastian_vettel),
     number: 5,
     name: "Sebastian Vettel",
     season: 12,
@@ -755,6 +820,7 @@ const pilots2018 = [
     position: 2,
   },
   {
+    driver: getDriverByKey(DriverKey.kimi_raikkonen),
     number: 7,
     name: "Kimi Raikkonen",
     season: 17,
@@ -768,6 +834,7 @@ const pilots2018 = [
     position: 3,
   },
   {
+    driver: getDriverByKey(DriverKey.max_verstappen),
     number: 33,
     name: "Max Verstappen",
     season: 4,
@@ -781,6 +848,7 @@ const pilots2018 = [
     position: 4,
   },
   {
+    driver: getDriverByKey(DriverKey.valtteri_bottas),
     number: 77,
     name: "Valtteri Bottas",
     season: 6,
@@ -794,6 +862,7 @@ const pilots2018 = [
     position: 5,
   },
   {
+    driver: getDriverByKey(DriverKey.daniel_ricciardo),
     number: 3,
     name: "Daniel Ricciardo",
     season: 8,
@@ -807,6 +876,7 @@ const pilots2018 = [
     position: 6,
   },
   {
+    driver: getDriverByKey(DriverKey.nico_hulkenberg),
     number: 8,
     name: "Nico Hulkenberg",
     season: 8,
@@ -820,6 +890,7 @@ const pilots2018 = [
     position: 7,
   },
   {
+    driver: getDriverByKey(DriverKey.sergio_perez),
     number: 11,
     name: "Sergio Perez",
     season: 8,
@@ -833,6 +904,7 @@ const pilots2018 = [
     position: 8,
   },
   {
+    driver: getDriverByKey(DriverKey.kevin_magnussen),
     number: 20,
     name: "Kevin Magnussen",
     season: 5,
@@ -846,6 +918,7 @@ const pilots2018 = [
     position: 9,
   },
   {
+    driver: getDriverByKey(DriverKey.carlos_sainz),
     number: 55,
     name: "Carlos Sainz",
     season: 4,
@@ -859,6 +932,7 @@ const pilots2018 = [
     position: 10,
   },
   {
+    driver: getDriverByKey(DriverKey.fernando_alonso),
     number: 29,
     name: "Fernando Alonso",
     season: 17,
@@ -872,6 +946,7 @@ const pilots2018 = [
     position: 11,
   },
   {
+    driver: getDriverByKey(DriverKey.esteban_ocon),
     number: 31,
     name: "Esteban Ocon",
     season: 3,
@@ -885,6 +960,7 @@ const pilots2018 = [
     position: 12,
   },
   {
+    driver: getDriverByKey(DriverKey.charles_leclerc),
     number: 16,
     name: "Charles Leclerc",
     season: 1,
@@ -898,6 +974,7 @@ const pilots2018 = [
     position: 13,
   },
   {
+    driver: getDriverByKey(DriverKey.romain_grosjean),
     number: 8,
     name: "Romain Grosjean",
     season: 8,
@@ -911,6 +988,7 @@ const pilots2018 = [
     position: 14,
   },
   {
+    driver: getDriverByKey(DriverKey.pier_gasli),
     number: 10,
     name: "Pier Gasli",
     season: 2,
@@ -924,6 +1002,7 @@ const pilots2018 = [
     position: 15,
   },
   {
+    driver: getDriverByKey(DriverKey.stoffel_vandoorne),
     number: 2,
     name: "Stoffel Vandoorne",
     season: 3,
@@ -937,6 +1016,7 @@ const pilots2018 = [
     position: 16,
   },
   {
+    driver: getDriverByKey(DriverKey.marcus_ericsson),
     number: 9,
     name: "Marcus Ericsson",
     season: 5,
@@ -950,6 +1030,7 @@ const pilots2018 = [
     position: 17,
   },
   {
+    driver: getDriverByKey(DriverKey.lance_stroll),
     number: 18,
     name: "Lance Stroll",
     season: 3,
@@ -963,6 +1044,7 @@ const pilots2018 = [
     position: 18,
   },
   {
+    driver: getDriverByKey(DriverKey.brendon_hartley),
     number: 28,
     name: "Brendon Hartley",
     season: 2,
@@ -976,6 +1058,7 @@ const pilots2018 = [
     position: 19,
   },
   {
+    driver: getDriverByKey(DriverKey.sergey_sirotkin),
     number: 35,
     name: "Sergey Sirotkin",
     season: 1,

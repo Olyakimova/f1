@@ -5611,6 +5611,68 @@ function isnan (val) {
 
 /***/ }),
 
+/***/ "./node_modules/classnames/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/classnames/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+/* global define */
+
+(function () {
+	'use strict';
+
+	var hasOwn = {}.hasOwnProperty;
+
+	function classNames () {
+		var classes = [];
+
+		for (var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+			if (!arg) continue;
+
+			var argType = typeof arg;
+
+			if (argType === 'string' || argType === 'number') {
+				classes.push(arg);
+			} else if (Array.isArray(arg) && arg.length) {
+				var inner = classNames.apply(null, arg);
+				if (inner) {
+					classes.push(inner);
+				}
+			} else if (argType === 'object') {
+				for (var key in arg) {
+					if (hasOwn.call(arg, key) && arg[key]) {
+						classes.push(key);
+					}
+				}
+			}
+		}
+
+		return classes.join(' ');
+	}
+
+	if ( true && module.exports) {
+		classNames.default = classNames;
+		module.exports = classNames;
+	} else if (true) {
+		// register as 'classnames', consistent with npm package name
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+			return classNames;
+		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+}());
+
+
+/***/ }),
+
 /***/ "./node_modules/content-type/index.js":
 /*!********************************************!*\
   !*** ./node_modules/content-type/index.js ***!
@@ -5964,6 +6026,42 @@ function objectToString(o) {
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/react-responsive-carousel/lib/styles/carousel.min.css":
+/*!****************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/react-responsive-carousel/lib/styles/carousel.min.css ***!
+  \****************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".carousel .control-arrow,.carousel.carousel-slider .control-arrow{-webkit-transition:all .25s ease-in;-moz-transition:all .25s ease-in;-ms-transition:all .25s ease-in;-o-transition:all .25s ease-in;transition:all .25s ease-in;opacity:.4;filter:alpha(opacity=40);position:absolute;z-index:2;top:20px;background:none;border:0;font-size:32px;cursor:pointer}.carousel .control-arrow:hover{opacity:1;filter:alpha(opacity=100)}.carousel .control-arrow:before,.carousel.carousel-slider .control-arrow:before{margin:0 5px;display:inline-block;border-top:8px solid transparent;border-bottom:8px solid transparent;content:''}.carousel .control-disabled.control-arrow{opacity:0;filter:alpha(opacity=0);cursor:inherit;display:none}.carousel .control-prev.control-arrow{left:0}.carousel .control-prev.control-arrow:before{border-right:8px solid #fff}.carousel .control-next.control-arrow{right:0}.carousel .control-next.control-arrow:before{border-left:8px solid #fff}.carousel-root{outline:none}.carousel{position:relative;width:100%}.carousel *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.carousel img{width:100%;display:inline-block;pointer-events:none}.carousel .carousel{position:relative}.carousel .control-arrow{outline:0;border:0;background:none;top:50%;margin-top:-13px;font-size:18px}.carousel .thumbs-wrapper{margin:20px;overflow:hidden}.carousel .thumbs{-webkit-transition:all .15s ease-in;-moz-transition:all .15s ease-in;-ms-transition:all .15s ease-in;-o-transition:all .15s ease-in;transition:all .15s ease-in;-webkit-transform:translate3d(0, 0, 0);-moz-transform:translate3d(0, 0, 0);-ms-transform:translate3d(0, 0, 0);-o-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);position:relative;list-style:none;white-space:nowrap}.carousel .thumb{-webkit-transition:border .15s ease-in;-moz-transition:border .15s ease-in;-ms-transition:border .15s ease-in;-o-transition:border .15s ease-in;transition:border .15s ease-in;display:inline-block;margin-right:6px;white-space:nowrap;overflow:hidden;border:3px solid #fff;padding:2px}.carousel .thumb:focus{border:3px solid #ccc;outline:none}.carousel .thumb.selected,.carousel .thumb:hover{border:3px solid #333}.carousel .thumb img{vertical-align:top}.carousel.carousel-slider{position:relative;margin:0;overflow:hidden}.carousel.carousel-slider .control-arrow{top:0;color:#fff;font-size:26px;bottom:0;margin-top:0;padding:5px}.carousel.carousel-slider .control-arrow:hover{background:rgba(0,0,0,0.2)}.carousel .slider-wrapper{overflow:hidden;margin:auto;width:100%;-webkit-transition:height .15s ease-in;-moz-transition:height .15s ease-in;-ms-transition:height .15s ease-in;-o-transition:height .15s ease-in;transition:height .15s ease-in}.carousel .slider-wrapper.axis-horizontal .slider{-ms-box-orient:horizontal;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:flex}.carousel .slider-wrapper.axis-horizontal .slider .slide{flex-direction:column;flex-flow:column}.carousel .slider-wrapper.axis-vertical{-ms-box-orient:horizontal;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-moz-flex;display:-webkit-flex;display:flex}.carousel .slider-wrapper.axis-vertical .slider{-webkit-flex-direction:column;flex-direction:column}.carousel .slider{margin:0;padding:0;position:relative;list-style:none;width:100%}.carousel .slider.animated{-webkit-transition:all .35s ease-in-out;-moz-transition:all .35s ease-in-out;-ms-transition:all .35s ease-in-out;-o-transition:all .35s ease-in-out;transition:all .35s ease-in-out}.carousel .slide{min-width:100%;margin:0;position:relative;text-align:center;background:#000}.carousel .slide img{width:100%;vertical-align:top;border:0}.carousel .slide iframe{display:inline-block;width:calc(100% - 80px);margin:0 40px 40px;border:0}.carousel .slide .legend{-webkit-transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;-o-transition:all .5s ease-in-out;transition:all .5s ease-in-out;position:absolute;bottom:40px;left:50%;margin-left:-45%;width:90%;border-radius:10px;background:#000;color:#fff;padding:10px;font-size:12px;text-align:center;opacity:0.25;-webkit-transition:opacity .35s ease-in-out;-moz-transition:opacity .35s ease-in-out;-ms-transition:opacity .35s ease-in-out;-o-transition:opacity .35s ease-in-out;transition:opacity .35s ease-in-out}.carousel .control-dots{position:absolute;bottom:0;margin:10px 0;text-align:center;width:100%}@media (min-width: 960px){.carousel .control-dots{bottom:0}}.carousel .control-dots .dot{-webkit-transition:opacity .25s ease-in;-moz-transition:opacity .25s ease-in;-ms-transition:opacity .25s ease-in;-o-transition:opacity .25s ease-in;transition:opacity .25s ease-in;opacity:.3;filter:alpha(opacity=30);box-shadow:1px 1px 2px rgba(0,0,0,0.9);background:#fff;border-radius:50%;width:8px;height:8px;cursor:pointer;display:inline-block;margin:0 8px}.carousel .control-dots .dot.selected,.carousel .control-dots .dot:hover{opacity:1;filter:alpha(opacity=100)}.carousel .carousel-status{position:absolute;top:0;right:0;padding:5px;font-size:10px;text-shadow:1px 1px 1px rgba(0,0,0,0.9);color:#fff}.carousel:hover .slide .legend{opacity:1}\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./src/common/carousel/Carousel.css":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-1!./src/common/carousel/Carousel.css ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, ".carousel-wrapper {\r\n  height: auto;\r\n  width: 800px;\r\n  margin: 30px auto !important;\r\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./src/common/common.css":
 /*!*******************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--6-1!./src/common/common.css ***!
@@ -6035,7 +6133,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".driver-top {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  font-family: sans-serif;\r\n}\r\n\r\n.driver-top div {\r\n  padding: 1px 2px 2px 11px;\r\n}\r\n\r\n.driver-top .short-info {\r\n  width: calc(100% - 450px);\r\n  padding: 1px 2px 2px 0px;\r\n  margin: 1px 2px 2px 2px;\r\n}\r\n\r\n.driver-top .photo {\r\n  width: 500px;\r\n  margin: 10px 0px 10px 10px;\r\n}\r\n\r\n.driver-mid {\r\n  margin: 15px;\r\n  font-family: sans-serif;\r\n}\r\n\r\n#driver-header {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n}\r\n\r\n#driver-header div {\r\n  padding: 0;\r\n}\r\n\r\n#driver-header .num {\r\n  text-align: center;\r\n  font-size: 40px;\r\n  font-family: \"F1WebFont\", sans-serif;\r\n  font-weight: bolder;\r\n  width: 10%;\r\n  color: grey;\r\n  margin: auto;\r\n}\r\n\r\n#driver-header .name {\r\n  text-align: left;\r\n  line-height: normal;\r\n  display: flex;\r\n  margin: auto;\r\n  font-size: 28px;\r\n  font-weight: bolder;\r\n  width: 74%;\r\n}\r\n\r\n#driver-header .flag {\r\n  text-align: right;\r\n  width: auto;\r\n}\r\n/* 73.77  -  557.22  -  100.02\r\n9.8%   -  74.1%  -  13.3% */\r\n", ""]);
+exports.push([module.i, ".driver-top {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  font-family: sans-serif;\r\n}\r\n\r\n.driver-top div {\r\n  padding: 1px 2px 2px 11px;\r\n}\r\n\r\n.driver-top .short-info {\r\n  width: calc(100% - 450px);\r\n  padding: 1px 2px 2px 0px;\r\n  margin: 1px 2px 2px 2px;\r\n}\r\n\r\n.driver-top .photo {\r\n  width: 500px;\r\n  margin: 10px 0px 10px 10px;\r\n  border: 1px solid;\r\n  border-color: grey;\r\n}\r\n\r\n.driver-mid {\r\n  margin: 15px;\r\n  font-family: sans-serif;\r\n}\r\n\r\n#driver-header {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n}\r\n\r\n#driver-header div {\r\n  padding: 0;\r\n}\r\n\r\n#driver-header .num {\r\n  text-align: center;\r\n  font-size: 40px;\r\n  font-family: \"F1WebFont\", sans-serif;\r\n  font-weight: bolder;\r\n  width: 10%;\r\n  color: grey;\r\n  margin: auto;\r\n}\r\n\r\n#driver-header .name {\r\n  text-align: left;\r\n  line-height: normal;\r\n  display: flex;\r\n  margin: auto;\r\n  font-size: 28px;\r\n  font-weight: bolder;\r\n  width: 74%;\r\n}\r\n\r\n#driver-header .flag {\r\n  text-align: right;\r\n  width: auto;\r\n}\r\n/* 73.77  -  557.22  -  100.02\r\n9.8%   -  74.1%  -  13.3% */\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -6053,7 +6151,25 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "#year-p {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  margin: 25px 50px 0px 15px;\r\n  background-color: white;\r\n}\r\n.year-stats {\r\n  border: 0;\r\n  padding: 5px 60px 5px 0px;\r\n  text-align: left;\r\n  background-color: white;\r\n  font-size: 25px;\r\n  font-weight: bolder;\r\n  color: rgb(71, 61, 61);\r\n}\r\n.year-pilots {\r\n  border-style:inset;\r\n  /* border-bottom:none; */\r\n  border: 2px solid rgb(71, 61, 61);\r\n  padding: 9px 9px 1px 9px;\r\n  background-color: white;\r\n  font-size: 18px;\r\n  font-weight: bolder;\r\n  color: rgb(71, 61, 61);\r\n}\r\n.year-pilots a {\r\n  color: rgb(71, 61, 61);\r\n  text-decoration:none;\r\n}\r\n.year-pilots a:hover {\r\n  color: rgb(71, 61, 61);\r\n  text-decoration:underline;\r\n}\r\n\r\n#stat-p {\r\n  background-color: rgb(71, 61, 61);\r\n  /* font-size: x-large; */\r\n  font-weight: bolder;\r\n  color:white;\r\n}\r\n\r\n#stat-p, \r\n.stat-p-row {\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  padding: 5px;\r\n  text-align: start;\r\n}\r\n\r\n#stat-p div,\r\n.stat-p-row div {\r\n  width: 8%;\r\n  text-align: center;\r\n}\r\n\r\n#stat-p .stat-p-wider,\r\n.stat-p-row .stat-p-wider {\r\n  width: 22%;\r\n  text-align: left;\r\n}", ""]);
+exports.push([module.i, "#year-p {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  margin: 25px 50px 0px 15px;\r\n  background-color: white;\r\n}\r\n.year-stats {\r\n  border: 0;\r\n  padding: 5px 60px 5px 0px;\r\n  text-align: left;\r\n  background-color: white;\r\n  font-size: 25px;\r\n  font-weight: bolder;\r\n  color: rgb(71, 61, 61);\r\n}\r\n.year-pilots {\r\n  border-style: inset;\r\n  /* border-bottom:none; */\r\n  border: 2px solid rgb(71, 61, 61);\r\n  padding: 9px 9px 1px 9px;\r\n  background-color: white;\r\n  font-size: 18px;\r\n  font-weight: bolder;\r\n  color: rgb(71, 61, 61);\r\n}\r\n.year-pilots a {\r\n  color: rgb(71, 61, 61);\r\n  text-decoration: none;\r\n}\r\n.year-pilots a:hover {\r\n  color: rgb(71, 61, 61);\r\n  text-decoration: underline;\r\n}\r\n\r\n#stat-p {\r\n  background-color: rgb(71, 61, 61);\r\n  /* font-size: x-large; */\r\n  font-weight: bolder;\r\n  color: white;\r\n}\r\n\r\n#stat-p,\r\n.stat-p-row {\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  padding: 5px;\r\n  text-align: start;\r\n}\r\n\r\n#stat-p div,\r\n.stat-p-row div {\r\n  width: 8%;\r\n  text-align: center;\r\n}\r\n\r\n#stat-p .stat-p-wider,\r\n.stat-p-row .stat-p-wider {\r\n  width: 22%;\r\n  text-align: left;\r\n}\r\n\r\n.stat-p-wider a {\r\n  color: rgb(71, 61, 61);\r\n  text-decoration: none;\r\n}\r\n.stat-p-wider a:hover {\r\n  color: rgb(71, 61, 61);\r\n  text-decoration: underline;\r\n}\r\n", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./src/feature/teams/team/team.css":
+/*!*****************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-1!./src/feature/teams/team/team.css ***!
+  \*****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "#team .logo {\r\n  width: 100px;\r\n  margin: 10px 0px 10px 10px;\r\n  /* border: 1px solid; */\r\n  border-color: grey;\r\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -6071,7 +6187,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "/* Color\r\n  mercedes: #00d2be\r\n  ferrari: #DC0000\r\n  red_bull: #0600ef\r\n  mclaren: #FF8700\r\n  renault: #FFF500\r\n  alpha_tauri: #ffffff\r\n  racing_point: #F596C8\r\n  haas: #787878\r\n  alfa_romeo: #960000\r\n  williams: #0082fa\r\n  серый #949498           */\r\n\r\n.team-container {\r\n  width: 100%;\r\n  padding-right: 10px;\r\n  padding-left: 90px;\r\n  padding-top: 10px;\r\n  margin-right: auto;\r\n  margin-left: auto;\r\n}\r\n.team-list-item {\r\n  border-right: solid 2px #949498;\r\n  border-top: solid 2px #949498;\r\n  border-top-right-radius: 10px;\r\n  margin-inline-start: 2px;\r\n  margin-inline-end: 2px;\r\n  padding-block-start: 0.35em;\r\n  padding-inline-start: 0.75em;\r\n  padding-inline-end: 0.75em;\r\n  padding-block-end: 1.5em;\r\n  width: 510px;\r\n  height: 220px;\r\n  float: left;\r\n}\r\n/* a:-webkit-any-link {\r\n    color: -webkit-link;\r\n    cursor: pointer;\r\n    text-decoration: underline;\r\n} */\r\n.team-header {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  font-family: sans-serif;\r\n  border-bottom: solid 7px #8b9796;\r\n}\r\n\r\n.mercedes .team-header {\r\n  border-bottom: solid 7px #00d2be;\r\n}\r\n\r\n.ferrari .team-header {\r\n  border-bottom: solid 7px #e71717;\r\n}\r\n\r\n.team-drivers {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  font-family: sans-serif;\r\n}\r\n.team-driver {\r\n  border-right: solid 1px #949498;\r\n  border-bottom: solid 1px #949498;\r\n  border-bottom-right-radius: 10px;\r\n  padding-top: 5px;\r\n  padding-left: 10px;\r\n  font-weight: bold;\r\n  width: 244px;\r\n  height: 20px;\r\n}\r\n.team-logo {\r\n  position: relative;\r\n  width: 50px;\r\n  height: 50px;\r\n  overflow: hidden;\r\n  display: block;\r\n}\r\n.team-car {\r\n  position: relative;\r\n  width: 510px;\r\n  height: 150px;\r\n  overflow: hidden;\r\n  display: block;\r\n  margin-top: 5px;\r\n}\r\nimg {\r\n  display: block;\r\n  width: 100%;\r\n  height: auto;\r\n}\r\n.team-name {\r\n  width: 450px;\r\n  height: 35px;\r\n  padding: 15px 0px 0px 10px;\r\n  font-size: 25px;\r\n  font-weight: bold;\r\n}\r\n", ""]);
+exports.push([module.i, "/* Color\r\n  mercedes: #00d2be\r\n  ferrari: #DC0000\r\n  red_bull: #0600ef\r\n  mclaren: #FF8700\r\n  renault: #FFF500\r\n  alpha_tauri: #ffffff\r\n  racing_point: #F596C8\r\n  haas: #787878\r\n  alfa_romeo: #960000\r\n  williams: #0082fa\r\n  серый #949498           */\r\n\r\n.team-container {\r\n  width: 100%;\r\n  padding-right: 10px;\r\n  padding-left: 90px;\r\n  /* padding-top: 10px; */\r\n  margin-top: 10px;\r\n  margin-right: auto;\r\n  margin-left: auto;\r\n}\r\n.team-list-item {\r\n  border-right: solid 2px #949498;\r\n  border-top: solid 2px #949498;\r\n  border-top-right-radius: 10px;\r\n  margin-inline-start: 2px;\r\n  margin-inline-end: 2px;\r\n  padding-block-start: 0.35em;\r\n  padding-inline-start: 0.75em;\r\n  padding-inline-end: 0.75em;\r\n  padding-block-end: 1.5em;\r\n  width: 510px;\r\n  height: 220px;\r\n  float: left;\r\n}\r\n\r\n.team-list-item a {\r\n  color: rgb(71, 61, 61);\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.team-list-item a:hover {\r\n  color: rgb(71, 61, 61);\r\n  cursor: pointer;\r\n  text-decoration: line-through;\r\n}\r\n.mercedes .team-list-item a:hover {\r\n  color: #00d2be;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.ferrari .team-list-item a:hover {\r\n  color: #dc0000;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.red_bull .team-list-item a:hover {\r\n  color: #0600ef;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.renault .team-list-item a:hover {\r\n  color: #fff500;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.mclaren .team-list-item a:hover {\r\n  color: #ff8700;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.alpha_tauri .team-list-item a:hover {\r\n  color: #949498;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.racing_point .team-list-item a:hover {\r\n  color: #f596c8;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.haas .team-list-item a:hover {\r\n  color: #787878;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.alfa_romeo .team-list-item a:hover {\r\n  color: #960000;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.williams .team-list-item a:hover {\r\n  color: #0082fa;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n\r\n.team-header {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  font-family: sans-serif;\r\n  border-bottom: solid 7px #949498;\r\n}\r\n\r\n.mercedes .team-header {\r\n  border-bottom: solid 7px #00d2be;\r\n}\r\n.ferrari .team-header {\r\n  border-bottom: solid 7px #dc0000;\r\n}\r\n.red_bull .team-header {\r\n  border-bottom: solid 7px #0600ef;\r\n}\r\n.renault .team-header {\r\n  border-bottom: solid 7px #fff500;\r\n}\r\n.mclaren .team-header {\r\n  border-bottom: solid 7px #ff8700;\r\n}\r\n.alpha_tauri .team-header {\r\n  border-bottom: solid 7px #949498;\r\n}\r\n.racing_point .team-header {\r\n  border-bottom: solid 7px #f596c8;\r\n}\r\n.haas .team-header {\r\n  border-bottom: solid 7px #787878;\r\n}\r\n.alfa_romeo .team-header {\r\n  border-bottom: solid 7px #960000;\r\n}\r\n.williams .team-header {\r\n  border-bottom: solid 7px #0082fa;\r\n}\r\n\r\n.team-drivers {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  font-family: sans-serif;\r\n}\r\n.team-driver {\r\n  border-right: solid 1px #949498;\r\n  border-bottom: solid 1px #949498;\r\n  border-bottom-right-radius: 10px;\r\n  padding-top: 5px;\r\n  padding-left: 10px;\r\n  font-weight: bold;\r\n  width: 244px;\r\n  height: 20px;\r\n}\r\n.team-logo {\r\n  position: relative;\r\n  width: 50px;\r\n  height: 50px;\r\n  overflow: hidden;\r\n  display: block;\r\n}\r\n.team-car {\r\n  position: relative;\r\n  width: 510px;\r\n  height: 150px;\r\n  overflow: hidden;\r\n  display: block;\r\n  margin-top: 5px;\r\n}\r\nimg {\r\n  display: block;\r\n  width: 100%;\r\n  height: auto;\r\n}\r\n.team-name {\r\n  width: 450px;\r\n  height: 35px;\r\n  padding: 15px 0px 0px 10px;\r\n  font-size: 25px;\r\n  font-weight: bold;\r\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -45722,6 +45838,405 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/react-easy-swipe/lib/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/react-easy-swipe/lib/index.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
+  if (true) {
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(/*! ./react-swipe */ "./node_modules/react-easy-swipe/lib/react-swipe.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else { var mod; }
+})(this, function (exports, _reactSwipe) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+
+  var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
+
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+      default: obj
+    };
+  }
+
+  exports.default = _reactSwipe2.default;
+});
+
+/***/ }),
+
+/***/ "./node_modules/react-easy-swipe/lib/react-swipe.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/react-easy-swipe/lib/react-swipe.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
+  if (true) {
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports, __webpack_require__(/*! react */ "./node_modules/react/index.js"), __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+  } else { var mod; }
+})(this, function (exports, _react, _propTypes) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.setHasSupportToCaptureOption = setHasSupportToCaptureOption;
+
+  var _react2 = _interopRequireDefault(_react);
+
+  var _propTypes2 = _interopRequireDefault(_propTypes);
+
+  function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+      default: obj
+    };
+  }
+
+  var _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  function _objectWithoutProperties(obj, keys) {
+    var target = {};
+
+    for (var i in obj) {
+      if (keys.indexOf(i) >= 0) continue;
+      if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
+      target[i] = obj[i];
+    }
+
+    return target;
+  }
+
+  function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  }
+
+  var _createClass = function () {
+    function defineProperties(target, props) {
+      for (var i = 0; i < props.length; i++) {
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+      }
+    }
+
+    return function (Constructor, protoProps, staticProps) {
+      if (protoProps) defineProperties(Constructor.prototype, protoProps);
+      if (staticProps) defineProperties(Constructor, staticProps);
+      return Constructor;
+    };
+  }();
+
+  function _possibleConstructorReturn(self, call) {
+    if (!self) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return call && (typeof call === "object" || typeof call === "function") ? call : self;
+  }
+
+  function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) {
+      throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+    }
+
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+      constructor: {
+        value: subClass,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+  }
+
+  var supportsCaptureOption = false;
+  function setHasSupportToCaptureOption(hasSupport) {
+    supportsCaptureOption = hasSupport;
+  }
+
+  try {
+    addEventListener('test', null, Object.defineProperty({}, 'capture', { get: function get() {
+        setHasSupportToCaptureOption(true);
+      } }));
+  } catch (e) {} // eslint-disable-line no-empty
+
+  function getSafeEventHandlerOpts() {
+    var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : { capture: true };
+
+    return supportsCaptureOption ? options : options.capture;
+  }
+
+  /**
+   * [getPosition returns a position element that works for mouse or touch events]
+   * @param  {[Event]} event [the received event]
+   * @return {[Object]}      [x and y coords]
+   */
+  function getPosition(event) {
+    if ('touches' in event) {
+      var _event$touches$ = event.touches[0],
+          pageX = _event$touches$.pageX,
+          pageY = _event$touches$.pageY;
+
+      return { x: pageX, y: pageY };
+    }
+
+    var screenX = event.screenX,
+        screenY = event.screenY;
+
+    return { x: screenX, y: screenY };
+  }
+
+  var ReactSwipe = function (_Component) {
+    _inherits(ReactSwipe, _Component);
+
+    function ReactSwipe() {
+      var _ref;
+
+      _classCallCheck(this, ReactSwipe);
+
+      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      var _this = _possibleConstructorReturn(this, (_ref = ReactSwipe.__proto__ || Object.getPrototypeOf(ReactSwipe)).call.apply(_ref, [this].concat(args)));
+
+      _this._handleSwipeStart = _this._handleSwipeStart.bind(_this);
+      _this._handleSwipeMove = _this._handleSwipeMove.bind(_this);
+      _this._handleSwipeEnd = _this._handleSwipeEnd.bind(_this);
+
+      _this._onMouseDown = _this._onMouseDown.bind(_this);
+      _this._onMouseMove = _this._onMouseMove.bind(_this);
+      _this._onMouseUp = _this._onMouseUp.bind(_this);
+
+      _this._setSwiperRef = _this._setSwiperRef.bind(_this);
+      return _this;
+    }
+
+    _createClass(ReactSwipe, [{
+      key: 'componentDidMount',
+      value: function componentDidMount() {
+        if (this.swiper) {
+          this.swiper.addEventListener('touchmove', this._handleSwipeMove, getSafeEventHandlerOpts({
+            capture: true,
+            passive: false
+          }));
+        }
+      }
+    }, {
+      key: 'componentWillUnmount',
+      value: function componentWillUnmount() {
+        if (this.swiper) {
+          this.swiper.removeEventListener('touchmove', this._handleSwipeMove, getSafeEventHandlerOpts({
+            capture: true,
+            passive: false
+          }));
+        }
+      }
+    }, {
+      key: '_onMouseDown',
+      value: function _onMouseDown(event) {
+        if (!this.props.allowMouseEvents) {
+          return;
+        }
+
+        this.mouseDown = true;
+
+        document.addEventListener('mouseup', this._onMouseUp);
+        document.addEventListener('mousemove', this._onMouseMove);
+
+        this._handleSwipeStart(event);
+      }
+    }, {
+      key: '_onMouseMove',
+      value: function _onMouseMove(event) {
+        if (!this.mouseDown) {
+          return;
+        }
+
+        this._handleSwipeMove(event);
+      }
+    }, {
+      key: '_onMouseUp',
+      value: function _onMouseUp(event) {
+        this.mouseDown = false;
+
+        document.removeEventListener('mouseup', this._onMouseUp);
+        document.removeEventListener('mousemove', this._onMouseMove);
+
+        this._handleSwipeEnd(event);
+      }
+    }, {
+      key: '_handleSwipeStart',
+      value: function _handleSwipeStart(event) {
+        var _getPosition = getPosition(event),
+            x = _getPosition.x,
+            y = _getPosition.y;
+
+        this.moveStart = { x: x, y: y };
+        this.props.onSwipeStart(event);
+      }
+    }, {
+      key: '_handleSwipeMove',
+      value: function _handleSwipeMove(event) {
+        if (!this.moveStart) {
+          return;
+        }
+
+        var _getPosition2 = getPosition(event),
+            x = _getPosition2.x,
+            y = _getPosition2.y;
+
+        var deltaX = x - this.moveStart.x;
+        var deltaY = y - this.moveStart.y;
+        this.moving = true;
+
+        // handling the responsability of cancelling the scroll to
+        // the component handling the event
+        var shouldPreventDefault = this.props.onSwipeMove({
+          x: deltaX,
+          y: deltaY
+        }, event);
+
+        if (shouldPreventDefault) {
+          event.preventDefault();
+        }
+
+        this.movePosition = { deltaX: deltaX, deltaY: deltaY };
+      }
+    }, {
+      key: '_handleSwipeEnd',
+      value: function _handleSwipeEnd(event) {
+        this.props.onSwipeEnd(event);
+
+        var tolerance = this.props.tolerance;
+
+
+        if (this.moving && this.movePosition) {
+          if (this.movePosition.deltaX < -tolerance) {
+            this.props.onSwipeLeft(1, event);
+          } else if (this.movePosition.deltaX > tolerance) {
+            this.props.onSwipeRight(1, event);
+          }
+          if (this.movePosition.deltaY < -tolerance) {
+            this.props.onSwipeUp(1, event);
+          } else if (this.movePosition.deltaY > tolerance) {
+            this.props.onSwipeDown(1, event);
+          }
+        }
+
+        this.moveStart = null;
+        this.moving = false;
+        this.movePosition = null;
+      }
+    }, {
+      key: '_setSwiperRef',
+      value: function _setSwiperRef(node) {
+        this.swiper = node;
+        this.props.innerRef(node);
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+        var _props = this.props,
+            tagName = _props.tagName,
+            className = _props.className,
+            style = _props.style,
+            children = _props.children,
+            allowMouseEvents = _props.allowMouseEvents,
+            onSwipeUp = _props.onSwipeUp,
+            onSwipeDown = _props.onSwipeDown,
+            onSwipeLeft = _props.onSwipeLeft,
+            onSwipeRight = _props.onSwipeRight,
+            onSwipeStart = _props.onSwipeStart,
+            onSwipeMove = _props.onSwipeMove,
+            onSwipeEnd = _props.onSwipeEnd,
+            innerRef = _props.innerRef,
+            tolerance = _props.tolerance,
+            props = _objectWithoutProperties(_props, ['tagName', 'className', 'style', 'children', 'allowMouseEvents', 'onSwipeUp', 'onSwipeDown', 'onSwipeLeft', 'onSwipeRight', 'onSwipeStart', 'onSwipeMove', 'onSwipeEnd', 'innerRef', 'tolerance']);
+
+        return _react2.default.createElement(
+          this.props.tagName,
+          _extends({
+            ref: this._setSwiperRef,
+            onMouseDown: this._onMouseDown,
+            onTouchStart: this._handleSwipeStart,
+            onTouchEnd: this._handleSwipeEnd,
+            className: className,
+            style: style
+          }, props),
+          children
+        );
+      }
+    }]);
+
+    return ReactSwipe;
+  }(_react.Component);
+
+  ReactSwipe.displayName = 'ReactSwipe';
+  ReactSwipe.propTypes = {
+    tagName: _propTypes2.default.string,
+    className: _propTypes2.default.string,
+    style: _propTypes2.default.object,
+    children: _propTypes2.default.node,
+    allowMouseEvents: _propTypes2.default.bool,
+    onSwipeUp: _propTypes2.default.func,
+    onSwipeDown: _propTypes2.default.func,
+    onSwipeLeft: _propTypes2.default.func,
+    onSwipeRight: _propTypes2.default.func,
+    onSwipeStart: _propTypes2.default.func,
+    onSwipeMove: _propTypes2.default.func,
+    onSwipeEnd: _propTypes2.default.func,
+    innerRef: _propTypes2.default.func,
+    tolerance: _propTypes2.default.number.isRequired
+  };
+  ReactSwipe.defaultProps = {
+    tagName: 'div',
+    allowMouseEvents: false,
+    onSwipeUp: function onSwipeUp() {},
+    onSwipeDown: function onSwipeDown() {},
+    onSwipeLeft: function onSwipeLeft() {},
+    onSwipeRight: function onSwipeRight() {},
+    onSwipeStart: function onSwipeStart() {},
+    onSwipeMove: function onSwipeMove() {},
+    onSwipeEnd: function onSwipeEnd() {},
+    innerRef: function innerRef() {},
+
+    tolerance: 0
+  };
+  exports.default = ReactSwipe;
+});
+
+/***/ }),
+
 /***/ "./node_modules/react-is/cjs/react-is.development.js":
 /*!***********************************************************!*\
   !*** ./node_modules/react-is/cjs/react-is.development.js ***!
@@ -45929,6 +46444,1549 @@ if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/react-is/cjs/react-is.development.js");
 }
 
+
+/***/ }),
+
+/***/ "./node_modules/react-responsive-carousel/lib/es/CSSTranslate.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/react-responsive-carousel/lib/es/CSSTranslate.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = function _default(position, metric, axis) {
+  var positionPercent = position === 0 ? position : position + metric;
+  var positionCss = axis === 'horizontal' ? [positionPercent, 0, 0] : [0, positionPercent, 0];
+  var transitionProp = 'translate3d';
+  var translatedPosition = '(' + positionCss.join(',') + ')';
+  return transitionProp + translatedPosition;
+};
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-responsive-carousel/lib/es/components/Carousel.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/react-responsive-carousel/lib/es/components/Carousel.js ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _reactDom = _interopRequireDefault(__webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js"));
+
+var _reactEasySwipe = _interopRequireDefault(__webpack_require__(/*! react-easy-swipe */ "./node_modules/react-easy-swipe/lib/index.js"));
+
+var _cssClasses = _interopRequireDefault(__webpack_require__(/*! ../cssClasses */ "./node_modules/react-responsive-carousel/lib/es/cssClasses.js"));
+
+var _CSSTranslate = _interopRequireDefault(__webpack_require__(/*! ../CSSTranslate */ "./node_modules/react-responsive-carousel/lib/es/CSSTranslate.js"));
+
+var _Thumbs = _interopRequireDefault(__webpack_require__(/*! ./Thumbs */ "./node_modules/react-responsive-carousel/lib/es/components/Thumbs.js"));
+
+var _document = _interopRequireDefault(__webpack_require__(/*! ../shims/document */ "./node_modules/react-responsive-carousel/lib/es/shims/document.js"));
+
+var _window = _interopRequireDefault(__webpack_require__(/*! ../shims/window */ "./node_modules/react-responsive-carousel/lib/es/shims/window.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var noop = function noop() {};
+
+var defaultStatusFormatter = function defaultStatusFormatter(current, total) {
+  return "".concat(current, " of ").concat(total);
+};
+
+var isKeyboardEvent = function isKeyboardEvent(e) {
+  return e ? e.hasOwnProperty('key') : false;
+};
+
+var Carousel = /*#__PURE__*/function (_React$Component) {
+  _inherits(Carousel, _React$Component);
+
+  var _super = _createSuper(Carousel);
+
+  function Carousel(props) {
+    var _this;
+
+    _classCallCheck(this, Carousel);
+
+    _this = _super.call(this, props);
+
+    _defineProperty(_assertThisInitialized(_this), "thumbsRef", void 0);
+
+    _defineProperty(_assertThisInitialized(_this), "carouselWrapperRef", void 0);
+
+    _defineProperty(_assertThisInitialized(_this), "listRef", void 0);
+
+    _defineProperty(_assertThisInitialized(_this), "itemsRef", void 0);
+
+    _defineProperty(_assertThisInitialized(_this), "timer", void 0);
+
+    _defineProperty(_assertThisInitialized(_this), "setThumbsRef", function (node) {
+      _this.thumbsRef = node;
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "setCarouselWrapperRef", function (node) {
+      _this.carouselWrapperRef = node;
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "setListRef", function (node) {
+      _this.listRef = node;
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "setItemsRef", function (node, index) {
+      if (!_this.itemsRef) {
+        _this.itemsRef = [];
+      }
+
+      _this.itemsRef[index] = node;
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "autoPlay", function () {
+      if (!_this.state.autoPlay || _react.Children.count(_this.props.children) <= 1) {
+        return;
+      }
+
+      if (_this.timer) clearTimeout(_this.timer);
+      _this.timer = setTimeout(function () {
+        _this.increment();
+      }, _this.props.interval);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "clearAutoPlay", function () {
+      if (!_this.state.autoPlay) {
+        return;
+      }
+
+      if (_this.timer) clearTimeout(_this.timer);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "resetAutoPlay", function () {
+      _this.clearAutoPlay();
+
+      _this.autoPlay();
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "stopOnHover", function () {
+      _this.setState({
+        isMouseEntered: true
+      }, _this.clearAutoPlay);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "startOnLeave", function () {
+      _this.setState({
+        isMouseEntered: false
+      }, _this.autoPlay);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "isFocusWithinTheCarousel", function () {
+      if (!_this.carouselWrapperRef) {
+        return false;
+      }
+
+      if ((0, _document.default)().activeElement === _this.carouselWrapperRef || _this.carouselWrapperRef.contains((0, _document.default)().activeElement)) {
+        return true;
+      }
+
+      return false;
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "navigateWithKeyboard", function (e) {
+      if (!_this.isFocusWithinTheCarousel()) {
+        return;
+      }
+
+      var axis = _this.props.axis;
+      var isHorizontal = axis === 'horizontal';
+      var keyNames = {
+        ArrowUp: 38,
+        ArrowRight: 39,
+        ArrowDown: 40,
+        ArrowLeft: 37
+      };
+      var nextKey = isHorizontal ? keyNames.ArrowRight : keyNames.ArrowDown;
+      var prevKey = isHorizontal ? keyNames.ArrowLeft : keyNames.ArrowUp;
+
+      if (nextKey === e.keyCode) {
+        _this.increment();
+      } else if (prevKey === e.keyCode) {
+        _this.decrement();
+      }
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "updateSizes", function () {
+      if (!_this.state.initialized || !_this.itemsRef || _this.itemsRef.length === 0) {
+        return;
+      }
+
+      var isHorizontal = _this.props.axis === 'horizontal';
+      var firstItem = _this.itemsRef[0];
+      var itemSize = isHorizontal ? firstItem.clientWidth : firstItem.clientHeight;
+
+      _this.setState({
+        itemSize: itemSize
+      });
+
+      if (_this.thumbsRef) {
+        _this.thumbsRef.updateSizes();
+      }
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "setMountState", function () {
+      _this.setState({
+        hasMount: true
+      });
+
+      _this.updateSizes();
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "handleClickItem", function (index, item) {
+      if (_react.Children.count(_this.props.children) === 0) {
+        return;
+      }
+
+      if (_this.state.cancelClick) {
+        _this.setState({
+          cancelClick: false
+        });
+
+        return;
+      }
+
+      _this.props.onClickItem(index, item);
+
+      if (index !== _this.state.selectedItem) {
+        _this.setState({
+          selectedItem: index
+        });
+      }
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "handleOnChange", function (index, item) {
+      if (_react.Children.count(_this.props.children) <= 1) {
+        return;
+      }
+
+      _this.props.onChange(index, item);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "handleClickThumb", function (index, item) {
+      _this.props.onClickThumb(index, item);
+
+      _this.selectItem({
+        selectedItem: index
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onSwipeStart", function (event) {
+      _this.setState({
+        swiping: true
+      });
+
+      _this.props.onSwipeStart(event);
+
+      _this.clearAutoPlay();
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onSwipeEnd", function (event) {
+      _this.setState({
+        swiping: false,
+        cancelClick: false
+      });
+
+      _this.props.onSwipeEnd(event);
+
+      _this.autoPlay();
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onSwipeMove", function (delta, event) {
+      _this.props.onSwipeMove(event);
+
+      var isHorizontal = _this.props.axis === 'horizontal';
+
+      var childrenLength = _react.Children.count(_this.props.children);
+
+      var initialBoundry = 0;
+
+      var currentPosition = _this.getPosition(_this.state.selectedItem);
+
+      var finalBoundry = _this.props.infiniteLoop ? _this.getPosition(childrenLength - 1) - 100 : _this.getPosition(childrenLength - 1);
+      var axisDelta = isHorizontal ? delta.x : delta.y;
+      var handledDelta = axisDelta; // prevent user from swiping left out of boundaries
+
+      if (currentPosition === initialBoundry && axisDelta > 0) {
+        handledDelta = 0;
+      } // prevent user from swiping right out of boundaries
+
+
+      if (currentPosition === finalBoundry && axisDelta < 0) {
+        handledDelta = 0;
+      }
+
+      var position = currentPosition + 100 / (_this.state.itemSize / handledDelta);
+
+      if (_this.props.infiniteLoop) {
+        // When allowing infinite loop, if we slide left from position 0 we reveal the cloned last slide that appears before it
+        // if we slide even further we need to jump to other side so it can continue - and vice versa for the last slide
+        if (_this.state.selectedItem === 0 && position > -100) {
+          position -= childrenLength * 100;
+        } else if (_this.state.selectedItem === childrenLength - 1 && position < -childrenLength * 100) {
+          position += childrenLength * 100;
+        }
+      }
+
+      _this.setPosition(position); // allows scroll if the swipe was within the tolerance
+
+
+      var hasMoved = Math.abs(axisDelta) > _this.props.swipeScrollTolerance;
+
+      if (hasMoved && !_this.state.cancelClick) {
+        _this.setState({
+          cancelClick: true
+        });
+      }
+
+      return hasMoved;
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "setPosition", function (position, forceReflow) {
+      var list = _reactDom.default.findDOMNode(_this.listRef);
+
+      if (list instanceof HTMLElement) {
+        ['WebkitTransform', 'MozTransform', 'MsTransform', 'OTransform', 'transform', 'msTransform'].forEach(function (prop) {
+          list.style[prop] = (0, _CSSTranslate.default)(position, '%', _this.props.axis);
+        });
+
+        if (forceReflow) {
+          list.offsetLeft;
+        }
+      }
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "resetPosition", function () {
+      var currentPosition = _this.getPosition(_this.state.selectedItem);
+
+      _this.setPosition(currentPosition);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "decrement", function () {
+      var positions = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+      var fromSwipe = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+      _this.moveTo(_this.state.selectedItem - (typeof positions === 'number' ? positions : 1), fromSwipe);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "increment", function () {
+      var positions = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+      var fromSwipe = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+      _this.moveTo(_this.state.selectedItem + (typeof positions === 'number' ? positions : 1), fromSwipe);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "moveTo", function (position, fromSwipe) {
+      if (typeof position !== 'number') {
+        return;
+      }
+
+      var lastPosition = _react.Children.count(_this.props.children) - 1;
+      var needClonedSlide = _this.props.infiniteLoop && !fromSwipe && (position < 0 || position > lastPosition);
+      var oldPosition = position;
+
+      if (position < 0) {
+        position = _this.props.infiniteLoop ? lastPosition : 0;
+      }
+
+      if (position > lastPosition) {
+        position = _this.props.infiniteLoop ? 0 : lastPosition;
+      }
+
+      if (needClonedSlide) {
+        // set swiping true would disable transition time, then we set slider to cloned position and force a reflow
+        // this is only needed for non-swiping situation
+        _this.setState({
+          swiping: true
+        }, function () {
+          if (oldPosition < 0) {
+            if (_this.props.centerMode && _this.props.centerSlidePercentage && _this.props.axis === 'horizontal') {
+              _this.setPosition(-(lastPosition + 2) * _this.props.centerSlidePercentage - (100 - _this.props.centerSlidePercentage) / 2, true);
+            } else {
+              _this.setPosition(-(lastPosition + 2) * 100, true);
+            }
+          } else if (oldPosition > lastPosition) {
+            _this.setPosition(0, true);
+          }
+
+          _this.selectItem({
+            selectedItem: position,
+            swiping: false
+          });
+        });
+      } else {
+        _this.selectItem({
+          // if it's not a slider, we don't need to set position here
+          selectedItem: position
+        });
+      } // don't reset auto play when stop on hover is enabled, doing so will trigger a call to auto play more than once
+      // and will result in the interval function not being cleared correctly.
+
+
+      if (_this.state.autoPlay && _this.state.isMouseEntered === false) {
+        _this.resetAutoPlay();
+      }
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onClickNext", function () {
+      _this.increment(1, false);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onClickPrev", function () {
+      _this.decrement(1, false);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onSwipeForward", function () {
+      _this.increment(1, true);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onSwipeBackwards", function () {
+      _this.decrement(1, true);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "changeItem", function (newIndex) {
+      return function (e) {
+        if (!isKeyboardEvent(e) || e.key === 'Enter') {
+          _this.selectItem({
+            selectedItem: newIndex
+          });
+        }
+      };
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "selectItem", function (state, cb) {
+      _this.setState(state, cb);
+
+      _this.handleOnChange(state.selectedItem, _react.Children.toArray(_this.props.children)[state.selectedItem]);
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "getInitialImage", function () {
+      var selectedItem = _this.props.selectedItem;
+      var item = _this.itemsRef && _this.itemsRef[selectedItem];
+      var images = item && item.getElementsByTagName('img');
+      return images && images[selectedItem];
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "getVariableImageHeight", function (position) {
+      var item = _this.itemsRef && _this.itemsRef[position];
+      var images = item && item.getElementsByTagName('img') || [];
+
+      if (_this.state.hasMount && images.length > 0) {
+        var image = images[0];
+
+        if (!image.complete) {
+          // if the image is still loading, the size won't be available so we trigger a new render after it's done
+          var onImageLoad = function onImageLoad() {
+            _this.forceUpdate();
+
+            image.removeEventListener('load', onImageLoad);
+          };
+
+          image.addEventListener('load', onImageLoad);
+        }
+
+        var height = image.clientHeight;
+        return height > 0 ? height : null;
+      }
+
+      return null;
+    });
+
+    _this.state = {
+      initialized: false,
+      selectedItem: props.selectedItem,
+      hasMount: false,
+      isMouseEntered: false,
+      autoPlay: props.autoPlay,
+      swiping: false,
+      cancelClick: false,
+      itemSize: 1
+    };
+    return _this;
+  }
+
+  _createClass(Carousel, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      if (!this.props.children) {
+        return;
+      }
+
+      this.setupCarousel();
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps, prevState) {
+      if (!prevProps.children && this.props.children && !this.state.initialized) {
+        this.setupCarousel();
+      }
+
+      if (prevState.swiping && !this.state.swiping) {
+        // We stopped swiping, ensure we are heading to the new/current slide and not stuck
+        this.resetPosition();
+      }
+
+      if (prevProps.selectedItem !== this.props.selectedItem || prevProps.centerMode !== this.props.centerMode) {
+        this.updateSizes();
+        this.moveTo(this.props.selectedItem);
+      }
+
+      if (prevProps.autoPlay !== this.props.autoPlay) {
+        if (this.props.autoPlay) {
+          this.setupAutoPlay();
+        } else {
+          this.destroyAutoPlay();
+        }
+
+        this.setState({
+          autoPlay: this.props.autoPlay
+        });
+      }
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this.destroyCarousel();
+    }
+  }, {
+    key: "setupCarousel",
+    value: function setupCarousel() {
+      this.bindEvents();
+
+      if (this.state.autoPlay && _react.Children.count(this.props.children) > 1) {
+        this.setupAutoPlay();
+      }
+
+      this.setState({
+        initialized: true
+      });
+      var initialImage = this.getInitialImage();
+
+      if (initialImage) {
+        // if it's a carousel of images, we set the mount state after the first image is loaded
+        initialImage.addEventListener('load', this.setMountState);
+      } else {
+        this.setMountState();
+      }
+    }
+  }, {
+    key: "destroyCarousel",
+    value: function destroyCarousel() {
+      if (this.state.initialized) {
+        this.unbindEvents();
+        this.destroyAutoPlay();
+      }
+    }
+  }, {
+    key: "setupAutoPlay",
+    value: function setupAutoPlay() {
+      this.autoPlay();
+      var carouselWrapper = this.carouselWrapperRef;
+
+      if (this.props.stopOnHover && carouselWrapper) {
+        carouselWrapper.addEventListener('mouseenter', this.stopOnHover);
+        carouselWrapper.addEventListener('mouseleave', this.startOnLeave);
+      }
+    }
+  }, {
+    key: "destroyAutoPlay",
+    value: function destroyAutoPlay() {
+      this.clearAutoPlay();
+      var carouselWrapper = this.carouselWrapperRef;
+
+      if (this.props.stopOnHover && carouselWrapper) {
+        carouselWrapper.removeEventListener('mouseenter', this.stopOnHover);
+        carouselWrapper.removeEventListener('mouseleave', this.startOnLeave);
+      }
+    }
+  }, {
+    key: "bindEvents",
+    value: function bindEvents() {
+      // as the widths are calculated, we need to resize
+      // the carousel when the window is resized
+      (0, _window.default)().addEventListener('resize', this.updateSizes); // issue #2 - image loading smaller
+
+      (0, _window.default)().addEventListener('DOMContentLoaded', this.updateSizes);
+
+      if (this.props.useKeyboardArrows) {
+        (0, _document.default)().addEventListener('keydown', this.navigateWithKeyboard);
+      }
+    }
+  }, {
+    key: "unbindEvents",
+    value: function unbindEvents() {
+      // removing listeners
+      (0, _window.default)().removeEventListener('resize', this.updateSizes);
+      (0, _window.default)().removeEventListener('DOMContentLoaded', this.updateSizes);
+      var initialImage = this.getInitialImage();
+
+      if (initialImage) {
+        initialImage.removeEventListener('load', this.setMountState);
+      }
+
+      if (this.props.useKeyboardArrows) {
+        (0, _document.default)().removeEventListener('keydown', this.navigateWithKeyboard);
+      }
+    }
+  }, {
+    key: "getPosition",
+    value: function getPosition(index) {
+      if (this.props.infiniteLoop) {
+        // index has to be added by 1 because of the first cloned slide
+        ++index;
+      }
+
+      if (index === 0) {
+        return 0;
+      }
+
+      var childrenLength = _react.Children.count(this.props.children);
+
+      if (this.props.centerMode && this.props.axis === 'horizontal') {
+        var currentPosition = -index * this.props.centerSlidePercentage;
+        var lastPosition = childrenLength - 1;
+
+        if (index && (index !== lastPosition || this.props.infiniteLoop)) {
+          currentPosition += (100 - this.props.centerSlidePercentage) / 2;
+        } else if (index === lastPosition) {
+          currentPosition += 100 - this.props.centerSlidePercentage;
+        }
+
+        return currentPosition;
+      }
+
+      return -index * 100;
+    }
+  }, {
+    key: "renderItems",
+    value: function renderItems(isClone) {
+      var _this2 = this;
+
+      if (!this.props.children) {
+        return [];
+      }
+
+      return _react.Children.map(this.props.children, function (item, index) {
+        var slideProps = {
+          ref: function ref(e) {
+            return _this2.setItemsRef(e, index);
+          },
+          key: 'itemKey' + index + (isClone ? 'clone' : ''),
+          className: _cssClasses.default.ITEM(true, index === _this2.state.selectedItem),
+          onClick: _this2.handleClickItem.bind(_this2, index, item)
+        };
+        var extraProps = {};
+
+        if (_this2.props.centerMode && _this2.props.axis === 'horizontal') {
+          extraProps.style = {
+            minWidth: _this2.props.centerSlidePercentage + '%'
+          };
+        }
+
+        return /*#__PURE__*/_react.default.createElement("li", _extends({}, slideProps, extraProps), _this2.props.renderItem(item, {
+          isSelected: index === _this2.state.selectedItem
+        }));
+      });
+    }
+  }, {
+    key: "renderControls",
+    value: function renderControls() {
+      var _this3 = this;
+
+      var _this$props = this.props,
+          showIndicators = _this$props.showIndicators,
+          labels = _this$props.labels,
+          renderIndicator = _this$props.renderIndicator,
+          children = _this$props.children;
+
+      if (!showIndicators) {
+        return null;
+      }
+
+      return /*#__PURE__*/_react.default.createElement("ul", {
+        className: "control-dots"
+      }, _react.Children.map(children, function (_, index) {
+        return renderIndicator && renderIndicator(_this3.changeItem(index), index === _this3.state.selectedItem, index, labels.item);
+      }));
+    }
+  }, {
+    key: "renderStatus",
+    value: function renderStatus() {
+      if (!this.props.showStatus) {
+        return null;
+      }
+
+      return /*#__PURE__*/_react.default.createElement("p", {
+        className: "carousel-status"
+      }, this.props.statusFormatter(this.state.selectedItem + 1, _react.Children.count(this.props.children)));
+    }
+  }, {
+    key: "renderThumbs",
+    value: function renderThumbs() {
+      if (!this.props.showThumbs || !this.props.children || _react.Children.count(this.props.children) === 0) {
+        return null;
+      }
+
+      return /*#__PURE__*/_react.default.createElement(_Thumbs.default, {
+        ref: this.setThumbsRef,
+        onSelectItem: this.handleClickThumb,
+        selectedItem: this.state.selectedItem,
+        transitionTime: this.props.transitionTime,
+        thumbWidth: this.props.thumbWidth,
+        labels: this.props.labels
+      }, this.props.renderThumbs(this.props.children));
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this4 = this;
+
+      if (!this.props.children || _react.Children.count(this.props.children) === 0) {
+        return null;
+      }
+
+      var isHorizontal = this.props.axis === 'horizontal';
+      var canShowArrows = this.props.showArrows && _react.Children.count(this.props.children) > 1; // show left arrow?
+
+      var hasPrev = canShowArrows && (this.state.selectedItem > 0 || this.props.infiniteLoop) || false; // show right arrow
+
+      var hasNext = canShowArrows && (this.state.selectedItem < _react.Children.count(this.props.children) - 1 || this.props.infiniteLoop) || false; // obj to hold the transformations and styles
+
+      var itemListStyles = {};
+      var currentPosition = this.getPosition(this.state.selectedItem); // if 3d is available, let's take advantage of the performance of transform
+
+      var transformProp = (0, _CSSTranslate.default)(currentPosition, '%', this.props.axis);
+      var transitionTime = this.props.transitionTime + 'ms';
+      itemListStyles = {
+        WebkitTransform: transformProp,
+        MozTransform: transformProp,
+        MsTransform: transformProp,
+        OTransform: transformProp,
+        transform: transformProp,
+        msTransform: transformProp
+      };
+
+      if (!this.state.swiping) {
+        itemListStyles = _objectSpread({}, itemListStyles, {
+          WebkitTransitionDuration: transitionTime,
+          MozTransitionDuration: transitionTime,
+          MsTransitionDuration: transitionTime,
+          OTransitionDuration: transitionTime,
+          transitionDuration: transitionTime,
+          msTransitionDuration: transitionTime
+        });
+      }
+
+      var itemsClone = this.renderItems(true);
+      var firstClone = itemsClone.shift();
+      var lastClone = itemsClone.pop();
+      var swiperProps = {
+        className: _cssClasses.default.SLIDER(true, this.state.swiping),
+        onSwipeMove: this.onSwipeMove,
+        onSwipeStart: this.onSwipeStart,
+        onSwipeEnd: this.onSwipeEnd,
+        style: itemListStyles,
+        tolerance: this.props.swipeScrollTolerance
+      };
+      var containerStyles = {};
+
+      if (isHorizontal) {
+        swiperProps.onSwipeLeft = this.onSwipeForward;
+        swiperProps.onSwipeRight = this.onSwipeBackwards;
+
+        if (this.props.dynamicHeight) {
+          var itemHeight = this.getVariableImageHeight(this.state.selectedItem);
+          swiperProps.style.height = itemHeight || 'auto';
+          containerStyles.height = itemHeight || 'auto';
+        }
+      } else {
+        swiperProps.onSwipeUp = this.props.verticalSwipe === 'natural' ? this.onSwipeBackwards : this.onSwipeForward;
+        swiperProps.onSwipeDown = this.props.verticalSwipe === 'natural' ? this.onSwipeForward : this.onSwipeBackwards;
+        swiperProps.style.height = this.state.itemSize;
+        containerStyles.height = this.state.itemSize;
+      }
+
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: _cssClasses.default.ROOT(this.props.className),
+        ref: this.setCarouselWrapperRef,
+        tabIndex: 0
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: _cssClasses.default.CAROUSEL(true),
+        style: {
+          width: this.props.width
+        }
+      }, this.props.renderArrowPrev(this.onClickPrev, hasPrev, this.props.labels.leftArrow), /*#__PURE__*/_react.default.createElement("div", {
+        className: _cssClasses.default.WRAPPER(true, this.props.axis),
+        style: containerStyles
+      }, this.props.swipeable ? /*#__PURE__*/_react.default.createElement(_reactEasySwipe.default, _extends({
+        tagName: "ul",
+        innerRef: this.setListRef
+      }, swiperProps, {
+        allowMouseEvents: this.props.emulateTouch
+      }), this.props.infiniteLoop && lastClone, this.renderItems(), this.props.infiniteLoop && firstClone) : /*#__PURE__*/_react.default.createElement("ul", {
+        className: _cssClasses.default.SLIDER(true, this.state.swiping),
+        ref: function ref(node) {
+          return _this4.setListRef(node);
+        },
+        style: itemListStyles
+      }, this.props.infiniteLoop && lastClone, this.renderItems(), this.props.infiniteLoop && firstClone)), this.props.renderArrowNext(this.onClickNext, hasNext, this.props.labels.rightArrow), this.renderControls(), this.renderStatus()), this.renderThumbs());
+    }
+  }]);
+
+  return Carousel;
+}(_react.default.Component);
+
+exports.default = Carousel;
+
+_defineProperty(Carousel, "displayName", 'Carousel');
+
+_defineProperty(Carousel, "defaultProps", {
+  axis: 'horizontal',
+  centerSlidePercentage: 80,
+  interval: 3000,
+  labels: {
+    leftArrow: 'previous slide / item',
+    rightArrow: 'next slide / item',
+    item: 'slide item'
+  },
+  onClickItem: noop,
+  onClickThumb: noop,
+  onChange: noop,
+  onSwipeStart: function onSwipeStart() {},
+  onSwipeEnd: function onSwipeEnd() {},
+  onSwipeMove: function onSwipeMove() {},
+  renderArrowPrev: function renderArrowPrev(onClickHandler, hasPrev, label) {
+    return /*#__PURE__*/_react.default.createElement("button", {
+      type: "button",
+      "aria-label": label,
+      className: _cssClasses.default.ARROW_PREV(!hasPrev),
+      onClick: onClickHandler
+    });
+  },
+  renderArrowNext: function renderArrowNext(onClickHandler, hasNext, label) {
+    return /*#__PURE__*/_react.default.createElement("button", {
+      type: "button",
+      "aria-label": label,
+      className: _cssClasses.default.ARROW_NEXT(!hasNext),
+      onClick: onClickHandler
+    });
+  },
+  renderIndicator: function renderIndicator(onClickHandler, isSelected, index, label) {
+    return /*#__PURE__*/_react.default.createElement("li", {
+      className: _cssClasses.default.DOT(isSelected),
+      onClick: onClickHandler,
+      onKeyDown: onClickHandler,
+      value: index,
+      key: index,
+      role: "button",
+      tabIndex: 0,
+      "aria-label": "".concat(label, " ").concat(index + 1)
+    });
+  },
+  renderItem: function renderItem(item) {
+    return item;
+  },
+  renderThumbs: function renderThumbs(children) {
+    var images = _react.Children.map(children, function (item) {
+      var img = item; // if the item is not an image, try to find the first image in the item's children.
+
+      if (item.type !== 'img') {
+        img = _react.Children.toArray(item.props.children).find(function (children) {
+          return children.type === 'img';
+        });
+      }
+
+      if (!img) {
+        return undefined;
+      }
+
+      return img;
+    });
+
+    if (images.filter(function (image) {
+      return image;
+    }).length === 0) {
+      console.warn("No images found! Can't build the thumb list without images. If you don't need thumbs, set showThumbs={false} in the Carousel. Note that it's not possible to get images rendered inside custom components. More info at https://github.com/leandrowd/react-responsive-carousel/blob/master/TROUBLESHOOTING.md");
+      return [];
+    }
+
+    return images;
+  },
+  statusFormatter: defaultStatusFormatter,
+  selectedItem: 0,
+  showArrows: true,
+  showIndicators: true,
+  showStatus: true,
+  showThumbs: true,
+  stopOnHover: true,
+  swipeScrollTolerance: 5,
+  swipeable: true,
+  transitionTime: 350,
+  verticalSwipe: 'standard',
+  width: '100%'
+});
+
+/***/ }),
+
+/***/ "./node_modules/react-responsive-carousel/lib/es/components/Thumbs.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/react-responsive-carousel/lib/es/components/Thumbs.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _cssClasses = _interopRequireDefault(__webpack_require__(/*! ../cssClasses */ "./node_modules/react-responsive-carousel/lib/es/cssClasses.js"));
+
+var _dimensions = __webpack_require__(/*! ../dimensions */ "./node_modules/react-responsive-carousel/lib/es/dimensions.js");
+
+var _CSSTranslate = _interopRequireDefault(__webpack_require__(/*! ../CSSTranslate */ "./node_modules/react-responsive-carousel/lib/es/CSSTranslate.js"));
+
+var _reactEasySwipe = _interopRequireDefault(__webpack_require__(/*! react-easy-swipe */ "./node_modules/react-easy-swipe/lib/index.js"));
+
+var _window = _interopRequireDefault(__webpack_require__(/*! ../shims/window */ "./node_modules/react-responsive-carousel/lib/es/shims/window.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function _getRequireWildcardCache() { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _createSuper(Derived) { return function () { var Super = _getPrototypeOf(Derived), result; if (_isNativeReflectConstruct()) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var isKeyboardEvent = function isKeyboardEvent(e) {
+  return e.hasOwnProperty('key');
+};
+
+var Thumbs = /*#__PURE__*/function (_Component) {
+  _inherits(Thumbs, _Component);
+
+  var _super = _createSuper(Thumbs);
+
+  function Thumbs(_props) {
+    var _this;
+
+    _classCallCheck(this, Thumbs);
+
+    _this = _super.call(this, _props);
+
+    _defineProperty(_assertThisInitialized(_this), "itemsWrapperRef", void 0);
+
+    _defineProperty(_assertThisInitialized(_this), "itemsListRef", void 0);
+
+    _defineProperty(_assertThisInitialized(_this), "thumbsRef", void 0);
+
+    _defineProperty(_assertThisInitialized(_this), "lastPosition", 0);
+
+    _defineProperty(_assertThisInitialized(_this), "setItemsWrapperRef", function (node) {
+      _this.itemsWrapperRef = node;
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "setItemsListRef", function (node) {
+      _this.itemsListRef = node;
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "setThumbsRef", function (node, index) {
+      if (!_this.thumbsRef) {
+        _this.thumbsRef = [];
+      }
+
+      _this.thumbsRef[index] = node;
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "updateSizes", function () {
+      if (!_this.props.children || !_this.itemsWrapperRef || !_this.thumbsRef) {
+        return;
+      }
+
+      var total = _react.Children.count(_this.props.children);
+
+      var wrapperSize = _this.itemsWrapperRef.clientWidth;
+      var itemSize = _this.props.thumbWidth ? _this.props.thumbWidth : (0, _dimensions.outerWidth)(_this.thumbsRef[0]);
+      var visibleItems = Math.floor(wrapperSize / itemSize);
+      var lastPosition = total - visibleItems;
+      var showArrows = visibleItems < total;
+
+      _this.setState(function (_state, props) {
+        return {
+          itemSize: itemSize,
+          visibleItems: visibleItems,
+          firstItem: showArrows ? _this.getFirstItem(props.selectedItem) : 0,
+          lastPosition: lastPosition,
+          showArrows: showArrows
+        };
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "handleClickItem", function (index, item, e) {
+      if (!isKeyboardEvent(e) || e.key === 'Enter') {
+        var handler = _this.props.onSelectItem;
+
+        if (typeof handler === 'function') {
+          handler(index, item);
+        }
+      }
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onSwipeStart", function () {
+      _this.setState({
+        swiping: true
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onSwipeEnd", function () {
+      _this.setState({
+        swiping: false
+      });
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "onSwipeMove", function (delta) {
+      var deltaX = delta.x;
+
+      if (!_this.state.itemSize || !_this.itemsWrapperRef) {
+        return false;
+      }
+
+      var leftBoundary = 0;
+      var currentPosition = -_this.state.firstItem * _this.state.itemSize;
+      var lastLeftBoundary = -_this.state.visibleItems * _this.state.itemSize; // prevent user from swiping left out of boundaries
+
+      if (currentPosition === leftBoundary && deltaX > 0) {
+        deltaX = 0;
+      } // prevent user from swiping right out of boundaries
+
+
+      if (currentPosition === lastLeftBoundary && deltaX < 0) {
+        deltaX = 0;
+      }
+
+      var wrapperSize = _this.itemsWrapperRef.clientWidth;
+      var position = currentPosition + 100 / (wrapperSize / deltaX); // if 3d isn't available we will use left to move
+
+      if (_this.itemsListRef) {
+        ['WebkitTransform', 'MozTransform', 'MsTransform', 'OTransform', 'transform', 'msTransform'].forEach(function (prop) {
+          _this.itemsListRef.style[prop] = (0, _CSSTranslate.default)(position, '%', _this.props.axis);
+        });
+      }
+
+      return true;
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "slideRight", function (positions) {
+      _this.moveTo(_this.state.firstItem - (typeof positions === 'number' ? positions : 1));
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "slideLeft", function (positions) {
+      _this.moveTo(_this.state.firstItem + (typeof positions === 'number' ? positions : 1));
+    });
+
+    _defineProperty(_assertThisInitialized(_this), "moveTo", function (position) {
+      // position can't be lower than 0
+      position = position < 0 ? 0 : position; // position can't be higher than last postion
+
+      position = position >= _this.lastPosition ? _this.lastPosition : position;
+
+      _this.setState({
+        firstItem: position
+      });
+    });
+
+    _this.state = {
+      selectedItem: _props.selectedItem,
+      swiping: false,
+      showArrows: false,
+      firstItem: 0,
+      visibleItems: 0,
+      lastPosition: 0
+    };
+    return _this;
+  }
+
+  _createClass(Thumbs, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.setupThumbs();
+    }
+  }, {
+    key: "UNSAFE_componentWillReceiveProps",
+    value: function UNSAFE_componentWillReceiveProps(props) {
+      if (props.selectedItem !== this.state.selectedItem) {
+        this.setState({
+          selectedItem: props.selectedItem,
+          firstItem: this.getFirstItem(props.selectedItem)
+        });
+      }
+    }
+  }, {
+    key: "componentDidUpdate",
+    value: function componentDidUpdate(prevProps) {
+      if (this.props.children === prevProps.children) {
+        return;
+      } // This will capture any size changes for arrow adjustments etc.
+      // usually in the same render cycle so we don't see any flickers
+
+
+      this.updateSizes();
+    }
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this.destroyThumbs();
+    }
+  }, {
+    key: "setupThumbs",
+    value: function setupThumbs() {
+      // as the widths are calculated, we need to resize
+      // the carousel when the window is resized
+      (0, _window.default)().addEventListener('resize', this.updateSizes); // issue #2 - image loading smaller
+
+      (0, _window.default)().addEventListener('DOMContentLoaded', this.updateSizes); // when the component is rendered we need to calculate
+      // the container size to adjust the responsive behaviour
+
+      this.updateSizes();
+    }
+  }, {
+    key: "destroyThumbs",
+    value: function destroyThumbs() {
+      // removing listeners
+      (0, _window.default)().removeEventListener('resize', this.updateSizes);
+      (0, _window.default)().removeEventListener('DOMContentLoaded', this.updateSizes);
+    }
+  }, {
+    key: "getFirstItem",
+    value: function getFirstItem(selectedItem) {
+      var firstItem = selectedItem;
+
+      if (selectedItem >= this.state.lastPosition) {
+        firstItem = this.state.lastPosition;
+      }
+
+      if (selectedItem < this.state.firstItem + this.state.visibleItems) {
+        firstItem = this.state.firstItem;
+      }
+
+      if (selectedItem < this.state.firstItem) {
+        firstItem = selectedItem;
+      }
+
+      return firstItem;
+    }
+  }, {
+    key: "renderItems",
+    value: function renderItems() {
+      var _this2 = this;
+
+      return this.props.children.map(function (img, index) {
+        var itemClass = _cssClasses.default.ITEM(false, index === _this2.state.selectedItem);
+
+        var thumbProps = {
+          key: index,
+          ref: function ref(e) {
+            return _this2.setThumbsRef(e, index);
+          },
+          className: itemClass,
+          onClick: _this2.handleClickItem.bind(_this2, index, _this2.props.children[index]),
+          onKeyDown: _this2.handleClickItem.bind(_this2, index, _this2.props.children[index]),
+          'aria-label': "".concat(_this2.props.labels.item, " ").concat(index + 1),
+          style: {
+            width: _this2.props.thumbWidth
+          }
+        };
+        return /*#__PURE__*/_react.default.createElement("li", _extends({}, thumbProps, {
+          role: "button",
+          tabIndex: 0
+        }), img);
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this3 = this;
+
+      if (!this.props.children) {
+        return null;
+      } // show left arrow?
+
+
+      var hasPrev = this.state.showArrows && this.state.firstItem > 0; // show right arrow
+
+      var hasNext = this.state.showArrows && this.state.firstItem < this.state.lastPosition; // obj to hold the transformations and styles
+
+      var itemListStyles = {};
+      var currentPosition = -this.state.firstItem * (this.state.itemSize || 0);
+      var transformProp = (0, _CSSTranslate.default)(currentPosition, 'px', this.props.axis);
+      var transitionTime = this.props.transitionTime + 'ms';
+      itemListStyles = {
+        WebkitTransform: transformProp,
+        MozTransform: transformProp,
+        MsTransform: transformProp,
+        OTransform: transformProp,
+        transform: transformProp,
+        msTransform: transformProp,
+        WebkitTransitionDuration: transitionTime,
+        MozTransitionDuration: transitionTime,
+        MsTransitionDuration: transitionTime,
+        OTransitionDuration: transitionTime,
+        transitionDuration: transitionTime,
+        msTransitionDuration: transitionTime
+      };
+      return /*#__PURE__*/_react.default.createElement("div", {
+        className: _cssClasses.default.CAROUSEL(false)
+      }, /*#__PURE__*/_react.default.createElement("div", {
+        className: _cssClasses.default.WRAPPER(false),
+        ref: this.setItemsWrapperRef
+      }, /*#__PURE__*/_react.default.createElement("button", {
+        type: "button",
+        className: _cssClasses.default.ARROW_PREV(!hasPrev),
+        onClick: function onClick() {
+          return _this3.slideRight();
+        },
+        "aria-label": this.props.labels.leftArrow
+      }), /*#__PURE__*/_react.default.createElement(_reactEasySwipe.default, {
+        tagName: "ul",
+        className: _cssClasses.default.SLIDER(false, this.state.swiping),
+        onSwipeLeft: this.slideLeft,
+        onSwipeRight: this.slideRight,
+        onSwipeMove: this.onSwipeMove,
+        onSwipeStart: this.onSwipeStart,
+        onSwipeEnd: this.onSwipeEnd,
+        style: itemListStyles,
+        innerRef: this.setItemsListRef
+      }, this.renderItems()), /*#__PURE__*/_react.default.createElement("button", {
+        type: "button",
+        className: _cssClasses.default.ARROW_NEXT(!hasNext),
+        onClick: function onClick() {
+          return _this3.slideLeft();
+        },
+        "aria-label": this.props.labels.rightArrow
+      })));
+    }
+  }]);
+
+  return Thumbs;
+}(_react.Component);
+
+exports.default = Thumbs;
+
+_defineProperty(Thumbs, "displayName", 'Thumbs');
+
+_defineProperty(Thumbs, "defaultProps", {
+  axis: 'horizontal',
+  labels: {
+    leftArrow: 'previous slide / item',
+    rightArrow: 'next slide / item',
+    item: 'slide item'
+  },
+  selectedItem: 0,
+  thumbWidth: 80,
+  transitionTime: 350
+});
+
+/***/ }),
+
+/***/ "./node_modules/react-responsive-carousel/lib/es/cssClasses.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/react-responsive-carousel/lib/es/cssClasses.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _classnames = _interopRequireDefault(__webpack_require__(/*! classnames */ "./node_modules/classnames/index.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var _default = {
+  ROOT: function ROOT(customClassName) {
+    return (0, _classnames.default)(_defineProperty({
+      'carousel-root': true
+    }, customClassName || '', !!customClassName));
+  },
+  CAROUSEL: function CAROUSEL(isSlider) {
+    return (0, _classnames.default)({
+      carousel: true,
+      'carousel-slider': isSlider
+    });
+  },
+  WRAPPER: function WRAPPER(isSlider, axis) {
+    return (0, _classnames.default)({
+      'thumbs-wrapper': !isSlider,
+      'slider-wrapper': isSlider,
+      'axis-horizontal': axis === 'horizontal',
+      'axis-vertical': axis !== 'horizontal'
+    });
+  },
+  SLIDER: function SLIDER(isSlider, isSwiping) {
+    return (0, _classnames.default)({
+      thumbs: !isSlider,
+      slider: isSlider,
+      animated: !isSwiping
+    });
+  },
+  ITEM: function ITEM(isSlider, selected) {
+    return (0, _classnames.default)({
+      thumb: !isSlider,
+      slide: isSlider,
+      selected: selected
+    });
+  },
+  ARROW_PREV: function ARROW_PREV(disabled) {
+    return (0, _classnames.default)({
+      'control-arrow control-prev': true,
+      'control-disabled': disabled
+    });
+  },
+  ARROW_NEXT: function ARROW_NEXT(disabled) {
+    return (0, _classnames.default)({
+      'control-arrow control-next': true,
+      'control-disabled': disabled
+    });
+  },
+  DOT: function DOT(selected) {
+    return (0, _classnames.default)({
+      dot: true,
+      selected: selected
+    });
+  }
+};
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-responsive-carousel/lib/es/dimensions.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/react-responsive-carousel/lib/es/dimensions.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.outerWidth = void 0;
+
+var outerWidth = function outerWidth(el) {
+  var width = el.offsetWidth;
+  var style = getComputedStyle(el);
+  width += parseInt(style.marginLeft) + parseInt(style.marginRight);
+  return width;
+};
+
+exports.outerWidth = outerWidth;
+
+/***/ }),
+
+/***/ "./node_modules/react-responsive-carousel/lib/es/index.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/react-responsive-carousel/lib/es/index.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "Carousel", {
+  enumerable: true,
+  get: function get() {
+    return _Carousel.default;
+  }
+});
+Object.defineProperty(exports, "Thumbs", {
+  enumerable: true,
+  get: function get() {
+    return _Thumbs.default;
+  }
+});
+
+var _Carousel = _interopRequireDefault(__webpack_require__(/*! ./components/Carousel */ "./node_modules/react-responsive-carousel/lib/es/components/Carousel.js"));
+
+var _Thumbs = _interopRequireDefault(__webpack_require__(/*! ./components/Thumbs */ "./node_modules/react-responsive-carousel/lib/es/components/Thumbs.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+/***/ }),
+
+/***/ "./node_modules/react-responsive-carousel/lib/es/shims/document.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/react-responsive-carousel/lib/es/shims/document.js ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = function _default() {
+  return document;
+};
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-responsive-carousel/lib/es/shims/window.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/react-responsive-carousel/lib/es/shims/window.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = function _default() {
+  return window;
+};
+
+exports.default = _default;
+
+/***/ }),
+
+/***/ "./node_modules/react-responsive-carousel/lib/styles/carousel.min.css":
+/*!****************************************************************************!*\
+  !*** ./node_modules/react-responsive-carousel/lib/styles/carousel.min.css ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../css-loader/dist/cjs.js??ref--6-1!./carousel.min.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/react-responsive-carousel/lib/styles/carousel.min.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -55980,7 +58038,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _common_header_Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./common/header/Header */ "./src/common/header/Header.jsx");
 /* harmony import */ var _common_common_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./common/common.css */ "./src/common/common.css");
 /* harmony import */ var _common_common_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_common_common_css__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _feature_teams_Teams__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./feature/teams/Teams */ "./src/feature/teams/Teams.jsx");
+/* harmony import */ var _feature_teams_TeamRouter__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./feature/teams/TeamRouter */ "./src/feature/teams/TeamRouter.jsx");
 
 
 
@@ -55999,7 +58057,7 @@ var App = function App() {
     component: _feature_pilots_Pilots__WEBPACK_IMPORTED_MODULE_3__["Pilots"]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/teams",
-    component: _feature_teams_Teams__WEBPACK_IMPORTED_MODULE_7__["Teams"]
+    component: _feature_teams_TeamRouter__WEBPACK_IMPORTED_MODULE_7__["TeamRouter"]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     component: _common_PageNotFound__WEBPACK_IMPORTED_MODULE_4__["PageNotFound"]
   })));
@@ -56022,6 +58080,82 @@ __webpack_require__.r(__webpack_exports__);
 
 var PageNotFound = function PageNotFound() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("h3", null, "PageNotFound"));
+};
+
+/***/ }),
+
+/***/ "./src/common/carousel/Carousel.css":
+/*!******************************************!*\
+  !*** ./src/common/carousel/Carousel.css ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--6-1!./Carousel.css */ "./node_modules/css-loader/dist/cjs.js?!./src/common/carousel/Carousel.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;
+
+/***/ }),
+
+/***/ "./src/common/carousel/CarouselWrapper.js":
+/*!************************************************!*\
+  !*** ./src/common/carousel/CarouselWrapper.js ***!
+  \************************************************/
+/*! exports provided: CarouselWrapper */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CarouselWrapper", function() { return CarouselWrapper; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-responsive-carousel */ "./node_modules/react-responsive-carousel/lib/es/index.js");
+/* harmony import */ var react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-responsive-carousel/lib/styles/carousel.min.css */ "./node_modules/react-responsive-carousel/lib/styles/carousel.min.css");
+/* harmony import */ var react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _Carousel_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Carousel.css */ "./src/common/carousel/Carousel.css");
+/* harmony import */ var _Carousel_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Carousel_css__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+var CarouselWrapper = function CarouselWrapper(props) {
+  var images = props.images;
+  if (!images || images.length === 0) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "carousel-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_responsive_carousel__WEBPACK_IMPORTED_MODULE_1__["Carousel"], {
+    autoPlay: true,
+    showArrows: true,
+    infiniteLoop: true,
+    dynamicHeight: true // showIndicators={true}
+
+  }, images.map(function (img) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      key: img
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      alt: "",
+      src: img
+    }));
+  })));
 };
 
 /***/ }),
@@ -56098,7 +58232,7 @@ var Header = function Header() {
     className: "cap-logo"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
     href: "#/"
-  }, "Formula 1 | \u0424\u043E\u0440\u043C\u0443\u043B\u0430 1"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+  }, "Formula 1"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     id: "nav"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     className: "nav-item"
@@ -56243,7 +58377,7 @@ var Pilots = function Pilots() {
     path: "/drivers",
     component: _stat_PilotsStat__WEBPACK_IMPORTED_MODULE_3__["PilotsStat"]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router__WEBPACK_IMPORTED_MODULE_1__["Route"], {
-    path: "/drivers/driver/:num",
+    path: "/drivers/driver/:key",
     component: _driver_Driver__WEBPACK_IMPORTED_MODULE_4__["Driver"]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     path: "/drivers/:year",
@@ -56272,8 +58406,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Driver = function Driver(props) {
-  var num = props.match.params.num;
-  var driver = Object(_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByNum"])(parseInt(num));
+  var key = props.match.params.key;
+  var driver = Object(_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(key);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     id: "driver"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
@@ -56292,7 +58426,7 @@ var Driver = function Driver(props) {
     className: "num"
   }, driver.number), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     className: "name"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, driver.name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, driver.fullname)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", {
     className: "flag",
     src: driver.flag,
     height: "67"
@@ -56342,12 +58476,14 @@ module.exports = exported;
 /*!***************************************************!*\
   !*** ./src/feature/pilots/driver/drivers-data.js ***!
   \***************************************************/
-/*! exports provided: getDriverByNum */
+/*! exports provided: getDriverByNum, getDriverByKey, DriverKey */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getDriverByNum", function() { return getDriverByNum; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getDriverByKey", function() { return getDriverByKey; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DriverKey", function() { return DriverKey; });
 /* harmony import */ var body_parser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! body-parser */ "./node_modules/body-parser/index.js");
 /* harmony import */ var body_parser__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(body_parser__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _util_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../util/utils */ "./src/util/utils.js");
@@ -56355,16 +58491,54 @@ __webpack_require__.r(__webpack_exports__);
 
 var getDriverByNum = function getDriverByNum(num) {
   return Object.assign({
-    imgUrl: images + "car-racer-black-simple-icon.jpg"
+    imgUrl: images + "racer-icon.jpg"
   }, driverMap[num]);
 };
+var getDriverByKey = function getDriverByKey(driverKey) {
+  return Object.assign({
+    imgUrl: images + "racer-icon.jpg"
+  }, driverMap[driverKey]);
+};
 var images = _util_utils__WEBPACK_IMPORTED_MODULE_1__["IS_PROD"] ? "assets/images/" : "/docs/assets/images/";
+var DriverKey = {
+  kimi_raikkonen: "kimi_raikkonen",
+  lewis_hamilton: "lewis_hamilton",
+  sebastian_vettel: "sebastian_vettel",
+  sergio_perez: "sergio_perez",
+  daniel_ricciardo: "daniel_ricciardo",
+  romain_grosjean: "romain_grosjean",
+  valtteri_bottas: "valtteri_bottas",
+  kevin_magnussen: "kevin_magnussen",
+  daniil_kvyat: "daniil_kvyat",
+  max_verstappen: "max_verstappen",
+  esteban_ocon: "esteban_ocon",
+  stoffel_vandoorne: "stoffel_vandoorne",
+  marcus_ericsson: "marcus_ericsson",
+  lance_stroll: "lance_stroll",
+  nico_rosberg: "nico_rosberg",
+  charles_leclerc: "charles_leclerc",
+  nicholas_latifi: "nicholas_latifi",
+  george_russell: "george_russell",
+  antonio_giovinazzi: "antonio_giovinazzi",
+  pier_gasli: "pier_gasli",
+  carlos_sainz: "carlos_sainz",
+  lando_norris: "lando_norris",
+  alexander_albon: "alexander_albon",
+  nico_hulkenberg: "nico_hulkenberg",
+  robert_kubica: "robert_kubica",
+  fernando_alonso: "fernando_alonso",
+  brendon_hartley: "brendon_hartley",
+  sergey_sirotkin: "sergey_sirotkin"
+};
+var baseUrl = "#/drivers/driver/";
 var driverMap = {
-  7: {
+  kimi_raikkonen: {
+    link: baseUrl + DriverKey.kimi_raikkonen,
     number: 7,
-    name: "Kimi-Matias Raikkonen | Кими Райкконен",
-    flag: images + "flagFin.gif",
-    imgUrl: images + "imgkr.jpg",
+    fullname: "Kimi-Matias Raikkonen | Кими Райкконен",
+    name: "Kimi Raikkonen",
+    flag: images + "flags/flagFin.gif",
+    imgUrl: images + "driver.imeges/imgkr.jpg",
     country: "Финляндия",
     databirth: "17.10.1979",
     season: 17,
@@ -56386,11 +58560,13 @@ var driverMap = {
     totallaps: 16480,
     info: "<p>Кими Райкконен родился гонщиком и уже с малых лет, катаясь на детском карте, проявлял не дюжую страсть к гонкам и скорости. Неважно, будь то автомобиль Формулы 1, собственный спорт кар, мотоцикл, снегоход или, даже, парочка лыж &ndash; у Кими всегда была одна цель &ndash; выжать максимум.</p>" + "<p>Восхождение гонщика к вершинам Формулы 1 началось в далеком 2000 году, когда он, доминируя в сезоне Формулы Рено, обеспечил свою дальнейшую карьеру в Ф1. С первого гран-при за Заубер, Райкконен начал набирать очки, завершив сезон на 10 месте, два раза финишировав на 4 позиции, на тот момент это было высшее достижение для команды за всю её историю. Финский гонщик произвел впечатление на представителей команды МакЛарен, и получил пятилетний контракт. В Макларен Кими дважды становится вице чемпионом, один раз завершает сезон на 5, 6, 7 местах соответственно.</p>" + "<p>В 2007 году Кими Райкконен переходит в Феррари. На последнем этапе сезона в Бразилии участвует в эпичном сражении за титул, соревнуясь с пилотами Макларен: Фернандо Алонсо и Льюисом Хэмилтоном. Перед стартом той гонки, для победы в чемпионате Кими требовалось одержать победу при финише Алонсо не выше 3-го места, а Хэмилтона &mdash; не выше 6-го, по итогу той гонки Алонсо финишировал 3-м, а Хэмилтон лишь 7-м, что обеспечило Кими победу в чемпионате с отрывом всего в 1 очко!</p>" + '<p style="text-align: center;"><iframe width="737" height="413" src="https://www.youtube.com/embed/o9prO7NNM-w" frameborder="0" allowfullscreen=""></iframe></p>' + '<p style="text-align: center;"><video style="width: 100%; height: auto;" class="tWeCl" controls="" controlslist="nodownload" playsinline="" poster="https://instagram.fhel4-1.fna.fbcdn.net/v/t51.2885-15/e35/90179730_140116357535701_6146790070061577404_n.jpg?_nc_ht=instagram.fhel4-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=W5SbvUkjPW4AX_1VdA9&amp;oh=53f9fa5e74c1be136c863e7fdc18f2f0&amp;oe=5E9328CC" preload="metadata" type="video/mp4" src="https://instagram.fhel4-1.fna.fbcdn.net/v/t50.16885-16/10000000_623434258438682_3781706163503701867_n.mp4?_nc_ht=instagram.fhel4-1.fna.fbcdn.net&amp;_nc_cat=102&amp;_nc_ohc=WI45wXeNMmMAX9iFSZ4&amp;oe=5E929F2B&amp;oh=a45b7df1d5b3b2882ad6893fe788a168"></video></p>' + "<p>В 2008 он завершает чемпионат на третьей строчке итогового протокола, в 2009 на 6-ом, одерживает историческую победу в Гран-при Бельгии, показывая, порой, удивительные результаты, на весьма медленной машине.</p>" + "<p>В 2010 Кими принимает волевое решение покинуть Формулу, и переходит в WRC, участвуя в двух сезонах Мирового Ралли - 9 стартов из 11, где лучшим результатом явилась 6-я позиция. В ноябре 2011 было объявлено, что Кими возвращается в Формулу 1, заключив двухлетний контракт с командой Лотус и в 2012 завершает чемпионат на третьем месте, несмотря на то, что его напарник по команде на восьмом. В 2013 Кими продолжает выступать за Лотус на высоком уровне и в середине сезона подписывает контракт с Феррари, в том же году пропускает две последние гонки из-за операции на спине.</p>" + "<p>В 2014-2016 уже на Феррари завершает сезон на 12-ом, 4-ом и 6-ом месте соответственно.</p>" + "<p>В 2017-2018 завершает сезон на 4-ом и 3-м месте соответственно и покидает Ferrari подписав двухлетний контракт с командой Sauber, в которой финн начинал карьеру в Ф1 в далёком 2001 году.</p>" + "<p>С самого начала карьеры Кими Райкконена, его тренером по фитнесу является Марк Арнелл, ранее работавший с двукратным чемпионом мира Микой Хаккиненом.</p>" + '<p>Журналисты называют финна "The IceMan", что означает ледяной человек, за его спокойствие и невозмутимость.</p>'
   },
-  44: {
+  lewis_hamilton: {
+    link: baseUrl + DriverKey.lewis_hamilton,
     number: 44,
-    name: "Lewis Carl Davidson Hamilton | Льюис Хэмилтон",
-    flag: images + "flagBrit.jpg",
-    imgUrl: images + "imglh.jpg",
+    fullname: "Lewis Carl Davidson Hamilton | Льюис Хэмилтон",
+    name: "Lewis Hamilton",
+    flag: images + "flags/flagBrit.jpg",
+    imgUrl: images + "driver.imeges/imglh.jpg",
     country: "Великобритания",
     databirth: "07.01.1985",
     season: 13,
@@ -56412,11 +58588,13 @@ var driverMap = {
     totallaps: 14144,
     info: "<p>&lsquo;Still I Rise&rsquo; &ndash; these are the words emblazoned across the back of Lewis Hamilton&rsquo;s helmet and tattooed across his shoulders, and ever since annihilating expectations with one of the greatest rookie performances in F1 history in 2007, that&rsquo;s literally all he&rsquo;s done: risen to the top of the all-time pole positions list ahead of his hero Ayrton Senna, surged into second place in the wins column behind only the inimitable Michael Schumacher, and surpassed the legendary Sir Jackie Stewart for the most championship titles by a British driver.</p>" + "<p>Could he be the G.O.A.T?&nbsp;Few would deny that he&rsquo;s in the conversation &ndash; and what&rsquo;s more he&rsquo;s got there his way, twinning his relentless speed with a refusal to conform to stereotypes for how a racing driver should think, dress or behave.</p>" + "<p>Respect is hard earned in F1, but Hamilton has it from every one of his peers.&nbsp;Why?&nbsp;Because they know that whatever the track, whatever the conditions, whatever the situation, when his visor goes down and the lights go out, it&rsquo;s Hammertime.</p>" + "<p>Льюис Хэмилтон&nbsp;&ndash; британский автогонщик. Первые выступления Льюиса относятся к 1993 году, когда в возрасте 8 лет он начал выступать в картинге и уже стал заметно выделяться своими победами. В 1998 году он выигрывает серию Super One и исполнительный директор команды Рон Деннис заключает с ним контракт поддержки молодых пилотов, который предусматривал опцион на место в Формуле-1, что делало британца самым молодым гонщиком в истории, заключившим контракт на место в Формуле-1.</p>" + "<p>После этого Льюис выступал в чемпионатах: Межконтинентальная А (в 1999), Формула-А (в 2000) и Формула Супер А (в 2001), где в 2000 году стал чемпионом Европы. В 2001 и 2003 годах Льюис выступает в британской серии Формулы-Рено UK, где в 2003 выигрывает чемпионат. В начале 2004 из-за натянутых отношений с McLaren его контракт был расторгнут, и он был исключен из программы поддержки молодых пилотов, позднее у Льюиса была возможность дебютировать в Ф1 за Williams уже в 2004, но BMW отказалась спонсировать британца. Он перезаключает контракт с Макларен и в 2004 стартует в Евросерии Формулы-3 за команду Manor, в 2005 переходит в ASM того же чемпионата и выигрывает серию. Журнал Autosport поставил его на 24 место в рейтинге &laquo;Топ-50 Пилотов 2005&raquo;. В 2006 он выступает в чемпионате GP2, где выигрывает чемпионат опередив Нельсиньо Пике и Тимо Глока.</p>" + "<p>В конце 2006 у команды Макларен появилась свободная вакансия в Ф1 и 30 сентября была подтверждена кандидатура Льюиса на место второго пилота, его напарником стал Фернандо Алонсо. И в 2007 состоялся дебют британца в Ф1, по итогам которого Хэмилтон оказался на втором месте в личном зачете, набрав одинаковое количество очков с его напарником Фернандо Алонсо (109 очков) и уступив Кими Райкконену всего одно очко. После выяснилось, что FIA проводит расследование связанное с температурой топлива в машинах Williams и Sauber, что может привести к их дисквалификации, в таком случае Льюис стал бы чемпионом мира уже в 2007, британец заявил, что такая победа ему не нужна и в итоге штраф не последовал и титул <em>достался Райкконену</em>.</p>" + "<p>Уже в 2008, на последнем круге последнего гран-при сезона, после эпических событий, титул всё же достался Льюису Хэмилтону, который чуть было не вырвал у него Фелипе Масса. На последнем круге той гонки Тимо Глок потерял темп и Хэмилтон смог его обойти на предпоследнем повороте, набрав тем самым необходимое для титула очко. В 2009-2012 года его выступления за Макларен продолжились, в каждом сезоне он одерживал победы, а по итогам занимал 4-5 места. В конце 2012 Льюис принял для себя решение покинуть Макларен и перейти в Mercedes, многие думали, что он совершает ошибку, но как выяснилось позже он не прогадал, так как в 2013 машина у Макларен получилась откровенно слабой. В 2014-2015 годах Льюис становится уже трёхкратным чемпионом мира вместе с Mercedes. В 2016 уступает титул Нико Росбергу, но в 2017 становится уже четырёхкратным чемпионом!</p>"
   },
-  5: {
+  sebastian_vettel: {
+    link: baseUrl + DriverKey.sebastian_vettel,
     number: 5,
-    name: "Sebastian Vettel | Себастьян Феттель",
-    flag: images + "flagGer.jpg",
-    imgUrl: images + "imgsv.jpg",
+    fullname: "Sebastian Vettel | Себастьян Феттель",
+    name: "Sebastian Vettel",
+    flag: images + "flags/flagGer.jpg",
+    imgUrl: images + "driver.imeges/imgsv.jpg",
     country: "Германия",
     databirth: "03.07.1987",
     season: 13,
@@ -56438,11 +58616,13 @@ var driverMap = {
     totallaps: 13077,
     info: "<p>Born and raised a Bull, but now very much a Prancing Horse, F1's poster boy of early achievement had won more than all but two drivers in history by the time he was just 26, including back-to-back world titles between 2010 and 2013.</p>" + "<p>Vettel&rsquo;s trademark is pure pace &ndash; and of course his one-finger victory salute. In the chase to the chequered flag, he likes to lead from the front and just like his hero, Michael Schumacher, Vettel has settled in as a race-winning leader at Ferrari.</p>" + "<p>But for all his competitive streak, Vettel has a playful side too and has been known to let loose with a spot of Beatles karaoke - and baby can he drive a car. Alongside his four world crowns he can boast more than 50 pole positions and race victories, ranking him &ndash; statistically - above many of the biggest names in F1 history. No wonder then that he was hand-picked to return Grand Prix racing&rsquo;s oldest team to glory.&nbsp;</p>" + "<p>Following his move to Maranello, Vettel&rsquo;s rivalry with Lewis Hamilton intensified. Opposites off track &ndash; Hamilton leading a glamorous public life while Vettel is a private family man &ndash; the duo have often been all too evenly matched on Sundays as they bid not just for more world titles, but to be hailed the best of their generation.&nbsp;&nbsp;</p>" + "<p>But now he faces an additional thorn in his side &ndash; young-gun team mate Charles Leclerc, the first man to outscore him over a season at the Scuderia - and Vettel will need to call on all his speed and experience if he&rsquo;s to reassert himself over the &lsquo;new boy&rsquo; in 2020.</p>"
   },
-  11: {
+  sergio_perez: {
+    link: baseUrl + DriverKey.sergio_perez,
     number: 11,
-    name: "Sergio Perez | Серхио Перес",
-    flag: images + "flagMex.jpg",
-    imgUrl: images + "imgsp.jpg",
+    fullname: "Sergio Perez | Серхио Перес",
+    name: "Sergio Perez",
+    flag: images + "flags/flagMex.jpg",
+    imgUrl: images + "driver.imeges/imgsp.jpg",
     country: "Мексика",
     databirth: "26.12.1989",
     season: 9,
@@ -56464,11 +58644,13 @@ var driverMap = {
     totallaps: 9692,
     info: "<p>...</p>" + "<p>...</p>"
   },
-  3: {
+  daniel_ricciardo: {
+    link: baseUrl + DriverKey.daniel_ricciardo,
     number: 3,
-    name: "Daniel Ricciardo | Даниэль Риккардо",
-    flag: images + "flagAus.jpg",
-    imgUrl: images + "imgdr.jpg",
+    fullname: "Daniel Ricciardo | Даниэль Риккардо",
+    name: "Daniel Ricciardo",
+    flag: images + "flags/flagAus.jpg",
+    imgUrl: images + "driver.imeges/imgdr.jpg",
     country: "Австралия",
     databirth: "01.07.1989",
     season: 9,
@@ -56490,11 +58672,13 @@ var driverMap = {
     totallaps: 9205,
     info: "<p>...</p>" + "<p>...</p>"
   },
-  8: {
+  romain_grosjean: {
+    link: baseUrl + DriverKey.romain_grosjean,
     number: 8,
-    name: "Romain Grosjean | Роман Грожан",
-    flag: images + "flagFra.gif",
-    imgUrl: images + "imgrg.jpg",
+    fullname: "Romain Grosjean | Роман Грожан",
+    name: "Romain Grosjean",
+    flag: images + "flags/flagFra.gif",
+    imgUrl: images + "driver.imeges/imgrg.jpg",
     country: "Франция",
     databirth: "17.04.1986",
     season: 9,
@@ -56516,11 +58700,13 @@ var driverMap = {
     totallaps: 7979,
     info: "<p>...</p>" + "<p>...</p>"
   },
-  77: {
+  valtteri_bottas: {
+    link: baseUrl + DriverKey.valtteri_bottas,
     number: 77,
-    name: "Valtteri Bottas | Вальттери Боттас",
-    flag: images + "flagFin.gif",
-    imgUrl: images + "imgvb.jpg",
+    fullname: "Valtteri Bottas | Вальттери Боттас",
+    name: "Valtteri Bottas",
+    flag: images + "flags/flagFin.gif",
+    imgUrl: images + "driver.imeges/imgvb.jpg",
     country: "Финляндия",
     databirth: "28.08.1989",
     season: 7,
@@ -56542,11 +58728,13 @@ var driverMap = {
     totallaps: 7937,
     info: "<p>...</p>" + "<p>...</p>"
   },
-  20: {
+  kevin_magnussen: {
+    link: baseUrl + DriverKey.kevin_magnussen,
     number: 20,
-    name: "Kevin Magnussen | Кевин Магнуссен",
-    flag: images + "flagDan.jpg",
-    imgUrl: images + "imgkm.jpg",
+    fullname: "Kevin Magnussen | Кевин Магнуссен",
+    name: "Kevin Magnussen",
+    flag: images + "flags/flagDan.jpg",
+    imgUrl: images + "driver.imeges/imgkm.jpg",
     country: "Дания",
     databirth: "05.10.1992",
     season: 7,
@@ -56568,11 +58756,13 @@ var driverMap = {
     totallaps: 5550,
     info: "<p>...</p>" + "<p>...</p>"
   },
-  26: {
+  daniil_kvyat: {
+    link: baseUrl + DriverKey.daniil_kvyat,
     number: 26,
-    name: "Daniil Kvyat | Даниил Квят",
-    flag: images + "flagRus.jpg",
-    imgUrl: images + "imgdk.jpg",
+    fullname: "Daniil Kvyat | Даниил Квят",
+    name: "Daniil Kvyat",
+    flag: images + "flags/flagRus.jpg",
+    imgUrl: images + "driver.imeges/imgdk.jpg",
     country: "Россия",
     databirth: "26.04.1994",
     season: 5,
@@ -56594,11 +58784,13 @@ var driverMap = {
     totallaps: 4774,
     info: "<p>...</p>" + "<p>...</p>"
   },
-  33: {
+  max_verstappen: {
+    link: baseUrl + DriverKey.max_verstappen,
     number: 33,
-    name: "Max Verstappen | Макс Ферстаппен",
-    flag: images + "flagGol.gif",
-    imgUrl: images + "imgmv.jpg",
+    fullname: "Max Verstappen | Макс Ферстаппен",
+    name: "Max Verstappen",
+    flag: images + "flags/flagGol.gif",
+    imgUrl: images + "driver.imeges/imgmv.jpg",
     country: "Голландия",
     databirth: "30.09.1997",
     season: 5,
@@ -56620,11 +58812,13 @@ var driverMap = {
     totallaps: 5257,
     info: "<p>...</p>" + "<p>...</p>"
   },
-  31: {
+  esteban_ocon: {
+    link: baseUrl + DriverKey.esteban_ocon,
     number: 31,
-    name: "Esteban Ocon | Эстебан Окон",
-    flag: images + "flagFra.gif",
-    imgUrl: images + "imgeo.jpg",
+    fullname: "Esteban Ocon | Эстебан Окон",
+    name: "Esteban Ocon",
+    flag: images + "flags/flagFra.gif",
+    imgUrl: images + "driver.imeges/imgeo.jpg",
     country: "Франция",
     databirth: "17.09.1996",
     season: 3,
@@ -56646,11 +58840,13 @@ var driverMap = {
     totallaps: 2677,
     info: "<p>...</p>" + "<p>...</p>"
   },
-  2: {
+  stoffel_vandoorne: {
+    link: baseUrl + DriverKey.stoffel_vandoorne,
     number: 2,
-    name: "Stoffel Vandoorne | Стоффель Вандорн",
-    flag: images + "flagBel.gif",
-    imgUrl: images + "imgstVan.jpg",
+    fullname: "Stoffel Vandoorne | Стоффель Вандорн",
+    name: "Stoffel Vandoorne",
+    flag: images + "flags/flagBel.jpg",
+    imgUrl: images + "driver.imeges/imgstVan.jpg",
     country: "Бельгия",
     databirth: "26.03.1991",
     season: 3,
@@ -56672,11 +58868,13 @@ var driverMap = {
     totallaps: 2207,
     info: "<p>...</p>" + "<p>...</p>"
   },
-  9: {
+  marcus_ericsson: {
+    link: baseUrl + DriverKey.marcus_ericsson,
     number: 9,
-    name: "Marcus Ericsson | Маркус Эриксон",
-    // flag: images + "flagBel.gif",
-    imgUrl: images + "imgme.jpg",
+    fullname: "Marcus Ericsson | Маркус Эриксон",
+    name: "Marcus Ericsson",
+    flag: images + "flags/flagBel.gif",
+    imgUrl: images + "driver.imeges/imgme.jpg",
     country: "Швеция",
     databirth: "29.11.1989",
     season: 5,
@@ -56698,11 +58896,13 @@ var driverMap = {
     totallaps: 4834,
     info: "<p>...</p>" + "<p>...</p>"
   },
-  18: {
+  lance_stroll: {
+    link: baseUrl + DriverKey.lance_stroll,
     number: 18,
-    name: "Lance Stroll | Лэнс Стролл",
-    flag: images + "flagCan.jpg",
-    imgUrl: images + "imgls.jpg",
+    fullname: "Lance Stroll | Лэнс Стролл",
+    name: "Lance Stroll",
+    flag: images + "flags/flagCan.jpg",
+    imgUrl: images + "driver.imeges/imgls.jpg",
     country: "Канада",
     databirth: "29.10.1998",
     season: 2,
@@ -56724,11 +58924,13 @@ var driverMap = {
     totallaps: 3417,
     info: "<p>...</p>" + "<p>...</p>"
   },
-  6: {
+  nico_rosberg: {
+    link: baseUrl + DriverKey.nico_rosberg,
     number: 6,
-    name: "Nico Rosberg | Нико Росберг",
-    flag: images + "flagGer.jpg",
-    imgUrl: images + "imgnr.jpg",
+    fullname: "Nico Rosberg | Нико Росберг",
+    name: "Nico Rosberg",
+    flag: images + "flags/flagGer.jpg",
+    imgUrl: images + "driver.imeges/imgnr.jpg",
     country: "Германия",
     databirth: "27.06.1985",
     season: 11,
@@ -56750,11 +58952,13 @@ var driverMap = {
     totallaps: 11088,
     info: "<p>...</p>" + "<p>...</p>"
   },
-  16: {
+  charles_leclerc: {
+    link: baseUrl + DriverKey.charles_leclerc,
     number: 16,
-    name: "Charles Leclerc | Шарль Леклер",
-    flag: images + "flagMon.jpg",
-    imgUrl: images + "imgcl.jpg",
+    fullname: "Charles Leclerc | Шарль Леклер",
+    name: "Charles Leclerc",
+    flag: images + "flags/flagMon.jpg",
+    imgUrl: images + "driver.imeges/imgcl.jpg",
     country: "Монако",
     databirth: "16.10.1997",
     season: 2,
@@ -56775,6 +58979,342 @@ var driverMap = {
     granprixinscore: "28 из 42 (67%)",
     totallaps: 2214,
     info: "<p>...</p>" + "<p>...</p>"
+  },
+  nicholas_latifi: {
+    link: baseUrl + DriverKey.nicholas_latifi,
+    number: 6,
+    fullname: "Nicholas Latifi | Николас Латифи",
+    name: "Nicholas Latifi",
+    flag: images + "flags/flagCan.jpg",
+    imgUrl: images + "driver.imeges/imgnl.jpg",
+    country: "Канада",
+    databirth: "29.06.1995",
+    season: 0,
+    champion: 0,
+    debut: "-",
+    granprix: 0,
+    victory: 0,
+    first: "-",
+    pouls: 0,
+    bestlap: 0,
+    podiums: 0,
+    startfirst: 0,
+    bestfinish: "-",
+    beststart: "-",
+    take: 0,
+    hattricks: 0,
+    scores: 0,
+    granprixinscore: "-",
+    totallaps: "-",
+    info: "<p>...</p>" + "<p>...</p>"
+  },
+  george_russell: {
+    link: baseUrl + DriverKey.george_russell,
+    number: 63,
+    fullname: "George Russell | Джордж Расселл",
+    name: "George Russell",
+    flag: images + "flags/flagEng.jpg",
+    imgUrl: images + "driver.imeges/imggr.jpg",
+    country: "Великобритания",
+    databirth: "15.02.1998",
+    season: 1,
+    champion: 0,
+    debut: "2019,	Австралия, Альберт-Парк",
+    granprix: 21,
+    victory: 0,
+    first: "-",
+    pouls: 0,
+    bestlap: 0,
+    podiums: 0,
+    startfirst: 0,
+    bestfinish: 11,
+    beststart: 14,
+    take: 0,
+    hattricks: 0,
+    scores: 0,
+    granprixinscore: "0 из 21 (0%)",
+    totallaps: 1182,
+    info: "<p>...</p>" + "<p>...</p>"
+  },
+  antonio_giovinazzi: {
+    link: baseUrl + DriverKey.antonio_giovinazzi,
+    number: 99,
+    fullname: "Antonio Giovinazzi | Антонио Джовинацци",
+    name: "Antonio Giovinazzi",
+    flag: images + "flags/flagIta.jpg",
+    imgUrl: images + "driver.imeges/imgag.jpg",
+    country: "Италия",
+    databirth: "14.12.1993",
+    season: 2,
+    champion: 0,
+    debut: "2017,	Австралия, Альберт-Парк",
+    granprix: 23,
+    victory: 0,
+    first: "-",
+    pouls: 0,
+    bestlap: 0,
+    podiums: 0,
+    startfirst: 0,
+    bestfinish: 5,
+    beststart: 7,
+    take: 0,
+    hattricks: 0,
+    scores: 14,
+    granprixinscore: "4 из 23 (17%)",
+    totallaps: 1269,
+    info: "<p>...</p>" + "<p>...</p>"
+  },
+  pier_gasli: {
+    link: baseUrl + DriverKey.pier_gasli,
+    number: 10,
+    fullname: "Pier Gasli | Пьер Гасли",
+    name: "Pier Gasli",
+    flag: images + "flags/flagFra.gif",
+    imgUrl: images + "driver.imeges/imgpg.jpg",
+    country: "Франция",
+    databirth: "07.02.1996",
+    season: 3,
+    champion: 0,
+    debut: "2017,	Малайзия, Сепанг",
+    granprix: 47,
+    victory: 0,
+    first: "-",
+    pouls: 0,
+    bestlap: 2,
+    podiums: 1,
+    startfirst: 0,
+    bestfinish: 2,
+    beststart: 4,
+    take: 0,
+    hattricks: 0,
+    scores: 124,
+    granprixinscore: "19 из 47 (40%)",
+    totallaps: 2567,
+    info: "<p>...</p>" + "<p>...</p>"
+  },
+  carlos_sainz: {
+    link: baseUrl + DriverKey.carlos_sainz,
+    number: 55,
+    fullname: "Carlos Sainz | Карлос Сайнс",
+    name: "Carlos Sainz",
+    flag: images + "flags/flagSpa.jpg",
+    imgUrl: images + "driver.imeges/imgcs.jpg",
+    country: "Испания",
+    databirth: "01.09.1994",
+    season: 5,
+    champion: 0,
+    debut: "2015,	Австралия, Альберт-Парк",
+    granprix: 102,
+    victory: 0,
+    first: "-",
+    pouls: 0,
+    bestlap: 0,
+    podiums: 1,
+    startfirst: 0,
+    bestfinish: 3,
+    beststart: 5,
+    take: 0,
+    hattricks: 0,
+    scores: 267,
+    granprixinscore: "53 из 102 (52%)",
+    totallaps: 5322,
+    info: "<p>...</p>" + "<p>...</p>"
+  },
+  lando_norris: {
+    link: baseUrl + DriverKey.lando_norris,
+    number: 4,
+    fullname: "Lando Norris | Ландо Норрис",
+    name: "Lando Norris",
+    flag: images + "flags/flagEng.jpg",
+    imgUrl: images + "driver.imeges/imgln.jpg",
+    country: "Великобритания",
+    databirth: "13.11.1999",
+    season: 1,
+    champion: 0,
+    debut: "2019,	Австралия, Альберт-Парк",
+    granprix: 21,
+    victory: 0,
+    first: 0,
+    pouls: 0,
+    bestlap: 0,
+    podiums: 1,
+    startfirst: 0,
+    bestfinish: 6,
+    beststart: 5,
+    take: 0,
+    hattricks: 0,
+    scores: 49,
+    granprixinscore: "11 из 21 (52%)",
+    totallaps: 1102,
+    info: "<p>...</p>" + "<p>...</p>"
+  },
+  alexander_albon: {
+    link: baseUrl + DriverKey.alexander_albon,
+    number: 23,
+    fullname: "Alexander Albon | Александр Албон",
+    name: "Alexander Albon",
+    flag: images + "flags/flagTha.png",
+    imgUrl: images + "driver.imeges/imgaa.jpg",
+    country: "Тайланд",
+    databirth: "23.03.1996",
+    season: 1,
+    champion: 0,
+    debut: "2019,	Австралия, Альберт-Парк",
+    granprix: 21,
+    victory: 0,
+    first: 0,
+    pouls: 0,
+    bestlap: 0,
+    podiums: 0,
+    startfirst: 0,
+    bestfinish: 4,
+    beststart: 5,
+    take: 0,
+    hattricks: 0,
+    scores: 92,
+    granprixinscore: "13 из 21 (62%)",
+    totallaps: 1245,
+    info: "<p>...</p>" + "<p>...</p>"
+  },
+  nico_hulkenberg: {
+    link: baseUrl + DriverKey.nico_hulkenberg,
+    number: 27,
+    fullname: "Nico Hulkenberg | Нико Хюлькенберг",
+    name: "Nico Hulkenberg",
+    flag: images + "flags/flagGer.jpg",
+    imgUrl: images + "driver.imeges/imgnh.jpg",
+    country: "Германия",
+    databirth: "19.08.1987",
+    season: 9,
+    champion: 0,
+    debut: "2010,	Бахрейн, Сахир",
+    granprix: 179,
+    victory: 0,
+    first: 0,
+    pouls: 1,
+    bestlap: 2,
+    podiums: 0,
+    startfirst: 2,
+    bestfinish: 4,
+    beststart: 1,
+    take: 0,
+    hattricks: 0,
+    scores: 511,
+    granprixinscore: "95 из 179 (53%)",
+    totallaps: 9038,
+    info: "<p>...</p>" + "<p>...</p>"
+  },
+  robert_kubica: {
+    link: baseUrl + DriverKey.robert_kubica,
+    number: 88,
+    fullname: "Robert Kubica | Роберт Кубица",
+    name: "Robert Kubica",
+    flag: images + "flags/flagPol.png",
+    imgUrl: images + "driver.imeges/imgrk.jpg",
+    country: "Польша",
+    databirth: "07.12.1984",
+    season: 6,
+    champion: 0,
+    debut: "2006,	Венгрия, Хунгароринг",
+    granprix: 97,
+    victory: 1,
+    first: "2008, Канада, Монреаль, № 29",
+    pouls: 1,
+    bestlap: 1,
+    podiums: 12,
+    startfirst: 4,
+    bestfinish: 1,
+    beststart: 1,
+    take: 0,
+    hattricks: 0,
+    scores: 274,
+    granprixinscore: "47 из 97 (48%)",
+    totallaps: 5382,
+    info: "<p>...</p>" + "<p>...</p>"
+  },
+  fernando_alonso: {
+    link: baseUrl + DriverKey.fernando_alonso,
+    number: 14,
+    fullname: "Fernando Alonso | Фернандо Алонсо",
+    name: "Fernando Alonso",
+    flag: images + "flags/flagSpa.jpg",
+    imgUrl: images + "driver.imeges/imgfa.jpg",
+    country: "Испания",
+    databirth: "29.07.1981",
+    season: 17,
+    champion: "2005, 2006",
+    debut: "2001,	Австралия, Альберт-Парк",
+    granprix: 314,
+    victory: 32,
+    first: "2003, Венгрия, Хунгароринг, № 30",
+    pouls: 22,
+    bestlap: 23,
+    podiums: 97,
+    startfirst: 37,
+    bestfinish: 1,
+    beststart: 1,
+    take: 14,
+    hattricks: 5,
+    scores: 1899,
+    granprixinscore: "202 из 314 (64%)",
+    totallaps: 16706,
+    info: "<p>...</p>" + "<p>...</p>"
+  },
+  brendon_hartley: {
+    link: baseUrl + DriverKey.brendon_hartley,
+    number: 28,
+    fullname: "Brendon Hartley | Фернандо Алонсо",
+    name: "Brendon Hartley" // flag: images + "flags/flagSpa.jpg",
+    // imgUrl: images + "driver.imeges/imgfa.jpg",
+    // country: "Испания",
+    // databirth: "29.07.1981",
+    // season: 17,
+    // champion: "2005, 2006",
+    // debut: "2001,	Австралия, Альберт-Парк",
+    // granprix: 314,
+    // victory: 32,
+    // first: "2003, Венгрия, Хунгароринг, № 30",
+    // pouls: 22,
+    // bestlap: 23,
+    // podiums: 97,
+    // startfirst: 37,
+    // bestfinish: 1,
+    // beststart: 1,
+    // take: 14,
+    // hattricks: 5,
+    // scores: 1899,
+    // granprixinscore: "202 из 314 (64%)",
+    // totallaps: 16706,
+    // info: "<p>...</p>" + "<p>...</p>",
+
+  },
+  sergey_sirotkin: {
+    link: baseUrl + DriverKey.sergey_sirotkin,
+    number: 35,
+    fullname: "Sergey Sirotkin | Сергей Сироткин",
+    name: "Sergey Sirotkin" // flag: images + "flags/flagSpa.jpg",
+    // imgUrl: images + "driver.imeges/imgfa.jpg",
+    // country: "Испания",
+    // databirth: "29.07.1981",
+    // season: 17,
+    // champion: "2005, 2006",
+    // debut: "2001,	Австралия, Альберт-Парк",
+    // granprix: 314,
+    // victory: 32,
+    // first: "2003, Венгрия, Хунгароринг, № 30",
+    // pouls: 22,
+    // bestlap: 23,
+    // podiums: 97,
+    // startfirst: 37,
+    // bestfinish: 1,
+    // beststart: 1,
+    // take: 14,
+    // hattricks: 5,
+    // scores: 1899,
+    // granprixinscore: "202 из 314 (64%)",
+    // totallaps: 16706,
+    // info: "<p>...</p>" + "<p>...</p>",
+
   }
 };
 
@@ -56834,17 +59374,18 @@ var PilotsStat = function PilotsStat(props) {
   var activeStyle = {
     color: "rgb(71, 61, 61)",
     textShadow: "3px 2px 1px rgb(71, 61, 61)"
-  }; // color: "black", textShadow: "2px 2px 0px rgb(219, 28, 3)" };
+  };
 
   var pilotView = function pilotView(pilot) {
+    var driver = pilot.driver;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
       className: "stat-p-row",
-      key: pilot.number
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.number), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+      key: driver.number
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, driver.number), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
       className: "stat-p-wider"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
-      href: "#/drivers/driver/" + pilot.number
-    }, pilot.name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.season), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+      href: driver.link
+    }, driver.name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.season), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
       className: "stat-p-wider"
     }, pilot.team), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.points), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.poles), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.bestLap), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.podiums), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, pilot.laps));
   };
@@ -56893,6 +59434,8 @@ var PilotsStat = function PilotsStat(props) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPilots", function() { return getPilots; });
+/* harmony import */ var _driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../driver/drivers-data */ "./src/feature/pilots/driver/drivers-data.js");
+
 var getPilots = function getPilots(year) {
   if (2019 == year) {
     return pilots2019;
@@ -56903,8 +59446,9 @@ var getPilots = function getPilots(year) {
   }
 };
 var pilotsAll = [{
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].kimi_raikkonen),
   number: 7,
-  name: "Kimi Räikkönen",
+  name: "Kimi Raikkonen",
   season: 17,
   team: "Alfa Romeo",
   points: 1859,
@@ -56913,6 +59457,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].lewis_hamilton),
   number: 44,
   name: "Lewis Hamilton",
   season: 13,
@@ -56923,6 +59468,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].sebastian_vettel),
   number: 5,
   name: "Sebastian Vettel",
   season: 13,
@@ -56933,6 +59479,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].sergio_perez),
   number: 11,
   name: "Sergio Perez",
   season: 9,
@@ -56943,6 +59490,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].daniel_ricciardo),
   number: 3,
   name: "Daniel Ricciardo",
   season: 9,
@@ -56953,6 +59501,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].romain_grosjean),
   number: 8,
   name: "Romain Grosjean",
   season: 9,
@@ -56963,6 +59512,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].nico_hulkenberg),
   number: 8,
   name: "Nico Hulkenberg",
   season: 9,
@@ -56973,6 +59523,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 9038
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].valtteri_bottas),
   number: 77,
   name: "Valtteri Bottas",
   season: 7,
@@ -56983,6 +59534,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].kevin_magnussen),
   number: 20,
   name: "Kevin Magnussen",
   season: 6,
@@ -56993,6 +59545,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].daniil_kvyat),
   number: 26,
   name: "Daniil Kvyat",
   season: 5,
@@ -57003,6 +59556,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].max_verstappen),
   number: 33,
   name: "Max Verstappen",
   season: 5,
@@ -57013,6 +59567,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].carlos_sainz),
   number: 55,
   name: "Carlos Sainz",
   season: 5,
@@ -57023,6 +59578,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].pier_gasli),
   number: 10,
   name: "Pier Gasli",
   season: 3,
@@ -57033,6 +59589,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].lance_stroll),
   number: 18,
   name: "Lance Stroll",
   season: 3,
@@ -57043,6 +59600,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].esteban_ocon),
   number: 31,
   name: "Esteban Ocon",
   season: 3,
@@ -57053,6 +59611,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].antonio_giovinazzi),
   number: 99,
   name: "Antonio Giovinazzi",
   season: 2,
@@ -57063,6 +59622,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].charles_leclerc),
   number: 16,
   name: "Charles Leclerc",
   season: 2,
@@ -57073,6 +59633,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].george_russell),
   number: 63,
   name: "George Russell",
   season: 1,
@@ -57083,6 +59644,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].lando_norris),
   number: 4,
   name: "Lando Norris",
   season: 1,
@@ -57093,6 +59655,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].alexander_albon),
   number: 23,
   name: "Alexander Albon",
   season: 1,
@@ -57103,6 +59666,7 @@ var pilotsAll = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].nicholas_latifi),
   number: 6,
   name: "Nicholas Latifi",
   season: 0,
@@ -57114,8 +59678,9 @@ var pilotsAll = [{
   laps: 0
 }];
 var pilots2020 = [{
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].kimi_raikkonen),
   number: 7,
-  name: "Kimi Räikkönen",
+  name: "Kimi Raikkonen",
   season: 17,
   team: "Alfa Romeo",
   points: 0,
@@ -57124,6 +59689,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].lewis_hamilton),
   number: 44,
   name: "Lewis Hamilton",
   season: 13,
@@ -57134,6 +59700,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].sebastian_vettel),
   number: 5,
   name: "Sebastian Vettel",
   season: 13,
@@ -57144,6 +59711,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].sergio_perez),
   number: 11,
   name: "Sergio Perez",
   season: 9,
@@ -57154,6 +59722,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].daniel_ricciardo),
   number: 3,
   name: "Daniel Ricciardo",
   season: 9,
@@ -57164,6 +59733,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].romain_grosjean),
   number: 8,
   name: "Romain Grosjean",
   season: 9,
@@ -57174,6 +59744,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].valtteri_bottas),
   number: 77,
   name: "Valtteri Bottas",
   season: 7,
@@ -57184,6 +59755,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].kevin_magnussen),
   number: 20,
   name: "Kevin Magnussen",
   season: 6,
@@ -57194,6 +59766,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].daniil_kvyat),
   number: 26,
   name: "Daniil Kvyat",
   season: 5,
@@ -57204,6 +59777,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].max_verstappen),
   number: 33,
   name: "Max Verstappen",
   season: 5,
@@ -57214,6 +59788,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].carlos_sainz),
   number: 55,
   name: "Carlos Sainz",
   season: 5,
@@ -57224,6 +59799,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].pier_gasli),
   number: 10,
   name: "Pier Gasli",
   season: 3,
@@ -57234,6 +59810,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].lance_stroll),
   number: 18,
   name: "Lance Stroll",
   season: 3,
@@ -57244,6 +59821,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].esteban_ocon),
   number: 31,
   name: "Esteban Ocon",
   season: 3,
@@ -57254,6 +59832,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].antonio_giovinazzi),
   number: 99,
   name: "Antonio Giovinazzi",
   season: 2,
@@ -57264,6 +59843,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].charles_leclerc),
   number: 16,
   name: "Charles Leclerc",
   season: 2,
@@ -57274,6 +59854,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].george_russell),
   number: 63,
   name: "George Russell",
   season: 1,
@@ -57284,6 +59865,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].lando_norris),
   number: 4,
   name: "Lando Norris",
   season: 1,
@@ -57294,6 +59876,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].alexander_albon),
   number: 23,
   name: "Alexander Albon",
   season: 1,
@@ -57304,6 +59887,7 @@ var pilots2020 = [{
   podiums: 0,
   laps: 0
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].nicholas_latifi),
   number: 6,
   name: "Nicholas Latifi",
   season: 0,
@@ -57315,6 +59899,7 @@ var pilots2020 = [{
   laps: 0
 }];
 var pilots2019 = [{
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].lewis_hamilton),
   number: 44,
   name: "Lewis Hamilton",
   season: 13,
@@ -57327,6 +59912,7 @@ var pilots2019 = [{
   laps: "???",
   position: 1
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].valtteri_bottas),
   number: 77,
   name: "Valtteri Bottas",
   season: 7,
@@ -57339,6 +59925,7 @@ var pilots2019 = [{
   laps: "???",
   position: 2
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].max_verstappen),
   number: 33,
   name: "Max Verstappen",
   season: 5,
@@ -57351,6 +59938,7 @@ var pilots2019 = [{
   laps: "???",
   position: 3
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].charles_leclerc),
   number: 16,
   name: "Charles Leclerc",
   season: 2,
@@ -57363,6 +59951,7 @@ var pilots2019 = [{
   laps: "???",
   position: 4
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].sebastian_vettel),
   number: 5,
   name: "Sebastian Vettel",
   season: 13,
@@ -57375,6 +59964,7 @@ var pilots2019 = [{
   laps: "???",
   position: 5
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].carlos_sainz),
   number: 55,
   name: "Carlos Sainz",
   season: 5,
@@ -57387,6 +59977,7 @@ var pilots2019 = [{
   laps: "???",
   position: 6
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].pier_gasli),
   number: 10,
   name: "Pier Gasli",
   season: 3,
@@ -57399,6 +59990,7 @@ var pilots2019 = [{
   laps: "???",
   position: 7
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].alexander_albon),
   number: 23,
   name: "Alexander Albon",
   season: 1,
@@ -57411,6 +60003,7 @@ var pilots2019 = [{
   laps: "???",
   position: 8
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].daniel_ricciardo),
   number: 3,
   name: "Daniel Ricciardo",
   season: 9,
@@ -57423,6 +60016,7 @@ var pilots2019 = [{
   laps: "???",
   position: 9
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].sergio_perez),
   number: 11,
   name: "Sergio Perez",
   season: 9,
@@ -57435,6 +60029,7 @@ var pilots2019 = [{
   laps: "???",
   position: 10
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].lando_norris),
   number: 4,
   name: "Lando Norris",
   season: 1,
@@ -57447,6 +60042,7 @@ var pilots2019 = [{
   laps: "???",
   position: 11
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].kimi_raikkonen),
   number: 7,
   name: "Kimi Raikkonen",
   season: 17,
@@ -57459,6 +60055,7 @@ var pilots2019 = [{
   laps: "???",
   position: 12
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].daniil_kvyat),
   number: 26,
   name: "Daniil Kvyat",
   season: 5,
@@ -57471,7 +60068,8 @@ var pilots2019 = [{
   laps: "???",
   position: 13
 }, {
-  number: 8,
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].nico_hulkenberg),
+  number: 27,
   name: "Nico Hulkenberg",
   season: 9,
   team: "Renault",
@@ -57483,6 +60081,7 @@ var pilots2019 = [{
   laps: "???",
   position: 14
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].lance_stroll),
   number: 18,
   name: "Lance Stroll",
   season: 3,
@@ -57495,6 +60094,7 @@ var pilots2019 = [{
   laps: "???",
   position: 15
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].kevin_magnussen),
   number: 20,
   name: "Kevin Magnussen",
   season: 6,
@@ -57507,6 +60107,7 @@ var pilots2019 = [{
   laps: "???",
   position: 16
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].antonio_giovinazzi),
   number: 99,
   name: "Antonio Giovinazzi",
   season: 2,
@@ -57519,6 +60120,7 @@ var pilots2019 = [{
   laps: "???",
   position: 17
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].romain_grosjean),
   number: 8,
   name: "Romain Grosjean",
   season: 9,
@@ -57531,6 +60133,7 @@ var pilots2019 = [{
   laps: "???",
   position: 18
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].robert_kubica),
   number: 88,
   name: "Robert Kubica",
   season: 6,
@@ -57543,6 +60146,7 @@ var pilots2019 = [{
   laps: "???",
   position: 19
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].george_russell),
   number: 63,
   name: "George Russell",
   season: 1,
@@ -57556,6 +60160,7 @@ var pilots2019 = [{
   position: 20
 }];
 var pilots2018 = [{
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].lewis_hamilton),
   number: 44,
   name: "Lewis Hamilton",
   season: 12,
@@ -57568,6 +60173,7 @@ var pilots2018 = [{
   laps: "???",
   position: 1
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].sebastian_vettel),
   number: 5,
   name: "Sebastian Vettel",
   season: 12,
@@ -57579,6 +60185,7 @@ var pilots2018 = [{
   laps: "???",
   position: 2
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].kimi_raikkonen),
   number: 7,
   name: "Kimi Raikkonen",
   season: 17,
@@ -57591,6 +60198,7 @@ var pilots2018 = [{
   laps: "???",
   position: 3
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].max_verstappen),
   number: 33,
   name: "Max Verstappen",
   season: 4,
@@ -57603,6 +60211,7 @@ var pilots2018 = [{
   laps: "???",
   position: 4
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].valtteri_bottas),
   number: 77,
   name: "Valtteri Bottas",
   season: 6,
@@ -57615,6 +60224,7 @@ var pilots2018 = [{
   laps: "???",
   position: 5
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].daniel_ricciardo),
   number: 3,
   name: "Daniel Ricciardo",
   season: 8,
@@ -57627,6 +60237,7 @@ var pilots2018 = [{
   laps: "???",
   position: 6
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].nico_hulkenberg),
   number: 8,
   name: "Nico Hulkenberg",
   season: 8,
@@ -57639,6 +60250,7 @@ var pilots2018 = [{
   laps: "???",
   position: 7
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].sergio_perez),
   number: 11,
   name: "Sergio Perez",
   season: 8,
@@ -57651,6 +60263,7 @@ var pilots2018 = [{
   laps: "???",
   position: 8
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].kevin_magnussen),
   number: 20,
   name: "Kevin Magnussen",
   season: 5,
@@ -57663,6 +60276,7 @@ var pilots2018 = [{
   laps: "???",
   position: 9
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].carlos_sainz),
   number: 55,
   name: "Carlos Sainz",
   season: 4,
@@ -57675,6 +60289,7 @@ var pilots2018 = [{
   laps: "???",
   position: 10
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].fernando_alonso),
   number: 29,
   name: "Fernando Alonso",
   season: 17,
@@ -57687,6 +60302,7 @@ var pilots2018 = [{
   laps: "???",
   position: 11
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].esteban_ocon),
   number: 31,
   name: "Esteban Ocon",
   season: 3,
@@ -57699,6 +60315,7 @@ var pilots2018 = [{
   laps: "???",
   position: 12
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].charles_leclerc),
   number: 16,
   name: "Charles Leclerc",
   season: 1,
@@ -57711,6 +60328,7 @@ var pilots2018 = [{
   laps: "???",
   position: 13
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].romain_grosjean),
   number: 8,
   name: "Romain Grosjean",
   season: 8,
@@ -57723,6 +60341,7 @@ var pilots2018 = [{
   laps: "???",
   position: 14
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].pier_gasli),
   number: 10,
   name: "Pier Gasli",
   season: 2,
@@ -57735,6 +60354,7 @@ var pilots2018 = [{
   laps: "???",
   position: 15
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].stoffel_vandoorne),
   number: 2,
   name: "Stoffel Vandoorne",
   season: 3,
@@ -57747,6 +60367,7 @@ var pilots2018 = [{
   laps: "???",
   position: 16
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].marcus_ericsson),
   number: 9,
   name: "Marcus Ericsson",
   season: 5,
@@ -57759,6 +60380,7 @@ var pilots2018 = [{
   laps: "???",
   position: 17
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].lance_stroll),
   number: 18,
   name: "Lance Stroll",
   season: 3,
@@ -57771,6 +60393,7 @@ var pilots2018 = [{
   laps: "???",
   position: 18
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].brendon_hartley),
   number: 28,
   name: "Brendon Hartley",
   season: 2,
@@ -57783,6 +60406,7 @@ var pilots2018 = [{
   laps: "???",
   position: 19
 }, {
+  driver: Object(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["getDriverByKey"])(_driver_drivers_data__WEBPACK_IMPORTED_MODULE_0__["DriverKey"].sergey_sirotkin),
   number: 35,
   name: "Sergey Sirotkin",
   season: 1,
@@ -57798,31 +60422,36 @@ var pilots2018 = [{
 
 /***/ }),
 
-/***/ "./src/feature/teams/Teams.jsx":
-/*!*************************************!*\
-  !*** ./src/feature/teams/Teams.jsx ***!
-  \*************************************/
-/*! exports provided: Teams */
+/***/ "./src/feature/teams/TeamRouter.jsx":
+/*!******************************************!*\
+  !*** ./src/feature/teams/TeamRouter.jsx ***!
+  \******************************************/
+/*! exports provided: TeamRouter */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Teams", function() { return Teams; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TeamRouter", function() { return TeamRouter; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/esm/react-router.js");
 /* harmony import */ var _teams_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./teams.css */ "./src/feature/teams/teams.css");
 /* harmony import */ var _teams_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_teams_css__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _TeamsMain__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./TeamsMain */ "./src/feature/teams/TeamsMain.jsx");
+/* harmony import */ var _team_Team__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./team/Team */ "./src/feature/teams/team/Team.jsx");
 
 
 
 
-var Teams = function Teams() {
+
+var TeamRouter = function TeamRouter() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router__WEBPACK_IMPORTED_MODULE_1__["Route"], {
     exact: true,
     path: "/teams",
     component: _TeamsMain__WEBPACK_IMPORTED_MODULE_3__["TeamsMain"]
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](react_router__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    path: "/teams/:key",
+    component: _team_Team__WEBPACK_IMPORTED_MODULE_4__["Team"]
   }));
 };
 
@@ -57859,7 +60488,7 @@ var TeamsMain = function TeamsMain(props) {
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
       className: "team-list-item"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
-      href: "#/teams/" + team.name
+      href: "#/teams/" + teamKey.toLowerCase()
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
       className: "team-header"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
@@ -57878,7 +60507,9 @@ var TeamsMain = function TeamsMain(props) {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
         key: driver.number,
         className: "team-driver"
-      }, driver.name);
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("a", {
+        href: driver.link
+      }, driver.name));
     }) : null)));
   };
 
@@ -57895,44 +60526,337 @@ var TeamsMain = function TeamsMain(props) {
 /*!****************************************!*\
   !*** ./src/feature/teams/team-data.js ***!
   \****************************************/
-/*! exports provided: Teams, TeamKeys */
+/*! exports provided: getTeamByKey, Teams, TeamKeys */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getTeamByKey", function() { return getTeamByKey; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Teams", function() { return Teams; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TeamKeys", function() { return TeamKeys; });
 /* harmony import */ var _util_assets__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util/assets */ "./src/util/assets.js");
 /* harmony import */ var _pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pilots/driver/drivers-data */ "./src/feature/pilots/driver/drivers-data.js");
 
 
+var getTeamByKey = function getTeamByKey(key) {
+  return Object.assign({}, Teams[key.toUpperCase()]);
+};
 var Teams = {
   MERCEDES: {
     logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].mercedes,
     name: "Mercedes AMG Petronas",
+    fullname: "Mercedes AMG Petronas",
     car: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Car"].mercedes,
-    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByNum"])(44), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByNum"])(77)]
+    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].lewis_hamilton), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].valtteri_bottas)],
+    base: "Брэкли, Великобритания",
+    teamChief: "Тото Вольф",
+    powerUnit: "Mercedes",
+    chassis: "W11",
+    firstTeamEntry: 1970,
+    worldChampionships: "2014-2019",
+    constructorsСup: "2014-2019",
+    highestRaceFinish: "1 (x93)",
+    polePositions: 103,
+    fastestLaps: 66,
+    info2019: "<p>2019</p>" + "<p>Начало сезона с беспрецедентной пятерки побед на первом-втором месте, и продолжение его еще дестью победами, гарантировало их шестой титул, удвоенный на отскоке. Всесторонняя командная работа является ключом к успеху даже чаще, чем максимальный темп. Валттери Боттас улучшил свой результат, а это означает, что Льюису Хэмилтону нужно приложить немало усилий, чтобы защитить свой титул чемпиона, что приближает британцев к рекорду всех времен Михаэля Шумахера.</p>",
+    info2018: "<p>2018</p>" + "<p>Это сезон преимущественно о Льюисе Хэмилтоне, чьи 11 побед помогли сохранить пятый подряд чемпионский титул для команды - несмотря на соперников Ferrari, часто имеющих более быстрый автомобиль - продолжая свое доминирование в эпоху турбо-гибридов. Товарищ по команде Валттери Боттас заканчивает год без победы будучи вынужденным играть в тылу безудержного Гамильтона.</p>",
+    info2017: "<p>2017</p>" + "<p>...</p>",
+    info2016: "<p>2016</p>" + "<p>...</p>",
+    images: ["/docs/assets/images/teams.photo/mercedes/map2.jpg", "/docs/assets/images/teams.photo/mercedes/map4.jpg", "/docs/assets/images/teams.photo/mercedes/map5.jpg", "/docs/assets/images/teams.photo/mercedes/map7.jpg", "/docs/assets/images/teams.photo/mercedes/map9.jpg", "/docs/assets/images/teams.photo/mercedes/map10.jpg"]
   },
   FERRARI: {
     logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].ferrari,
     name: "Scuderia Ferrari",
+    fullname: "Scuderia Ferrari",
     car: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Car"].ferrari,
-    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByNum"])(5), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByNum"])(16)]
+    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].sebastian_vettel), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].charles_leclerc)],
+    base: "Маранелло, Италия",
+    teamChief: "Маттиа Бинотто",
+    powerUnit: "Ferrari",
+    chassis: "SF1000",
+    firstTeamEntry: 1950,
+    worldChampionships: "1952, 1953, 1956, 1958, 1961, 1964, 1975, 1977, 1979, 2000-2004, 2007",
+    constructorsСup: "1961, 1964, 1975-1977, 1979, 1982, 1983, 1999-2004, 2007, 2008",
+    highestRaceFinish: "1 (x239)",
+    polePositions: 221,
+    fastestLaps: 253,
+    info2019: "<p>2019</p>" + "<p>...</p>",
+    info2018: "<p>...</p>" + "<p>...</p>",
+    info2017: "<p>...</p>" + "<p>...</p>",
+    info2016: "<p>...</p>" + "<p>...</p>"
   },
   RED_BULL: {
     logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].red_bull,
-    name: "Aston Martin Red Bull Racing",
+    name: "Red Bull",
+    fullname: "Aston Martin Red Bull Racing",
     car: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Car"].red_bull,
-    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByNum"])(33), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByNum"])(23)]
+    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].max_verstappen), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].alexander_albon)],
+    base: "Милтон-Кинс, Великобритания",
+    teamChief: "Кристиан Хорнер",
+    powerUnit: "Honda",
+    chassis: "RB16",
+    firstTeamEntry: 1997,
+    worldChampionships: "2010-2013",
+    constructorsСup: "2010-2013",
+    highestRaceFinish: "1 (x62)",
+    polePositions: 62,
+    fastestLaps: 65,
+    info2019: "<p>2019</p>" + "<p>...</p>",
+    info2018: "<p>...</p>" + "<p>...</p>",
+    info2017: "<p>...</p>" + "<p>...</p>",
+    info2016: "<p>...</p>" + "<p>...</p>"
   },
   RENAULT: {
     logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].renault,
     name: "Renault DP World F1 Team",
+    fullname: "Renault DP World F1 Team",
     car: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Car"].renault,
-    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByNum"])(3), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByNum"])(31)]
+    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].daniel_ricciardo), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].esteban_ocon)],
+    base: "Энстоун, Великобритания",
+    teamChief: "Сирил Абитебул",
+    powerUnit: "Renault",
+    chassis: "R.S.20",
+    firstTeamEntry: 1986,
+    worldChampionships: "2005-2006",
+    constructorsСup: "2005-2006",
+    highestRaceFinish: "1 (x20)",
+    polePositions: 20,
+    fastestLaps: 13,
+    info2019: "<p>2019</p>" + "<p>...</p>",
+    info2018: "<p>...</p>" + "<p>...</p>",
+    info2017: "<p>...</p>" + "<p>...</p>",
+    info2016: "<p>...</p>" + "<p>...</p>"
+  },
+  McLAREN: {
+    logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].mclaren,
+    name: "McLaren",
+    fullname: "McLaren F1 Team",
+    car: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Car"].mclaren,
+    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].carlos_sainz), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].lando_norris)],
+    base: "Уокинг, Великобритания",
+    teamChief: "Зак Браун",
+    powerUnit: "Renault",
+    chassis: "MCL35",
+    firstTeamEntry: 1966,
+    worldChampionships: "1974, 1976, 1984-1986, 1988-1991, 1998, 1999, 2008",
+    constructorsСup: "1974, 1984, 1985, 1988-1991, 1998",
+    highestRaceFinish: "1 (x182)",
+    polePositions: 155,
+    fastestLaps: 155,
+    info2019: "<p>2019</p>" + "<p>...</p>",
+    info2018: "<p>...</p>" + "<p>...</p>",
+    info2017: "<p>...</p>" + "<p>...</p>",
+    info2016: "<p>...</p>" + "<p>...</p>"
+  },
+  ALPHA_TAURI: {
+    logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].alpha_tauri,
+    name: "Alpha Tauri",
+    fullname: "Scuderia Alpha Tauri",
+    car: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Car"].alpha_tauri,
+    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].daniil_kvyat), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].pier_gasli)],
+    base: "Фаэнца, Италия",
+    teamChief: "Франц Тост",
+    powerUnit: "Honda",
+    chassis: "AT01",
+    firstTeamEntry: 1985,
+    worldChampionships: " ",
+    constructorsСup: " ",
+    highestRaceFinish: "1 (x1)",
+    polePositions: 1,
+    fastestLaps: 1,
+    info2019: "<p>2019</p>" + "<p>...</p>",
+    info2018: "<p>...</p>" + "<p>...</p>",
+    info2017: "<p>...</p>" + "<p>...</p>",
+    info2016: "<p>...</p>" + "<p>...</p>"
+  },
+  RACING_POINT: {
+    logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].racing_point,
+    name: "Racing Point",
+    fullname: "BWT Racing Point Formula Team",
+    car: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Car"].racing_point,
+    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].lance_stroll), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].sergio_perez)],
+    base: "Сильверстоун, Великобритания",
+    Owner: "Лоуренс Стролл",
+    teamChief: "Отмар Сафнауэр",
+    powerUnit: "BWT Mercedes",
+    chassis: "RP20",
+    firstTeamEntry: 2019,
+    worldChampionships: " ",
+    constructorsСup: " ",
+    highestRaceFinish: "4 (x1)",
+    polePositions: " ",
+    fastestLaps: " ",
+    info2019: "<p>2019</p>" + "<p>...</p>",
+    info2018: "<p>...</p>" + "<p>...</p>",
+    info2017: "<p>...</p>" + "<p>...</p>",
+    info2016: "<p>...</p>" + "<p>...</p>"
+  },
+  HAAS: {
+    logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].haas,
+    name: "Haas F1 Team",
+    fullname: "Haas F1 Team",
+    car: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Car"].haas,
+    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].romain_grosjean), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].kevin_magnussen)],
+    base: "Каннаполис, США",
+    teamChief: "Гюнтер Штайнер",
+    powerUnit: "Ferrari",
+    chassis: "VF-20",
+    firstTeamEntry: 2016,
+    worldChampionships: " ",
+    constructorsСup: " ",
+    highestRaceFinish: "4 (x1)",
+    polePositions: " ",
+    fastestLaps: 1,
+    info2019: "<p>2019</p>" + "<p>...</p>",
+    info2018: "<p>...</p>" + "<p>...</p>",
+    info2017: "<p>...</p>" + "<p>...</p>",
+    info2016: "<p>...</p>" + "<p>...</p>"
+  },
+  ALFA_ROMEO: {
+    logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].alfa_romeo,
+    name: "Alfa Romeo",
+    fullname: "Alfa Romeo Racing",
+    car: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Car"].alfa_romeo,
+    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].kimi_raikkonen), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].antonio_giovinazzi)],
+    base: "Хинвил, Швейцария",
+    teamChief: "Фредерик Вассёр",
+    powerUnit: "Ferrari",
+    chassis: "C39",
+    firstTeamEntry: 1993,
+    worldChampionships: " ",
+    constructorsСup: " ",
+    highestRaceFinish: "1 (x1)",
+    polePositions: 1,
+    fastestLaps: 5,
+    info2019: "<p>2019</p>" + "<p>...</p>",
+    info2018: "<p>...</p>" + "<p>...</p>",
+    info2017: "<p>...</p>" + "<p>...</p>",
+    info2016: "<p>...</p>" + "<p>...</p>"
+  },
+  WILLIAMS: {
+    logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].williams,
+    name: "Williams Racing",
+    fullname: "Williams Racing",
+    car: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Car"].williams,
+    drivers: [Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].george_russell), Object(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["getDriverByKey"])(_pilots_driver_drivers_data__WEBPACK_IMPORTED_MODULE_1__["DriverKey"].nicholas_latifi)],
+    base: "Гроув, Великобритания",
+    teamChief: "Фрэнк Уильямс/Клэр Уильямс",
+    powerUnit: "Mercedes",
+    chassis: "FW43",
+    firstTeamEntry: 1978,
+    worldChampionships: "1980, 1982, 1987, 1992, 1993, 1996, 1997",
+    constructorsСup: "1980, 1981, 1986, 1987, 1992-1994, 1996, 1997",
+    highestRaceFinish: "1 (x114)",
+    polePositions: 129,
+    fastestLaps: 133,
+    info2019: "<p>2019</p>" + "<p>...</p>",
+    info2018: "<p>...</p>" + "<p>...</p>",
+    info2017: "<p>...</p>" + "<p>...</p>",
+    info2016: "<p>...</p>" + "<p>...</p>"
   }
 };
 var TeamKeys = Object.keys(Teams);
+
+/***/ }),
+
+/***/ "./src/feature/teams/team/Team.jsx":
+/*!*****************************************!*\
+  !*** ./src/feature/teams/team/Team.jsx ***!
+  \*****************************************/
+/*! exports provided: Team */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Team", function() { return Team; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _team_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./team.css */ "./src/feature/teams/team/team.css");
+/* harmony import */ var _team_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_team_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _team_data__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../team-data */ "./src/feature/teams/team-data.js");
+/* harmony import */ var _common_carousel_CarouselWrapper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../common/carousel/CarouselWrapper */ "./src/common/carousel/CarouselWrapper.js");
+
+
+
+
+var Team = function Team(props) {
+  var key = props.match.params.key;
+  var team = Object(_team_data__WEBPACK_IMPORTED_MODULE_2__["getTeamByKey"])(key);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    id: "team"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "team-top"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", {
+    className: "logo",
+    src: team.logo
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "short-info",
+    style: {
+      marginLeft: 20
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    id: "team-header"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "name"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, team.fullname))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u0411\u0430\u0437\u0430: ", team.base), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u0420\u0443\u043A\u043E\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C: ", team.teamChief), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u0421\u0438\u043B\u043E\u0432\u0430\u044F \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430: ", team.powerUnit), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u0428\u0430\u0441\u0441\u0438: ", team.chassis), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041F\u0435\u0440\u0432\u044B\u0439 \u0432\u0445\u043E\u0434 \u0432 \u043A\u043E\u043C\u0430\u043D\u0434\u0443: ", team.firstTeamEntry), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041F\u043E\u0431\u0435\u0434\u044B \u0432 \u043B\u0438\u0447\u043D\u043E\u043C \u0437\u0430\u0447\u0435\u0442\u0435: ", team.worldChampionships), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041F\u043E\u0431\u0435\u0434\u044B \u0432 \u043A\u0443\u0431\u043A\u0435 \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440\u043E\u0432: ", team.constructorsСup), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041B\u0443\u0447\u0448\u0438\u0439 \u0444\u0438\u043D\u0438\u0448: ", team.highestRaceFinish), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041F\u043E\u0443\u043B\u044B: ", team.polePositions), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041B\u0443\u0447\u0448\u0438\u0439 \u043A\u0440\u0443\u0433: ", team.fastestLaps))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_common_carousel_CarouselWrapper__WEBPACK_IMPORTED_MODULE_3__["CarouselWrapper"], {
+    images: team.images
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "team-mid"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    dangerouslySetInnerHTML: {
+      __html: team.info2019
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "team-mid"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    dangerouslySetInnerHTML: {
+      __html: team.info2019
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "team-mid"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    dangerouslySetInnerHTML: {
+      __html: team.info2018
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "team-mid"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    dangerouslySetInnerHTML: {
+      __html: team.info2017
+    }
+  })));
+};
+
+/***/ }),
+
+/***/ "./src/feature/teams/team/team.css":
+/*!*****************************************!*\
+  !*** ./src/feature/teams/team/team.css ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../../node_modules/css-loader/dist/cjs.js??ref--6-1!./team.css */ "./node_modules/css-loader/dist/cjs.js?!./src/feature/teams/team/team.css");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+var exported = content.locals ? content.locals : {};
+
+
+
+module.exports = exported;
 
 /***/ }),
 
@@ -58005,28 +60929,28 @@ __webpack_require__.r(__webpack_exports__);
 
 var images = _utils__WEBPACK_IMPORTED_MODULE_0__["IS_PROD"] ? "assets/images/" : "/docs/assets/images/";
 var Logo = {
-  mercedes: images + "logo-merc.png",
-  ferrari: images + "logo-fer.png",
-  red_bull: images + "logo-rb.png",
-  mclaren: images + "logo-mcl.png",
-  renault: images + "logo-ren.png",
-  alpha_tauri: images + "logo-torr.png",
-  racing_point: images + "logo-rp.png",
-  haas: images + "logo-haas.png",
-  alfa_romeo: images + "logo-alfa.png",
-  williams: images + "logo-will.png"
+  mercedes: images + "teams.logo/logo-merc.png",
+  ferrari: images + "teams.logo/logo-fer.png",
+  red_bull: images + "teams.logo/logo-rb.png",
+  mclaren: images + "teams.logo/logo-mcl.png",
+  renault: images + "teams.logo/logo-ren.png",
+  alpha_tauri: images + "teams.logo/logo-torr.png",
+  racing_point: images + "teams.logo/logo-rp.png",
+  haas: images + "teams.logo/logo-haas.png",
+  alfa_romeo: images + "teams.logo/logo-alfa.png",
+  williams: images + "teams.logo/logo-will.png"
 };
 var Car = {
-  mercedes: images + "car-merc.jpg",
-  ferrari: images + "car-fer.jpg",
-  red_bull: images + "car-rb.jpg",
-  mclaren: images + "car-mcl.jpg",
-  renault: images + "car-ren.jpg",
-  alpha_tauri: images + "car-torr.jpg",
-  racing_point: images + "car-rp.jpg",
-  haas: images + "car-haas.jpg",
-  alfa_romeo: images + "car-alfa.jpg",
-  williams: images + "car-will.jpg"
+  mercedes: images + "teams.car/car-merc.jpg",
+  ferrari: images + "teams.car/car-fer.jpg",
+  red_bull: images + "teams.car/car-rb.jpg",
+  mclaren: images + "teams.car/car-mcl.jpg",
+  renault: images + "teams.car/car-ren.jpg",
+  alpha_tauri: images + "teams.car/car-torr.jpg",
+  racing_point: images + "teams.car/car-rp.jpg",
+  haas: images + "teams.car/car-haas.jpg",
+  alfa_romeo: images + "teams.car/car-alfa.png",
+  williams: images + "teams.car/car-will.jpg"
 };
 
 /***/ }),

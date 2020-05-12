@@ -4,21 +4,64 @@ import { IS_PROD } from "../../../util/utils";
 export const getDriverByNum = (num) => {
   return Object.assign(
     {
-      imgUrl: images + "car-racer-black-simple-icon.jpg",
+      imgUrl: images + "racer-icon.jpg",
     },
     driverMap[num]
   );
 };
 
+export const getDriverByKey = (driverKey) => {
+  return Object.assign(
+    {
+      imgUrl: images + "racer-icon.jpg",
+    },
+    driverMap[driverKey]
+  );
+};
+
 const images = IS_PROD ? "assets/images/" : "/docs/assets/images/";
 
+export const DriverKey = {
+  kimi_raikkonen: "kimi_raikkonen",
+  lewis_hamilton: "lewis_hamilton",
+  sebastian_vettel: "sebastian_vettel",
+  sergio_perez: "sergio_perez",
+  daniel_ricciardo: "daniel_ricciardo",
+  romain_grosjean: "romain_grosjean",
+  valtteri_bottas: "valtteri_bottas",
+  kevin_magnussen: "kevin_magnussen",
+  daniil_kvyat: "daniil_kvyat",
+  max_verstappen: "max_verstappen",
+  esteban_ocon: "esteban_ocon",
+  stoffel_vandoorne: "stoffel_vandoorne",
+  marcus_ericsson: "marcus_ericsson",
+  lance_stroll: "lance_stroll",
+  nico_rosberg: "nico_rosberg",
+  charles_leclerc: "charles_leclerc",
+  nicholas_latifi: "nicholas_latifi",
+  george_russell: "george_russell",
+  antonio_giovinazzi: "antonio_giovinazzi",
+  pier_gasli: "pier_gasli",
+  carlos_sainz: "carlos_sainz",
+  lando_norris: "lando_norris",
+  alexander_albon: "alexander_albon",
+  nico_hulkenberg: "nico_hulkenberg",
+  robert_kubica: "robert_kubica",
+  fernando_alonso: "fernando_alonso",
+  brendon_hartley: "brendon_hartley",
+  sergey_sirotkin: "sergey_sirotkin",
+};
+
+const baseUrl = "#/drivers/driver/";
+
 const driverMap = {
-  7: {
+  kimi_raikkonen: {
+    link: baseUrl + DriverKey.kimi_raikkonen,
     number: 7,
     fullname: "Kimi-Matias Raikkonen | Кими Райкконен",
     name: "Kimi Raikkonen",
-    flag: images + "flagFin.gif",
-    imgUrl: images + "imgkr.jpg",
+    flag: images + "flags/flagFin.gif",
+    imgUrl: images + "driver.imeges/imgkr.jpg",
     country: "Финляндия",
     databirth: "17.10.1979",
     season: 17,
@@ -53,12 +96,13 @@ const driverMap = {
       '<p>Журналисты называют финна "The IceMan", что означает ледяной человек, за его спокойствие и невозмутимость.</p>',
   },
 
-  44: {
+  lewis_hamilton: {
+    link: baseUrl + DriverKey.lewis_hamilton,
     number: 44,
     fullname: "Lewis Carl Davidson Hamilton | Льюис Хэмилтон",
     name: "Lewis Hamilton",
-    flag: images + "flagBrit.jpg",
-    imgUrl: images + "imglh.jpg",
+    flag: images + "flags/flagBrit.jpg",
+    imgUrl: images + "driver.imeges/imglh.jpg",
     country: "Великобритания",
     databirth: "07.01.1985",
     season: 13,
@@ -88,12 +132,13 @@ const driverMap = {
       "<p>Уже в 2008, на последнем круге последнего гран-при сезона, после эпических событий, титул всё же достался Льюису Хэмилтону, который чуть было не вырвал у него Фелипе Масса. На последнем круге той гонки Тимо Глок потерял темп и Хэмилтон смог его обойти на предпоследнем повороте, набрав тем самым необходимое для титула очко. В 2009-2012 года его выступления за Макларен продолжились, в каждом сезоне он одерживал победы, а по итогам занимал 4-5 места. В конце 2012 Льюис принял для себя решение покинуть Макларен и перейти в Mercedes, многие думали, что он совершает ошибку, но как выяснилось позже он не прогадал, так как в 2013 машина у Макларен получилась откровенно слабой. В 2014-2015 годах Льюис становится уже трёхкратным чемпионом мира вместе с Mercedes. В 2016 уступает титул Нико Росбергу, но в 2017 становится уже четырёхкратным чемпионом!</p>",
   },
 
-  5: {
+  sebastian_vettel: {
+    link: baseUrl + DriverKey.sebastian_vettel,
     number: 5,
     fullname: "Sebastian Vettel | Себастьян Феттель",
     name: "Sebastian Vettel",
-    flag: images + "flagGer.jpg",
-    imgUrl: images + "imgsv.jpg",
+    flag: images + "flags/flagGer.jpg",
+    imgUrl: images + "driver.imeges/imgsv.jpg",
     country: "Германия",
     databirth: "03.07.1987",
     season: 13,
@@ -121,12 +166,13 @@ const driverMap = {
       "<p>But now he faces an additional thorn in his side &ndash; young-gun team mate Charles Leclerc, the first man to outscore him over a season at the Scuderia - and Vettel will need to call on all his speed and experience if he&rsquo;s to reassert himself over the &lsquo;new boy&rsquo; in 2020.</p>",
   },
 
-  11: {
+  sergio_perez: {
+    link: baseUrl + DriverKey.sergio_perez,
     number: 11,
     fullname: "Sergio Perez | Серхио Перес",
     name: "Sergio Perez",
-    flag: images + "flagMex.jpg",
-    imgUrl: images + "imgsp.jpg",
+    flag: images + "flags/flagMex.jpg",
+    imgUrl: images + "driver.imeges/imgsp.jpg",
     country: "Мексика",
     databirth: "26.12.1989",
     season: 9,
@@ -149,12 +195,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  3: {
+  daniel_ricciardo: {
+    link: baseUrl + DriverKey.daniel_ricciardo,
     number: 3,
     fullname: "Daniel Ricciardo | Даниэль Риккардо",
     name: "Daniel Ricciardo",
-    flag: images + "flagAus.jpg",
-    imgUrl: images + "imgdr.jpg",
+    flag: images + "flags/flagAus.jpg",
+    imgUrl: images + "driver.imeges/imgdr.jpg",
     country: "Австралия",
     databirth: "01.07.1989",
     season: 9,
@@ -177,12 +224,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  8: {
+  romain_grosjean: {
+    link: baseUrl + DriverKey.romain_grosjean,
     number: 8,
     fullname: "Romain Grosjean | Роман Грожан",
     name: "Romain Grosjean",
-    flag: images + "flagFra.gif",
-    imgUrl: images + "imgrg.jpg",
+    flag: images + "flags/flagFra.gif",
+    imgUrl: images + "driver.imeges/imgrg.jpg",
     country: "Франция",
     databirth: "17.04.1986",
     season: 9,
@@ -205,12 +253,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  77: {
+  valtteri_bottas: {
+    link: baseUrl + DriverKey.valtteri_bottas,
     number: 77,
     fullname: "Valtteri Bottas | Вальттери Боттас",
     name: "Valtteri Bottas",
-    flag: images + "flagFin.gif",
-    imgUrl: images + "imgvb.jpg",
+    flag: images + "flags/flagFin.gif",
+    imgUrl: images + "driver.imeges/imgvb.jpg",
     country: "Финляндия",
     databirth: "28.08.1989",
     season: 7,
@@ -233,12 +282,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  20: {
+  kevin_magnussen: {
+    link: baseUrl + DriverKey.kevin_magnussen,
     number: 20,
     fullname: "Kevin Magnussen | Кевин Магнуссен",
     name: "Kevin Magnussen",
-    flag: images + "flagDan.jpg",
-    imgUrl: images + "imgkm.jpg",
+    flag: images + "flags/flagDan.jpg",
+    imgUrl: images + "driver.imeges/imgkm.jpg",
     country: "Дания",
     databirth: "05.10.1992",
     season: 7,
@@ -261,12 +311,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  26: {
+  daniil_kvyat: {
+    link: baseUrl + DriverKey.daniil_kvyat,
     number: 26,
     fullname: "Daniil Kvyat | Даниил Квят",
     name: "Daniil Kvyat",
-    flag: images + "flagRus.jpg",
-    imgUrl: images + "imgdk.jpg",
+    flag: images + "flags/flagRus.jpg",
+    imgUrl: images + "driver.imeges/imgdk.jpg",
     country: "Россия",
     databirth: "26.04.1994",
     season: 5,
@@ -289,12 +340,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  33: {
+  max_verstappen: {
+    link: baseUrl + DriverKey.max_verstappen,
     number: 33,
     fullname: "Max Verstappen | Макс Ферстаппен",
     name: "Max Verstappen",
-    flag: images + "flagGol.gif",
-    imgUrl: images + "imgmv.jpg",
+    flag: images + "flags/flagGol.gif",
+    imgUrl: images + "driver.imeges/imgmv.jpg",
     country: "Голландия",
     databirth: "30.09.1997",
     season: 5,
@@ -317,12 +369,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  31: {
+  esteban_ocon: {
+    link: baseUrl + DriverKey.esteban_ocon,
     number: 31,
     fullname: "Esteban Ocon | Эстебан Окон",
     name: "Esteban Ocon",
-    flag: images + "flagFra.gif",
-    imgUrl: images + "imgeo.jpg",
+    flag: images + "flags/flagFra.gif",
+    imgUrl: images + "driver.imeges/imgeo.jpg",
     country: "Франция",
     databirth: "17.09.1996",
     season: 3,
@@ -345,12 +398,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  2: {
+  stoffel_vandoorne: {
+    link: baseUrl + DriverKey.stoffel_vandoorne,
     number: 2,
     fullname: "Stoffel Vandoorne | Стоффель Вандорн",
     name: "Stoffel Vandoorne",
-    flag: images + "flagBel.gif",
-    imgUrl: images + "imgstVan.jpg",
+    flag: images + "flags/flagBel.jpg",
+    imgUrl: images + "driver.imeges/imgstVan.jpg",
     country: "Бельгия",
     databirth: "26.03.1991",
     season: 3,
@@ -373,12 +427,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  9: {
+  marcus_ericsson: {
+    link: baseUrl + DriverKey.marcus_ericsson,
     number: 9,
     fullname: "Marcus Ericsson | Маркус Эриксон",
     name: "Marcus Ericsson",
-    // flag: images + "flagBel.gif",
-    imgUrl: images + "imgme.jpg",
+    flag: images + "flags/flagBel.gif",
+    imgUrl: images + "driver.imeges/imgme.jpg",
     country: "Швеция",
     databirth: "29.11.1989",
     season: 5,
@@ -401,12 +456,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  18: {
+  lance_stroll: {
+    link: baseUrl + DriverKey.lance_stroll,
     number: 18,
     fullname: "Lance Stroll | Лэнс Стролл",
     name: "Lance Stroll",
-    flag: images + "flagCan.jpg",
-    imgUrl: images + "imgls.jpg",
+    flag: images + "flags/flagCan.jpg",
+    imgUrl: images + "driver.imeges/imgls.jpg",
     country: "Канада",
     databirth: "29.10.1998",
     season: 2,
@@ -429,12 +485,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  0: {
+  nico_rosberg: {
+    link: baseUrl + DriverKey.nico_rosberg,
     number: 6,
     fullname: "Nico Rosberg | Нико Росберг",
     name: "Nico Rosberg",
-    flag: images + "flagGer.jpg",
-    imgUrl: images + "imgnr.jpg",
+    flag: images + "flags/flagGer.jpg",
+    imgUrl: images + "driver.imeges/imgnr.jpg",
     country: "Германия",
     databirth: "27.06.1985",
     season: 11,
@@ -457,12 +514,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  16: {
+  charles_leclerc: {
+    link: baseUrl + DriverKey.charles_leclerc,
     number: 16,
     fullname: "Charles Leclerc | Шарль Леклер",
     name: "Charles Leclerc",
-    flag: images + "flagMon.jpg",
-    imgUrl: images + "imgcl.jpg",
+    flag: images + "flags/flagMon.jpg",
+    imgUrl: images + "driver.imeges/imgcl.jpg",
     country: "Монако",
     databirth: "16.10.1997",
     season: 2,
@@ -485,12 +543,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  6: {
+  nicholas_latifi: {
+    link: baseUrl + DriverKey.nicholas_latifi,
     number: 6,
     fullname: "Nicholas Latifi | Николас Латифи",
     name: "Nicholas Latifi",
-    flag: images + "flagCan.jpg",
-    imgUrl: images + "imgnl.jpg",
+    flag: images + "flags/flagCan.jpg",
+    imgUrl: images + "driver.imeges/imgnl.jpg",
     country: "Канада",
     databirth: "29.06.1995",
     season: 0,
@@ -513,12 +572,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  63: {
+  george_russell: {
+    link: baseUrl + DriverKey.george_russell,
     number: 63,
     fullname: "George Russell | Джордж Расселл",
     name: "George Russell",
-    flag: images + "flagEng.jpg",
-    imgUrl: images + "imggr.jpg",
+    flag: images + "flags/flagEng.jpg",
+    imgUrl: images + "driver.imeges/imggr.jpg",
     country: "Великобритания",
     databirth: "15.02.1998",
     season: 1,
@@ -541,12 +601,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  99: {
+  antonio_giovinazzi: {
+    link: baseUrl + DriverKey.antonio_giovinazzi,
     number: 99,
     fullname: "Antonio Giovinazzi | Антонио Джовинацци",
     name: "Antonio Giovinazzi",
-    flag: images + "flagIta.jpg",
-    imgUrl: images + "imgag.jpg",
+    flag: images + "flags/flagIta.jpg",
+    imgUrl: images + "driver.imeges/imgag.jpg",
     country: "Италия",
     databirth: "14.12.1993",
     season: 2,
@@ -569,12 +630,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  10: {
+  pier_gasli: {
+    link: baseUrl + DriverKey.pier_gasli,
     number: 10,
     fullname: "Pier Gasli | Пьер Гасли",
     name: "Pier Gasli",
-    flag: images + "flagFra.gif",
-    imgUrl: images + "imgpg.jpg",
+    flag: images + "flags/flagFra.gif",
+    imgUrl: images + "driver.imeges/imgpg.jpg",
     country: "Франция",
     databirth: "07.02.1996",
     season: 3,
@@ -597,12 +659,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  55: {
+  carlos_sainz: {
+    link: baseUrl + DriverKey.carlos_sainz,
     number: 55,
     fullname: "Carlos Sainz | Карлос Сайнс",
     name: "Carlos Sainz",
-    flag: images + "flagSpa.jpg",
-    imgUrl: images + "imgcs.jpg",
+    flag: images + "flags/flagSpa.jpg",
+    imgUrl: images + "driver.imeges/imgcs.jpg",
     country: "Испания",
     databirth: "01.09.1994",
     season: 5,
@@ -625,12 +688,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  4: {
+  lando_norris: {
+    link: baseUrl + DriverKey.lando_norris,
     number: 4,
     fullname: "Lando Norris | Ландо Норрис",
     name: "Lando Norris",
-    flag: images + "flagEng.jpg",
-    imgUrl: images + "imgln.jpg",
+    flag: images + "flags/flagEng.jpg",
+    imgUrl: images + "driver.imeges/imgln.jpg",
     country: "Великобритания",
     databirth: "13.11.1999",
     season: 1,
@@ -653,12 +717,13 @@ const driverMap = {
     info: "<p>...</p>" + "<p>...</p>",
   },
 
-  23: {
+  alexander_albon: {
+    link: baseUrl + DriverKey.alexander_albon,
     number: 23,
     fullname: "Alexander Albon | Александр Албон",
     name: "Alexander Albon",
-    flag: images + "flagTha.jpg",
-    imgUrl: images + "imgaa.jpg",
+    flag: images + "flags/flagTha.png",
+    imgUrl: images + "driver.imeges/imgaa.jpg",
     country: "Тайланд",
     databirth: "23.03.1996",
     season: 1,
@@ -679,5 +744,150 @@ const driverMap = {
     granprixinscore: "13 из 21 (62%)",
     totallaps: 1245,
     info: "<p>...</p>" + "<p>...</p>",
+  },
+
+  nico_hulkenberg: {
+    link: baseUrl + DriverKey.nico_hulkenberg,
+    number: 27,
+    fullname: "Nico Hulkenberg | Нико Хюлькенберг",
+    name: "Nico Hulkenberg",
+    flag: images + "flags/flagGer.jpg",
+    imgUrl: images + "driver.imeges/imgnh.jpg",
+    country: "Германия",
+    databirth: "19.08.1987",
+    season: 9,
+    champion: 0,
+    debut: "2010,	Бахрейн, Сахир",
+    granprix: 179,
+    victory: 0,
+    first: 0,
+    pouls: 1,
+    bestlap: 2,
+    podiums: 0,
+    startfirst: 2,
+    bestfinish: 4,
+    beststart: 1,
+    take: 0,
+    hattricks: 0,
+    scores: 511,
+    granprixinscore: "95 из 179 (53%)",
+    totallaps: 9038,
+    info: "<p>...</p>" + "<p>...</p>",
+  },
+
+  robert_kubica: {
+    link: baseUrl + DriverKey.robert_kubica,
+    number: 88,
+    fullname: "Robert Kubica | Роберт Кубица",
+    name: "Robert Kubica",
+    flag: images + "flags/flagPol.png",
+    imgUrl: images + "driver.imeges/imgrk.jpg",
+    country: "Польша",
+    databirth: "07.12.1984",
+    season: 6,
+    champion: 0,
+    debut: "2006,	Венгрия, Хунгароринг",
+    granprix: 97,
+    victory: 1,
+    first: "2008, Канада, Монреаль, № 29",
+    pouls: 1,
+    bestlap: 1,
+    podiums: 12,
+    startfirst: 4,
+    bestfinish: 1,
+    beststart: 1,
+    take: 0,
+    hattricks: 0,
+    scores: 274,
+    granprixinscore: "47 из 97 (48%)",
+    totallaps: 5382,
+    info: "<p>...</p>" + "<p>...</p>",
+  },
+
+  fernando_alonso: {
+    link: baseUrl + DriverKey.fernando_alonso,
+    number: 14,
+    fullname: "Fernando Alonso | Фернандо Алонсо",
+    name: "Fernando Alonso",
+    flag: images + "flags/flagSpa.jpg",
+    imgUrl: images + "driver.imeges/imgfa.jpg",
+    country: "Испания",
+    databirth: "29.07.1981",
+    season: 17,
+    champion: "2005, 2006",
+    debut: "2001,	Австралия, Альберт-Парк",
+    granprix: 314,
+    victory: 32,
+    first: "2003, Венгрия, Хунгароринг, № 30",
+    pouls: 22,
+    bestlap: 23,
+    podiums: 97,
+    startfirst: 37,
+    bestfinish: 1,
+    beststart: 1,
+    take: 14,
+    hattricks: 5,
+    scores: 1899,
+    granprixinscore: "202 из 314 (64%)",
+    totallaps: 16706,
+    info: "<p>...</p>" + "<p>...</p>",
+  },
+
+  brendon_hartley: {
+    link: baseUrl + DriverKey.brendon_hartley,
+    number: 28,
+    fullname: "Brendon Hartley | Фернандо Алонсо",
+    name: "Brendon Hartley",
+    // flag: images + "flags/flagSpa.jpg",
+    // imgUrl: images + "driver.imeges/imgfa.jpg",
+    // country: "Испания",
+    // databirth: "29.07.1981",
+    // season: 17,
+    // champion: "2005, 2006",
+    // debut: "2001,	Австралия, Альберт-Парк",
+    // granprix: 314,
+    // victory: 32,
+    // first: "2003, Венгрия, Хунгароринг, № 30",
+    // pouls: 22,
+    // bestlap: 23,
+    // podiums: 97,
+    // startfirst: 37,
+    // bestfinish: 1,
+    // beststart: 1,
+    // take: 14,
+    // hattricks: 5,
+    // scores: 1899,
+    // granprixinscore: "202 из 314 (64%)",
+    // totallaps: 16706,
+    // info: "<p>...</p>" + "<p>...</p>",
+  },
+
+  sergey_sirotkin: {
+    link: baseUrl + DriverKey.sergey_sirotkin,
+    number: 35,
+    fullname: "Sergey Sirotkin | Сергей Сироткин",
+    name: "Sergey Sirotkin",
+    // flag: images + "flags/flagSpa.jpg",
+    // imgUrl: images + "driver.imeges/imgfa.jpg",
+    // country: "Испания",
+    // databirth: "29.07.1981",
+    // season: 17,
+    // champion: "2005, 2006",
+    // debut: "2001,	Австралия, Альберт-Парк",
+    // granprix: 314,
+    // victory: 32,
+    // first: "2003, Венгрия, Хунгароринг, № 30",
+    // pouls: 22,
+    // bestlap: 23,
+    // podiums: 97,
+    // startfirst: 37,
+    // bestfinish: 1,
+    // beststart: 1,
+    // take: 14,
+    // hattricks: 5,
+    // scores: 1899,
+    // granprixinscore: "202 из 314 (64%)",
+    // totallaps: 16706,
+    // info: "<p>...</p>" + "<p>...</p>",
   },
 };

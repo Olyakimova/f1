@@ -1,10 +1,10 @@
 import * as React from "react";
-import { getDriverByNum } from "./drivers-data";
+import { getDriverByKey } from "./drivers-data";
 import "./driver.css";
 
 export const Driver = (props) => {
-  const { num } = props.match.params;
-  const driver = getDriverByNum(parseInt(num));
+  const { key } = props.match.params;
+  const driver = getDriverByKey(key);
 
   return (
     <div id="driver">

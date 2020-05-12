@@ -14,7 +14,7 @@
   color: rgb(71, 61, 61);
 }
 .year-pilots {
-  border-style:inset;
+  border-style: inset;
   /* border-bottom:none; */
   border: 2px solid rgb(71, 61, 61);
   padding: 9px 9px 1px 9px;
@@ -25,21 +25,21 @@
 }
 .year-pilots a {
   color: rgb(71, 61, 61);
-  text-decoration:none;
+  text-decoration: none;
 }
 .year-pilots a:hover {
   color: rgb(71, 61, 61);
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 #stat-p {
   background-color: rgb(71, 61, 61);
   /* font-size: x-large; */
   font-weight: bolder;
-  color:white;
+  color: white;
 }
 
-#stat-p, 
+#stat-p,
 .stat-p-row {
   display: flex;
   justify-content: space-evenly;
@@ -57,4 +57,13 @@
 .stat-p-row .stat-p-wider {
   width: 22%;
   text-align: left;
+}
+
+.stat-p-wider a {
+  color: rgb(71, 61, 61);
+  text-decoration: none;
+}
+.stat-p-wider a:hover {
+  color: rgb(71, 61, 61);
+  text-decoration: underline;
 }

@@ -10,14 +10,15 @@ export const PilotsStat = (props) => {
     color: "rgb(71, 61, 61)",
     textShadow: "3px 2px 1px rgb(71, 61, 61)",
   };
-  // color: "black", textShadow: "2px 2px 0px rgb(219, 28, 3)" };
 
   const pilotView = (pilot) => {
+    const { driver } = pilot;
+
     return (
-      <div className="stat-p-row" key={pilot.number}>
-        <div>{pilot.number}</div>
+      <div className="stat-p-row" key={driver.number}>
+        <div>{driver.number}</div>
         <div className="stat-p-wider">
-          <a href={"#/drivers/driver/" + pilot.number}>{pilot.name}</a>
+          <a href={driver.link}>{driver.name}</a>
         </div>
         <div>{pilot.season}</div>
         <div className="stat-p-wider">{pilot.team}</div>

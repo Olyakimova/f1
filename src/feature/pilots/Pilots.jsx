@@ -7,7 +7,7 @@ import { Driver } from "./driver/Driver";
 export const Pilots = () => (
   <Switch>
     <Route exact path="/drivers" component={PilotsStat} />
-    <Route path="/drivers/driver/:num" component={Driver} />
+    <Route path="/drivers/driver/:key" component={Driver} />
     <Route path="/drivers/:year" component={PilotsStat} />
   </Switch>
 );
