@@ -6169,7 +6169,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "#team .logo {\r\n  width: 100px;\r\n  margin: 10px 0px 5px 10px;\r\n  border-color: grey;\r\n}\r\n\r\n#team-header {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  font-family: sans-serif;\r\n}\r\n#team-header .name {\r\n  font-size: 40px;\r\n  font-weight: bold;\r\n  color: rgb(71, 61, 61);\r\n  margin: 30px 0px 0px 10px;\r\n  text-decoration: underline;\r\n}\r\n\r\n#line {\r\ntop: -25px;\r\ndisplay: flex;\r\njustify-content: flex-start;\r\nalign-items: flex-end;\r\nposition: relative;\r\n}\r\n#team .colorline {\r\n  width: 31%;\r\n  height: 67px;\r\n  margin: 0px 0px 11px 0px;\r\n  background-color: #00d2be;\r\n}\r\n#team .carline {\r\n  height: 90px;\r\n  width: auto;\r\n  margin: 0px 0px 10px 0px;\r\n}\r\n.mercedes #team .colorline {\r\n  background-color: #00d2be;\r\n}\r\n/* .ferrari .team-list-item a:hover {\r\n  color: #dc0000;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.red_bull .team-list-item a:hover {\r\n  color: #0600ef;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.renault .team-list-item a:hover {\r\n  color: #fff500;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.mclaren .team-list-item a:hover {\r\n  color: #ff8700;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.alpha_tauri .team-list-item a:hover {\r\n  color: #949498;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.racing_point .team-list-item a:hover {\r\n  color: #f596c8;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.haas .team-list-item a:hover {\r\n  color: #787878;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.alfa_romeo .team-list-item a:hover {\r\n  color: #960000;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.williams .team-list-item a:hover {\r\n  color: #0082fa;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n} */\r\n\r\n", ""]);
+exports.push([module.i, "#team .logo {\r\n  width: 100px;\r\n  margin: 10px 0px 5px 10px;\r\n  border-color: grey;\r\n}\r\n\r\n#team-header {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  font-family: sans-serif;\r\n}\r\n#team-header .name {\r\n  font-size: 40px;\r\n  font-weight: bold;\r\n  color: rgb(71, 61, 61);\r\n  margin: 30px 0px 0px 10px;\r\n  text-decoration: underline;\r\n}\r\n\r\n#line {\r\n  top: -25px;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  align-items: flex-end;\r\n  position: relative;\r\n}\r\n#team .colorline {\r\n  width: 31%;\r\n  height: 67px;\r\n  margin: 0px 0px 11px 0px;\r\n  background-color: red;\r\n  transition: width 1s;\r\n}\r\n#team .colorline:hover {\r\n  width: 100%;\r\n}\r\n#team .carline {\r\n  height: 90px;\r\n  width: auto;\r\n  margin: 0px 0px 10px 0px;\r\n  cursor: pointer;\r\n}\r\n#team.mercedes .colorline {\r\n  background-color: #00d2be;\r\n}\r\n#team.ferrari .colorline {\r\n  background-color: #dc0000;\r\n}\r\n#team.red_bull .colorline {\r\n  background-color: #0600ef;\r\n}\r\n#team.renault .colorline {\r\n  background-color: #fff500;\r\n}\r\n#team.mclaren .colorline {\r\n  background-color: #ff8700;\r\n}\r\n#team.alpha_tauri .colorline {\r\n  background-color: #949498;\r\n}\r\n#team.racing_point .colorline {\r\n  background-color: #f596c8;\r\n}\r\n#team.haas .colorline {\r\n  background-color: #787878;\r\n}\r\n#team.alfa_romeo .colorline {\r\n  background-color: #960000;\r\n}\r\n#team.williams .colorline {\r\n  background-color: #0082fa;\r\n}\r\n\r\n#driver-photo {\r\n  width: 100px;\r\n  height: 100px;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  /* align-items: flex-end; */\r\n  position: relative;\r\n}\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -60786,6 +60786,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _team_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_team_css__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _team_data__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../team-data */ "./src/feature/teams/team-data.js");
 /* harmony import */ var _common_carousel_CarouselWrapper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../common/carousel/CarouselWrapper */ "./src/common/carousel/CarouselWrapper.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(n); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 
 
 
@@ -60793,8 +60805,28 @@ __webpack_require__.r(__webpack_exports__);
 var Team = function Team(props) {
   var key = props.match.params.key;
   var team = Object(_team_data__WEBPACK_IMPORTED_MODULE_2__["getTeamByKey"])(key);
+
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0__["useState"]("0"),
+      _React$useState2 = _slicedToArray(_React$useState, 2),
+      carWidth = _React$useState2[0],
+      setCarWidth = _React$useState2[1];
+
+  react__WEBPACK_IMPORTED_MODULE_0__["useEffect"](function () {
+    setTimeout(function () {
+      setCarWidth("31%");
+    }, 1000);
+  }, []);
+
+  var carClick = function carClick() {
+    setCarWidth("100%");
+    setTimeout(function () {
+      setCarWidth("31%");
+    }, 1000);
+  };
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
-    id: "team"
+    id: "team",
+    className: key
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     className: "team-top"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
@@ -60807,10 +60839,21 @@ var Team = function Team(props) {
   }, team.fullname)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     id: "line"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
-    className: "colorline"
+    className: "colorline",
+    style: {
+      width: carWidth
+    }
   }, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", {
     className: "carline",
-    src: team.line
+    src: team.line,
+    onClick: carClick
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    id: "driver-photo"
+  }, team.drivers.map(function (driver) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", {
+      className: "photo",
+      src: driver.imgUrl
+    });
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     className: "short-info",
     style: {

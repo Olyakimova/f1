@@ -18,69 +18,64 @@
 }
 
 #line {
-top: -25px;
-display: flex;
-justify-content: flex-start;
-align-items: flex-end;
-position: relative;
+  top: -25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
 }
 #team .colorline {
   width: 31%;
   height: 67px;
   margin: 0px 0px 11px 0px;
-  background-color: #00d2be;
+  background-color: red;
+  transition: width 1s;
+}
+#team .colorline:hover {
+  width: 100%;
 }
 #team .carline {
   height: 90px;
   width: auto;
   margin: 0px 0px 10px 0px;
+  cursor: pointer;
 }
-.mercedes #team .colorline {
+#team.mercedes .colorline {
   background-color: #00d2be;
 }
-/* .ferrari .team-list-item a:hover {
-  color: #dc0000;
-  cursor: pointer;
-  text-decoration: none;
+#team.ferrari .colorline {
+  background-color: #dc0000;
 }
-.red_bull .team-list-item a:hover {
-  color: #0600ef;
-  cursor: pointer;
-  text-decoration: none;
+#team.red_bull .colorline {
+  background-color: #0600ef;
 }
-.renault .team-list-item a:hover {
-  color: #fff500;
-  cursor: pointer;
-  text-decoration: none;
+#team.renault .colorline {
+  background-color: #fff500;
 }
-.mclaren .team-list-item a:hover {
-  color: #ff8700;
-  cursor: pointer;
-  text-decoration: none;
+#team.mclaren .colorline {
+  background-color: #ff8700;
 }
-.alpha_tauri .team-list-item a:hover {
-  color: #949498;
-  cursor: pointer;
-  text-decoration: none;
+#team.alpha_tauri .colorline {
+  background-color: #949498;
 }
-.racing_point .team-list-item a:hover {
-  color: #f596c8;
-  cursor: pointer;
-  text-decoration: none;
+#team.racing_point .colorline {
+  background-color: #f596c8;
 }
-.haas .team-list-item a:hover {
-  color: #787878;
-  cursor: pointer;
-  text-decoration: none;
+#team.haas .colorline {
+  background-color: #787878;
 }
-.alfa_romeo .team-list-item a:hover {
-  color: #960000;
-  cursor: pointer;
-  text-decoration: none;
+#team.alfa_romeo .colorline {
+  background-color: #960000;
 }
-.williams .team-list-item a:hover {
-  color: #0082fa;
-  cursor: pointer;
-  text-decoration: none;
-} */
+#team.williams .colorline {
+  background-color: #0082fa;
+}
 
+#driver-photo {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: flex-end; */
+  position: relative;
+}
