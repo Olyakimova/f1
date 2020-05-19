@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Logo } from "../../util/assets";
 import { Car } from "../../util/assets";
+import { Line } from "../../util/assets";
 import "./teams.css";
 import { TeamKeys, Teams } from "./team-data";
 

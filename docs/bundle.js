@@ -6169,7 +6169,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "#team .logo {\r\n  width: 100px;\r\n  margin: 10px 0px 10px 10px;\r\n  /* border: 1px solid; */\r\n  border-color: grey;\r\n}\r\n", ""]);
+exports.push([module.i, "#team .logo {\r\n  width: 100px;\r\n  margin: 10px 0px 5px 10px;\r\n  border-color: grey;\r\n}\r\n\r\n#team-header {\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  font-family: sans-serif;\r\n}\r\n#team-header .name {\r\n  font-size: 40px;\r\n  font-weight: bold;\r\n  color: rgb(71, 61, 61);\r\n  margin: 30px 0px 0px 10px;\r\n  text-decoration: underline;\r\n}\r\n\r\n#line {\r\ntop: -25px;\r\ndisplay: flex;\r\njustify-content: flex-start;\r\nalign-items: flex-end;\r\nposition: relative;\r\n}\r\n#team .colorline {\r\n  width: 31%;\r\n  height: 67px;\r\n  margin: 0px 0px 11px 0px;\r\n  background-color: #00d2be;\r\n}\r\n#team .carline {\r\n  height: 90px;\r\n  width: auto;\r\n  margin: 0px 0px 10px 0px;\r\n}\r\n.mercedes #team .colorline {\r\n  background-color: #00d2be;\r\n}\r\n/* .ferrari .team-list-item a:hover {\r\n  color: #dc0000;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.red_bull .team-list-item a:hover {\r\n  color: #0600ef;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.renault .team-list-item a:hover {\r\n  color: #fff500;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.mclaren .team-list-item a:hover {\r\n  color: #ff8700;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.alpha_tauri .team-list-item a:hover {\r\n  color: #949498;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.racing_point .team-list-item a:hover {\r\n  color: #f596c8;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.haas .team-list-item a:hover {\r\n  color: #787878;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.alfa_romeo .team-list-item a:hover {\r\n  color: #960000;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n}\r\n.williams .team-list-item a:hover {\r\n  color: #0082fa;\r\n  cursor: pointer;\r\n  text-decoration: none;\r\n} */\r\n\r\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -58538,7 +58538,7 @@ var driverMap = {
     fullname: "Kimi-Matias Raikkonen | Кими Райкконен",
     name: "Kimi Raikkonen",
     flag: images + "flags/flagFin.gif",
-    imgUrl: images + "driver.imeges/imgkr.jpg",
+    imgUrl: images + "imgs/imgkr.jpg",
     country: "Финляндия",
     databirth: "17.10.1979",
     season: 17,
@@ -58566,7 +58566,7 @@ var driverMap = {
     fullname: "Lewis Carl Davidson Hamilton | Льюис Хэмилтон",
     name: "Lewis Hamilton",
     flag: images + "flags/flagBrit.jpg",
-    imgUrl: images + "driver.imeges/imglh.jpg",
+    imgUrl: images + "imgs/imglh.jpg",
     country: "Великобритания",
     databirth: "07.01.1985",
     season: 13,
@@ -58594,7 +58594,7 @@ var driverMap = {
     fullname: "Sebastian Vettel | Себастьян Феттель",
     name: "Sebastian Vettel",
     flag: images + "flags/flagGer.jpg",
-    imgUrl: images + "driver.imeges/imgsv.jpg",
+    imgUrl: images + "imgs/imgsv.jpg",
     country: "Германия",
     databirth: "03.07.1987",
     season: 13,
@@ -58622,7 +58622,7 @@ var driverMap = {
     fullname: "Sergio Perez | Серхио Перес",
     name: "Sergio Perez",
     flag: images + "flags/flagMex.jpg",
-    imgUrl: images + "driver.imeges/imgsp.jpg",
+    imgUrl: images + "imgs/imgsp.jpg",
     country: "Мексика",
     databirth: "26.12.1989",
     season: 9,
@@ -58650,7 +58650,7 @@ var driverMap = {
     fullname: "Daniel Ricciardo | Даниэль Риккардо",
     name: "Daniel Ricciardo",
     flag: images + "flags/flagAus.jpg",
-    imgUrl: images + "driver.imeges/imgdr.jpg",
+    imgUrl: images + "imgs/imgdr.jpg",
     country: "Австралия",
     databirth: "01.07.1989",
     season: 9,
@@ -58678,7 +58678,7 @@ var driverMap = {
     fullname: "Romain Grosjean | Роман Грожан",
     name: "Romain Grosjean",
     flag: images + "flags/flagFra.gif",
-    imgUrl: images + "driver.imeges/imgrg.jpg",
+    imgUrl: images + "imgs/imgrg.jpg",
     country: "Франция",
     databirth: "17.04.1986",
     season: 9,
@@ -58706,7 +58706,7 @@ var driverMap = {
     fullname: "Valtteri Bottas | Вальттери Боттас",
     name: "Valtteri Bottas",
     flag: images + "flags/flagFin.gif",
-    imgUrl: images + "driver.imeges/imgvb.jpg",
+    imgUrl: images + "imgs/imgvb.jpg",
     country: "Финляндия",
     databirth: "28.08.1989",
     season: 7,
@@ -58734,7 +58734,7 @@ var driverMap = {
     fullname: "Kevin Magnussen | Кевин Магнуссен",
     name: "Kevin Magnussen",
     flag: images + "flags/flagDan.jpg",
-    imgUrl: images + "driver.imeges/imgkm.jpg",
+    imgUrl: images + "imgs/imgkm.jpg",
     country: "Дания",
     databirth: "05.10.1992",
     season: 7,
@@ -58762,7 +58762,7 @@ var driverMap = {
     fullname: "Daniil Kvyat | Даниил Квят",
     name: "Daniil Kvyat",
     flag: images + "flags/flagRus.jpg",
-    imgUrl: images + "driver.imeges/imgdk.jpg",
+    imgUrl: images + "imgs/imgdk.jpg",
     country: "Россия",
     databirth: "26.04.1994",
     season: 5,
@@ -58790,7 +58790,7 @@ var driverMap = {
     fullname: "Max Verstappen | Макс Ферстаппен",
     name: "Max Verstappen",
     flag: images + "flags/flagGol.gif",
-    imgUrl: images + "driver.imeges/imgmv.jpg",
+    imgUrl: images + "imgs/imgmv.jpg",
     country: "Голландия",
     databirth: "30.09.1997",
     season: 5,
@@ -58818,7 +58818,7 @@ var driverMap = {
     fullname: "Esteban Ocon | Эстебан Окон",
     name: "Esteban Ocon",
     flag: images + "flags/flagFra.gif",
-    imgUrl: images + "driver.imeges/imgeo.jpg",
+    imgUrl: images + "imgs/imgeo.jpg",
     country: "Франция",
     databirth: "17.09.1996",
     season: 3,
@@ -58846,7 +58846,7 @@ var driverMap = {
     fullname: "Stoffel Vandoorne | Стоффель Вандорн",
     name: "Stoffel Vandoorne",
     flag: images + "flags/flagBel.jpg",
-    imgUrl: images + "driver.imeges/imgstVan.jpg",
+    imgUrl: images + "imgs/imgstVan.jpg",
     country: "Бельгия",
     databirth: "26.03.1991",
     season: 3,
@@ -58874,7 +58874,7 @@ var driverMap = {
     fullname: "Marcus Ericsson | Маркус Эриксон",
     name: "Marcus Ericsson",
     flag: images + "flags/flagBel.gif",
-    imgUrl: images + "driver.imeges/imgme.jpg",
+    imgUrl: images + "imgs/imgme.jpg",
     country: "Швеция",
     databirth: "29.11.1989",
     season: 5,
@@ -58902,7 +58902,7 @@ var driverMap = {
     fullname: "Lance Stroll | Лэнс Стролл",
     name: "Lance Stroll",
     flag: images + "flags/flagCan.jpg",
-    imgUrl: images + "driver.imeges/imgls.jpg",
+    imgUrl: images + "imgs/imgls.jpg",
     country: "Канада",
     databirth: "29.10.1998",
     season: 2,
@@ -58930,7 +58930,7 @@ var driverMap = {
     fullname: "Nico Rosberg | Нико Росберг",
     name: "Nico Rosberg",
     flag: images + "flags/flagGer.jpg",
-    imgUrl: images + "driver.imeges/imgnr.jpg",
+    imgUrl: images + "imgs/imgnr.jpg",
     country: "Германия",
     databirth: "27.06.1985",
     season: 11,
@@ -58958,7 +58958,7 @@ var driverMap = {
     fullname: "Charles Leclerc | Шарль Леклер",
     name: "Charles Leclerc",
     flag: images + "flags/flagMon.jpg",
-    imgUrl: images + "driver.imeges/imgcl.jpg",
+    imgUrl: images + "imgs/imgcl.jpg",
     country: "Монако",
     databirth: "16.10.1997",
     season: 2,
@@ -58986,7 +58986,7 @@ var driverMap = {
     fullname: "Nicholas Latifi | Николас Латифи",
     name: "Nicholas Latifi",
     flag: images + "flags/flagCan.jpg",
-    imgUrl: images + "driver.imeges/imgnl.jpg",
+    imgUrl: images + "imgs/imgnl.jpg",
     country: "Канада",
     databirth: "29.06.1995",
     season: 0,
@@ -59014,7 +59014,7 @@ var driverMap = {
     fullname: "George Russell | Джордж Расселл",
     name: "George Russell",
     flag: images + "flags/flagEng.jpg",
-    imgUrl: images + "driver.imeges/imggr.jpg",
+    imgUrl: images + "imgs/imggr.jpg",
     country: "Великобритания",
     databirth: "15.02.1998",
     season: 1,
@@ -59042,7 +59042,7 @@ var driverMap = {
     fullname: "Antonio Giovinazzi | Антонио Джовинацци",
     name: "Antonio Giovinazzi",
     flag: images + "flags/flagIta.jpg",
-    imgUrl: images + "driver.imeges/imgag.jpg",
+    imgUrl: images + "imgs/imgag.jpg",
     country: "Италия",
     databirth: "14.12.1993",
     season: 2,
@@ -59070,7 +59070,7 @@ var driverMap = {
     fullname: "Pier Gasli | Пьер Гасли",
     name: "Pier Gasli",
     flag: images + "flags/flagFra.gif",
-    imgUrl: images + "driver.imeges/imgpg.jpg",
+    imgUrl: images + "imgs/imgpg.jpg",
     country: "Франция",
     databirth: "07.02.1996",
     season: 3,
@@ -59098,7 +59098,7 @@ var driverMap = {
     fullname: "Carlos Sainz | Карлос Сайнс",
     name: "Carlos Sainz",
     flag: images + "flags/flagSpa.jpg",
-    imgUrl: images + "driver.imeges/imgcs.jpg",
+    imgUrl: images + "imgs/imgcs.jpg",
     country: "Испания",
     databirth: "01.09.1994",
     season: 5,
@@ -59126,7 +59126,7 @@ var driverMap = {
     fullname: "Lando Norris | Ландо Норрис",
     name: "Lando Norris",
     flag: images + "flags/flagEng.jpg",
-    imgUrl: images + "driver.imeges/imgln.jpg",
+    imgUrl: images + "imgs/imgln.jpg",
     country: "Великобритания",
     databirth: "13.11.1999",
     season: 1,
@@ -59154,7 +59154,7 @@ var driverMap = {
     fullname: "Alexander Albon | Александр Албон",
     name: "Alexander Albon",
     flag: images + "flags/flagTha.png",
-    imgUrl: images + "driver.imeges/imgaa.jpg",
+    imgUrl: images + "imgs/imgaa.jpg",
     country: "Тайланд",
     databirth: "23.03.1996",
     season: 1,
@@ -59182,7 +59182,7 @@ var driverMap = {
     fullname: "Nico Hulkenberg | Нико Хюлькенберг",
     name: "Nico Hulkenberg",
     flag: images + "flags/flagGer.jpg",
-    imgUrl: images + "driver.imeges/imgnh.jpg",
+    imgUrl: images + "imgs/imgnh.jpg",
     country: "Германия",
     databirth: "19.08.1987",
     season: 9,
@@ -59210,7 +59210,7 @@ var driverMap = {
     fullname: "Robert Kubica | Роберт Кубица",
     name: "Robert Kubica",
     flag: images + "flags/flagPol.png",
-    imgUrl: images + "driver.imeges/imgrk.jpg",
+    imgUrl: images + "imgs/imgrk.jpg",
     country: "Польша",
     databirth: "07.12.1984",
     season: 6,
@@ -59238,7 +59238,7 @@ var driverMap = {
     fullname: "Fernando Alonso | Фернандо Алонсо",
     name: "Fernando Alonso",
     flag: images + "flags/flagSpa.jpg",
-    imgUrl: images + "driver.imeges/imgfa.jpg",
+    imgUrl: images + "imgs/imgfa.jpg",
     country: "Испания",
     databirth: "29.07.1981",
     season: 17,
@@ -59265,7 +59265,7 @@ var driverMap = {
     number: 28,
     fullname: "Brendon Hartley | Фернандо Алонсо",
     name: "Brendon Hartley" // flag: images + "flags/flagSpa.jpg",
-    // imgUrl: images + "driver.imeges/imgfa.jpg",
+    // imgUrl: images + "imgs/imgfa.jpg",
     // country: "Испания",
     // databirth: "29.07.1981",
     // season: 17,
@@ -59293,7 +59293,7 @@ var driverMap = {
     number: 35,
     fullname: "Sergey Sirotkin | Сергей Сироткин",
     name: "Sergey Sirotkin" // flag: images + "flags/flagSpa.jpg",
-    // imgUrl: images + "driver.imeges/imgfa.jpg",
+    // imgUrl: images + "imgs/imgfa.jpg",
     // country: "Испания",
     // databirth: "29.07.1981",
     // season: 17,
@@ -60478,6 +60478,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var TeamsMain = function TeamsMain(props) {
   var teamView = function teamView(teamKey) {
     var team = _team_data__WEBPACK_IMPORTED_MODULE_3__["Teams"][teamKey];
@@ -60562,7 +60563,8 @@ var Teams = {
     info2018: "<p>2018</p>" + "<p>Это сезон преимущественно о Льюисе Хэмилтоне, чьи 11 побед помогли сохранить пятый подряд чемпионский титул для команды - несмотря на соперников Ferrari, часто имеющих более быстрый автомобиль - продолжая свое доминирование в эпоху турбо-гибридов. Товарищ по команде Валттери Боттас заканчивает год без победы будучи вынужденным играть в тылу безудержного Гамильтона.</p>",
     info2017: "<p>2017</p>" + "<p>...</p>",
     info2016: "<p>2016</p>" + "<p>...</p>",
-    images: ["/docs/assets/images/teams.photo/mercedes/map2.jpg", "/docs/assets/images/teams.photo/mercedes/map4.jpg", "/docs/assets/images/teams.photo/mercedes/map5.jpg", "/docs/assets/images/teams.photo/mercedes/map7.jpg", "/docs/assets/images/teams.photo/mercedes/map9.jpg", "/docs/assets/images/teams.photo/mercedes/map10.jpg"]
+    line: "/docs/assets/images/lines/merline.png",
+    images: ["/docs/assets/images/teams/mercedes/map1.jpg", "/docs/assets/images/teams/mercedes/map2.jpg", "/docs/assets/images/teams/mercedes/map3.jpg", "/docs/assets/images/teams/mercedes/map4.jpg", "/docs/assets/images/teams/mercedes/map5.jpg", "/docs/assets/images/teams/mercedes/map6.jpg", "/docs/assets/images/teams/mercedes/map7.jpg", "/docs/assets/images/teams/mercedes/map8.jpg", "/docs/assets/images/teams/mercedes/map9.jpg", "/docs/assets/images/teams/mercedes/map10.jpg", "/docs/assets/images/teams/mercedes/map11.jpg", "/docs/assets/images/teams/mercedes/map12.jpg", "/docs/assets/images/teams/mercedes/map13.jpg", "/docs/assets/images/teams/mercedes/map14.jpg", "/docs/assets/images/teams/mercedes/map15.jpg"]
   },
   FERRARI: {
     logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].ferrari,
@@ -60583,7 +60585,8 @@ var Teams = {
     info2019: "<p>2019</p>" + "<p>...</p>",
     info2018: "<p>...</p>" + "<p>...</p>",
     info2017: "<p>...</p>" + "<p>...</p>",
-    info2016: "<p>...</p>" + "<p>...</p>"
+    info2016: "<p>...</p>" + "<p>...</p>",
+    images: ["/docs/assets/images/teams/ferrari/fer1.jpg", "/docs/assets/images/teams/ferrari/fer2.jpg", "/docs/assets/images/teams/ferrari/fer3.jpg", "/docs/assets/images/teams/ferrari/fer4.jpg", "/docs/assets/images/teams/ferrari/fer5.jpg", "/docs/assets/images/teams/ferrari/fer6.jpg", "/docs/assets/images/teams/ferrari/fer7.jpg", "/docs/assets/images/teams/ferrari/fer8.jpg", "/docs/assets/images/teams/ferrari/fer9.jpg", "/docs/assets/images/teams/ferrari/fer10.jpg", "/docs/assets/images/teams/ferrari/fer11.jpg", "/docs/assets/images/teams/ferrari/fer12.jpg", "/docs/assets/images/teams/ferrari/fer13.jpg", "/docs/assets/images/teams/ferrari/fer14.jpg", "/docs/assets/images/teams/ferrari/fer15.jpeg"]
   },
   RED_BULL: {
     logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].red_bull,
@@ -60604,7 +60607,8 @@ var Teams = {
     info2019: "<p>2019</p>" + "<p>...</p>",
     info2018: "<p>...</p>" + "<p>...</p>",
     info2017: "<p>...</p>" + "<p>...</p>",
-    info2016: "<p>...</p>" + "<p>...</p>"
+    info2016: "<p>...</p>" + "<p>...</p>",
+    images: ["/docs/assets/images/teams/redbull/rbl1.jpg", "/docs/assets/images/teams/redbull/rbl2.jpg", "/docs/assets/images/teams/redbull/rbl3.jpg", "/docs/assets/images/teams/redbull/rbl4.jpg", "/docs/assets/images/teams/redbull/rbl5.jpg", "/docs/assets/images/teams/redbull/rbl6.jpg", "/docs/assets/images/teams/redbull/rbl7.jpg", "/docs/assets/images/teams/redbull/rbl8.jpg", "/docs/assets/images/teams/redbull/rbl9.jpg", "/docs/assets/images/teams/redbull/rbl10.jpg", "/docs/assets/images/teams/redbull/rbl11.jpg", "/docs/assets/images/teams/redbull/rbl12.jpg", "/docs/assets/images/teams/redbull/rbl13.jpg", "/docs/assets/images/teams/redbull/rbl14.jpg", "/docs/assets/images/teams/redbull/rbl15.jpg"]
   },
   RENAULT: {
     logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].renault,
@@ -60625,7 +60629,8 @@ var Teams = {
     info2019: "<p>2019</p>" + "<p>...</p>",
     info2018: "<p>...</p>" + "<p>...</p>",
     info2017: "<p>...</p>" + "<p>...</p>",
-    info2016: "<p>...</p>" + "<p>...</p>"
+    info2016: "<p>...</p>" + "<p>...</p>",
+    images: ["/docs/assets/images/teams/renault/ren1.jpg", "/docs/assets/images/teams/renault/ren2.jpg", "/docs/assets/images/teams/renault/ren3.jpg", "/docs/assets/images/teams/renault/ren4.jpg", "/docs/assets/images/teams/renault/ren5.jpg", "/docs/assets/images/teams/renault/ren6.jpg", "/docs/assets/images/teams/renault/ren7.jpg", "/docs/assets/images/teams/renault/ren8.jpg", "/docs/assets/images/teams/renault/ren9.jpg", "/docs/assets/images/teams/renault/ren10.jpg", "/docs/assets/images/teams/renault/ren11.jpg", "/docs/assets/images/teams/renault/ren12.jpg", "/docs/assets/images/teams/renault/ren13.jpg", "/docs/assets/images/teams/renault/ren14.jpg", "/docs/assets/images/teams/renault/ren15.jpg"]
   },
   McLAREN: {
     logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].mclaren,
@@ -60646,7 +60651,8 @@ var Teams = {
     info2019: "<p>2019</p>" + "<p>...</p>",
     info2018: "<p>...</p>" + "<p>...</p>",
     info2017: "<p>...</p>" + "<p>...</p>",
-    info2016: "<p>...</p>" + "<p>...</p>"
+    info2016: "<p>...</p>" + "<p>...</p>",
+    images: ["/docs/assets/images/teams/mclaren/mcl1.jpg", "/docs/assets/images/teams/mclaren/mcl2.jpg", "/docs/assets/images/teams/mclaren/mcl3.jpg", "/docs/assets/images/teams/mclaren/mcl4.jpg", "/docs/assets/images/teams/mclaren/mcl5.jpg", "/docs/assets/images/teams/mclaren/mcl6.jpg", "/docs/assets/images/teams/mclaren/mcl7.jpg", "/docs/assets/images/teams/mclaren/mcl8.jpg", "/docs/assets/images/teams/mclaren/mcl9.jpg", "/docs/assets/images/teams/mclaren/mcl10.jpg", "/docs/assets/images/teams/mclaren/mcl11.jpg", "/docs/assets/images/teams/mclaren/mcl12.jpg", "/docs/assets/images/teams/mclaren/mcl13.jpg", "/docs/assets/images/teams/mclaren/mcl14.jpg", "/docs/assets/images/teams/mclaren/mcl15.jpg"]
   },
   ALPHA_TAURI: {
     logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].alpha_tauri,
@@ -60667,7 +60673,8 @@ var Teams = {
     info2019: "<p>2019</p>" + "<p>...</p>",
     info2018: "<p>...</p>" + "<p>...</p>",
     info2017: "<p>...</p>" + "<p>...</p>",
-    info2016: "<p>...</p>" + "<p>...</p>"
+    info2016: "<p>...</p>" + "<p>...</p>",
+    images: ["/docs/assets/images/teams/alphatauri/alt1.jpg", "/docs/assets/images/teams/alphatauri/alt2.jpg", "/docs/assets/images/teams/alphatauri/alt3.jpg", "/docs/assets/images/teams/alphatauri/alt4.jpg", "/docs/assets/images/teams/alphatauri/alt5.jpg", "/docs/assets/images/teams/alphatauri/alt6.jpg", "/docs/assets/images/teams/alphatauri/alt7.jpg", "/docs/assets/images/teams/alphatauri/alt8.jpg", "/docs/assets/images/teams/alphatauri/alt9.jpg", "/docs/assets/images/teams/alphatauri/alt10.jpg", "/docs/assets/images/teams/alphatauri/alt11.jpg", "/docs/assets/images/teams/alphatauri/alt12.jpg", "/docs/assets/images/teams/alphatauri/alt13.jpg", "/docs/assets/images/teams/alphatauri/alt14.jpg", "/docs/assets/images/teams/alphatauri/alt15.jpg"]
   },
   RACING_POINT: {
     logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].racing_point,
@@ -60689,7 +60696,8 @@ var Teams = {
     info2019: "<p>2019</p>" + "<p>...</p>",
     info2018: "<p>...</p>" + "<p>...</p>",
     info2017: "<p>...</p>" + "<p>...</p>",
-    info2016: "<p>...</p>" + "<p>...</p>"
+    info2016: "<p>...</p>" + "<p>...</p>",
+    images: ["/docs/assets/images/teams/racingpoint/rp1.jpg", "/docs/assets/images/teams/racingpoint/rp2.jpg", "/docs/assets/images/teams/racingpoint/rp3.jpg", "/docs/assets/images/teams/racingpoint/rp4.jpg", "/docs/assets/images/teams/racingpoint/rp5.jpg", "/docs/assets/images/teams/racingpoint/rp6.jpg", "/docs/assets/images/teams/racingpoint/rp7.jpg", "/docs/assets/images/teams/racingpoint/rp8.jpg", "/docs/assets/images/teams/racingpoint/rp9.jpg", "/docs/assets/images/teams/racingpoint/rp10.jpg", "/docs/assets/images/teams/racingpoint/rp11.jpg", "/docs/assets/images/teams/racingpoint/rp12.jpg", "/docs/assets/images/teams/racingpoint/rp13.jpg", "/docs/assets/images/teams/racingpoint/rp14.jpg", "/docs/assets/images/teams/racingpoint/rp15.jpg"]
   },
   HAAS: {
     logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].haas,
@@ -60710,7 +60718,8 @@ var Teams = {
     info2019: "<p>2019</p>" + "<p>...</p>",
     info2018: "<p>...</p>" + "<p>...</p>",
     info2017: "<p>...</p>" + "<p>...</p>",
-    info2016: "<p>...</p>" + "<p>...</p>"
+    info2016: "<p>...</p>" + "<p>...</p>",
+    images: ["/docs/assets/images/teams/haas/haa1.jpg", "/docs/assets/images/teams/haas/haa2.jpg", "/docs/assets/images/teams/haas/haa3.jpg", "/docs/assets/images/teams/haas/haa4.jpg", "/docs/assets/images/teams/haas/haa5.jpg", "/docs/assets/images/teams/haas/haa6.jpg", "/docs/assets/images/teams/haas/haa7.jpg", "/docs/assets/images/teams/haas/haa8.jpg", "/docs/assets/images/teams/haas/haa9.jpg", "/docs/assets/images/teams/haas/haa10.jpg", "/docs/assets/images/teams/haas/haa11.jpg", "/docs/assets/images/teams/haas/haa12.jpg", "/docs/assets/images/teams/haas/haa13.jpg", "/docs/assets/images/teams/haas/haa14.jpg", "/docs/assets/images/teams/haas/haa15.jpg"]
   },
   ALFA_ROMEO: {
     logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].alfa_romeo,
@@ -60731,7 +60740,8 @@ var Teams = {
     info2019: "<p>2019</p>" + "<p>...</p>",
     info2018: "<p>...</p>" + "<p>...</p>",
     info2017: "<p>...</p>" + "<p>...</p>",
-    info2016: "<p>...</p>" + "<p>...</p>"
+    info2016: "<p>...</p>" + "<p>...</p>",
+    images: ["/docs/assets/images/teams/alfaromeo/alr1.jpg", "/docs/assets/images/teams/alfaromeo/alr2.jpg", "/docs/assets/images/teams/alfaromeo/alr3.jpg", "/docs/assets/images/teams/alfaromeo/alr4.jpg", "/docs/assets/images/teams/alfaromeo/alr5.jpg", "/docs/assets/images/teams/alfaromeo/alr6.jpg", "/docs/assets/images/teams/alfaromeo/alr7.jpg", "/docs/assets/images/teams/alfaromeo/alr8.jpg", "/docs/assets/images/teams/alfaromeo/alr9.jpg", "/docs/assets/images/teams/alfaromeo/alr10.jpg", "/docs/assets/images/teams/alfaromeo/alr11.jpg", "/docs/assets/images/teams/alfaromeo/alr12.jpg", "/docs/assets/images/teams/alfaromeo/alr13.jpg", "/docs/assets/images/teams/alfaromeo/alr14.jpg", "/docs/assets/images/teams/alfaromeo/alr15.jpg"]
   },
   WILLIAMS: {
     logo: _util_assets__WEBPACK_IMPORTED_MODULE_0__["Logo"].williams,
@@ -60752,7 +60762,8 @@ var Teams = {
     info2019: "<p>2019</p>" + "<p>...</p>",
     info2018: "<p>...</p>" + "<p>...</p>",
     info2017: "<p>...</p>" + "<p>...</p>",
-    info2016: "<p>...</p>" + "<p>...</p>"
+    info2016: "<p>...</p>" + "<p>...</p>",
+    images: ["/docs/assets/images/teams/williams/wil1.jpg", "/docs/assets/images/teams/williams/wil2.jpg", "/docs/assets/images/teams/williams/wil3.jpg", "/docs/assets/images/teams/williams/wil4.jpg", "/docs/assets/images/teams/williams/wil5.jpg", "/docs/assets/images/teams/williams/wil6.jpg", "/docs/assets/images/teams/williams/wil7.jpg", "/docs/assets/images/teams/williams/wil8.jpg", "/docs/assets/images/teams/williams/wil9.jpg", "/docs/assets/images/teams/williams/wil10.jpg", "/docs/assets/images/teams/williams/wil11.jpg", "/docs/assets/images/teams/williams/wil12.jpg", "/docs/assets/images/teams/williams/wil13.jpg", "/docs/assets/images/teams/williams/wil14.jpg", "/docs/assets/images/teams/williams/wil15.jpg"]
   }
 };
 var TeamKeys = Object.keys(Teams);
@@ -60786,19 +60797,27 @@ var Team = function Team(props) {
     id: "team"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     className: "team-top"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", {
-    className: "logo",
-    src: team.logo
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
-    className: "short-info",
-    style: {
-      marginLeft: 20
-    }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     id: "team-header"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", {
+    className: "logo",
+    src: team.logo
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     className: "name"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, team.fullname))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u0411\u0430\u0437\u0430: ", team.base), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u0420\u0443\u043A\u043E\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C: ", team.teamChief), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u0421\u0438\u043B\u043E\u0432\u0430\u044F \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430: ", team.powerUnit), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u0428\u0430\u0441\u0441\u0438: ", team.chassis), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041F\u0435\u0440\u0432\u044B\u0439 \u0432\u0445\u043E\u0434 \u0432 \u043A\u043E\u043C\u0430\u043D\u0434\u0443: ", team.firstTeamEntry), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041F\u043E\u0431\u0435\u0434\u044B \u0432 \u043B\u0438\u0447\u043D\u043E\u043C \u0437\u0430\u0447\u0435\u0442\u0435: ", team.worldChampionships), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041F\u043E\u0431\u0435\u0434\u044B \u0432 \u043A\u0443\u0431\u043A\u0435 \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440\u043E\u0432: ", team.constructorsСup), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041B\u0443\u0447\u0448\u0438\u0439 \u0444\u0438\u043D\u0438\u0448: ", team.highestRaceFinish), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041F\u043E\u0443\u043B\u044B: ", team.polePositions), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041B\u0443\u0447\u0448\u0438\u0439 \u043A\u0440\u0443\u0433: ", team.fastestLaps))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_common_carousel_CarouselWrapper__WEBPACK_IMPORTED_MODULE_3__["CarouselWrapper"], {
+  }, team.fullname)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    id: "line"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "colorline"
+  }, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("img", {
+    className: "carline",
+    src: team.line
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
+    className: "short-info",
+    style: {
+      marginLeft: 20,
+      marginTop: -25
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u0411\u0430\u0437\u0430: ", team.base), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u0420\u0443\u043A\u043E\u0432\u043E\u0434\u0438\u0442\u0435\u043B\u044C: ", team.teamChief), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u0421\u0438\u043B\u043E\u0432\u0430\u044F \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043A\u0430: ", team.powerUnit), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u0428\u0430\u0441\u0441\u0438: ", team.chassis), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041F\u0435\u0440\u0432\u044B\u0439 \u0432\u0445\u043E\u0434 \u0432 \u043A\u043E\u043C\u0430\u043D\u0434\u0443: ", team.firstTeamEntry), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041F\u043E\u0431\u0435\u0434\u044B \u0432 \u043B\u0438\u0447\u043D\u043E\u043C \u0437\u0430\u0447\u0435\u0442\u0435: ", team.worldChampionships), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041F\u043E\u0431\u0435\u0434\u044B \u0432 \u043A\u0443\u0431\u043A\u0435 \u043A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440\u043E\u0432: ", team.constructorsСup), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041B\u0443\u0447\u0448\u0438\u0439 \u0444\u0438\u043D\u0438\u0448: ", team.highestRaceFinish), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041F\u043E\u0443\u043B\u044B: ", team.polePositions), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, "\u041B\u0443\u0447\u0448\u0438\u0439 \u043A\u0440\u0443\u0433: ", team.fastestLaps))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"](_common_carousel_CarouselWrapper__WEBPACK_IMPORTED_MODULE_3__["CarouselWrapper"], {
     images: team.images
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__["createElement"]("div", {
     className: "team-mid"
@@ -60918,39 +60937,52 @@ Object(react_dom__WEBPACK_IMPORTED_MODULE_3__["render"])( /*#__PURE__*/react__WE
 /*!****************************!*\
   !*** ./src/util/assets.js ***!
   \****************************/
-/*! exports provided: Logo, Car */
+/*! exports provided: Logo, Car, Line */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Logo", function() { return Logo; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Car", function() { return Car; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Line", function() { return Line; });
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils */ "./src/util/utils.js");
 
 var images = _utils__WEBPACK_IMPORTED_MODULE_0__["IS_PROD"] ? "assets/images/" : "/docs/assets/images/";
 var Logo = {
-  mercedes: images + "teams.logo/logo-merc.png",
-  ferrari: images + "teams.logo/logo-fer.png",
-  red_bull: images + "teams.logo/logo-rb.png",
-  mclaren: images + "teams.logo/logo-mcl.png",
-  renault: images + "teams.logo/logo-ren.png",
-  alpha_tauri: images + "teams.logo/logo-torr.png",
-  racing_point: images + "teams.logo/logo-rp.png",
-  haas: images + "teams.logo/logo-haas.png",
-  alfa_romeo: images + "teams.logo/logo-alfa.png",
-  williams: images + "teams.logo/logo-will.png"
+  mercedes: images + "logo/logo-merc.png",
+  ferrari: images + "logo/logo-fer.png",
+  red_bull: images + "logo/logo-rb.png",
+  mclaren: images + "logo/logo-mcl.png",
+  renault: images + "logo/logo-ren.png",
+  alpha_tauri: images + "logo/logo-torr.png",
+  racing_point: images + "logo/logo-rp.png",
+  haas: images + "logo/logo-haas.png",
+  alfa_romeo: images + "logo/logo-alfa.png",
+  williams: images + "logo/logo-will.png"
 };
 var Car = {
-  mercedes: images + "teams.car/car-merc.jpg",
-  ferrari: images + "teams.car/car-fer.jpg",
-  red_bull: images + "teams.car/car-rb.jpg",
-  mclaren: images + "teams.car/car-mcl.jpg",
-  renault: images + "teams.car/car-ren.jpg",
-  alpha_tauri: images + "teams.car/car-torr.jpg",
-  racing_point: images + "teams.car/car-rp.jpg",
-  haas: images + "teams.car/car-haas.jpg",
-  alfa_romeo: images + "teams.car/car-alfa.png",
-  williams: images + "teams.car/car-will.jpg"
+  mercedes: images + "cars/car-merc.jpg",
+  ferrari: images + "cars/car-fer.jpg",
+  red_bull: images + "cars/car-rb.jpg",
+  mclaren: images + "cars/car-mcl.jpg",
+  renault: images + "cars/car-ren.jpg",
+  alpha_tauri: images + "cars/car-torr.jpg",
+  racing_point: images + "cars/car-rp.jpg",
+  haas: images + "cars/car-haas.jpg",
+  alfa_romeo: images + "cars/car-alfa.png",
+  williams: images + "cars/car-will.jpg"
+};
+var Line = {
+  mercedes: images + "lines/merline.png" // ferrari: images + "lines/car-fer.jpg",
+  // red_bull: images + "lines/car-rb.jpg",
+  // mclaren: images + "lines/car-mcl.jpg",
+  // renault: images + "lines/car-ren.jpg",
+  // alpha_tauri: images + "lines/car-torr.jpg",
+  // racing_point: images + "lines/car-rp.jpg",
+  // haas: images + "lines/car-haas.jpg",
+  // alfa_romeo: images + "lines/car-alfa.png",
+  // williams: images + "lines/car-will.jpg",
+
 };
 
 /***/ }),

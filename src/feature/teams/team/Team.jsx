@@ -10,15 +10,18 @@ export const Team = (props) => {
   return (
     <div id="team">
       <div className="team-top">
-        <img className="logo" src={team.logo} />
-        <div className="short-info" style={{ marginLeft: 20 }}>
-          <div id="team-header">
-            {/* <div className="num">{team.name}</div> */}
-            <div className="name">
-              <div>{team.fullname}</div>
+        <div id="team-header">
+            <div><img className="logo" src={team.logo} />
             </div>
-          </div>
-
+            <div className="name">{team.fullname}
+            </div>
+        </div>
+        <div id="line">
+          <div className="colorline"> </div>
+          <img className="carline" src={team.line} />
+        </div>
+        
+        <div className="short-info" style={{ marginLeft: 20, marginTop: -25 }}>
           <div>База: {team.base}</div>
           <div>Руководитель: {team.teamChief}</div>
           <div>Силовая установка: {team.powerUnit}</div>

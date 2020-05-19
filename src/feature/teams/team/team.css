@@ -1,6 +1,86 @@
 #team .logo {
   width: 100px;
-  margin: 10px 0px 10px 10px;
-  /* border: 1px solid; */
+  margin: 10px 0px 5px 10px;
   border-color: grey;
 }
+
+#team-header {
+  display: flex;
+  justify-content: flex-start;
+  font-family: sans-serif;
+}
+#team-header .name {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(71, 61, 61);
+  margin: 30px 0px 0px 10px;
+  text-decoration: underline;
+}
+
+#line {
+top: -25px;
+display: flex;
+justify-content: flex-start;
+align-items: flex-end;
+position: relative;
+}
+#team .colorline {
+  width: 31%;
+  height: 67px;
+  margin: 0px 0px 11px 0px;
+  background-color: #00d2be;
+}
+#team .carline {
+  height: 90px;
+  width: auto;
+  margin: 0px 0px 10px 0px;
+}
+.mercedes #team .colorline {
+  background-color: #00d2be;
+}
+/* .ferrari .team-list-item a:hover {
+  color: #dc0000;
+  cursor: pointer;
+  text-decoration: none;
+}
+.red_bull .team-list-item a:hover {
+  color: #0600ef;
+  cursor: pointer;
+  text-decoration: none;
+}
+.renault .team-list-item a:hover {
+  color: #fff500;
+  cursor: pointer;
+  text-decoration: none;
+}
+.mclaren .team-list-item a:hover {
+  color: #ff8700;
+  cursor: pointer;
+  text-decoration: none;
+}
+.alpha_tauri .team-list-item a:hover {
+  color: #949498;
+  cursor: pointer;
+  text-decoration: none;
+}
+.racing_point .team-list-item a:hover {
+  color: #f596c8;
+  cursor: pointer;
+  text-decoration: none;
+}
+.haas .team-list-item a:hover {
+  color: #787878;
+  cursor: pointer;
+  text-decoration: none;
+}
+.alfa_romeo .team-list-item a:hover {
+  color: #960000;
+  cursor: pointer;
+  text-decoration: none;
+}
+.williams .team-list-item a:hover {
+  color: #0082fa;
+  cursor: pointer;
+  text-decoration: none;
+} */
+
