@@ -34,7 +34,7 @@ export const Header = () => {
         </div>
         <div className="nav-item">
           <NavLink to="/grand-prix" activeStyle={activeStyle}>
-            Гран При
+            Гран-При
           </NavLink>
         </div>
       </div>

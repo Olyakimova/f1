@@ -38,7 +38,7 @@ export const Team = (props) => {
         </div>
         <div id="driver-photo">
           {team.drivers.map((driver) => (
-            <img className="photo" src={driver.imgUrl} />
+            <img key={driver.imgUrl} className="photo" src={driver.imgUrl} />
           ))}
         </div>
         <div className="short-info" style={{ marginLeft: 20, marginTop: -25 }}>

@@ -24,9 +24,9 @@ export const Driver = (props) => {
           <div>Сезонов в Ф1: {driver.season}</div>
           <div>Чемпион мира: {driver.champion}</div>
           <div>Дебют: {driver.debut}</div>
-          <div>Гран При: {driver.granprix}</div>
+          <div>Гран-При: {driver.granprix}</div>
           <div>Победы: {driver.victory}</div>
-          <div>Первый победный Гран При: {driver.first}</div>
+          <div>Первый победный Гран-При: {driver.first}</div>
           <div>Поулы: {driver.pouls}</div>
           <div>Лучшие круги: {driver.bestlap}</div>
           <div>Подиумы: {driver.podiums}</div>

@@ -72,10 +72,15 @@
 }
 
 #driver-photo {
-  width: 100px;
-  height: 100px;
+  width: 306px;
+  height: 600px;
   display: flex;
   justify-content: flex-start;
   /* align-items: flex-end; */
   position: relative;
+}
+.photo {
+  overflow: hidden;
+  width: 300px;
+  margin-left: -300px;
 }

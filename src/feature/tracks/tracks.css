@@ -1,0 +1,21 @@
+.map {
+  background-color: rgb(12, 28, 79);
+  background-image: url(trackbackground.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.track-map {
+  height: 30px;
+}
+
+.track-map a {
+  color: white;
+  text-decoration: none;
+}
+
+.track-map a:hover {
+  color: white;
+  text-decoration: underline;
+}

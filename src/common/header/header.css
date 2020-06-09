@@ -1,7 +1,8 @@
 #nav {
   display: flex;
   justify-content: flex-start;
-  background-color: rgb(255, 221, 0);
+  background-color: gray;
+  /* rgb(255, 221, 0) */
 }
 #nav a {
   color: white;
@@ -22,7 +23,8 @@
   width: 100%;
   background-image: url(1920px-F2.svg.png);
   background-repeat: no-repeat;
-  background-color: rgb(255, 221, 0);
+  background-color: gray;
+  /* rgb(255, 221, 0) */
   /* #fde910 */
   background-position: right;
   color: rgb(255, 30, 0);
