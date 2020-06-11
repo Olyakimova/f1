@@ -21,24 +21,31 @@
 #cap {
   height: 100px;
   width: 100%;
-  background-image: url(1920px-F2.svg.png);
+  background-image: url(1920px-F.png);
+  /* background-image: url(1920px-F2.svg.png); */
   background-repeat: no-repeat;
   background-color: gray;
   /* rgb(255, 221, 0) */
   /* #fde910 */
-  background-position: right;
+  background-position: left;
   color: rgb(255, 30, 0);
-  font-size: 45px;
+  font-size: 59px;
   text-shadow: 2px 2px 0px rgb(219, 28, 3);
   /* text-shadow: 1px 1px 2px black, 0 0 1em red; Параметры тени */
 }
 
 #cap p {
-  margin: 0;
-  padding: 20px 3px 1px;
+  margin-top: 0px;
+  padding: 29px 3px 1px 9px;
 }
 
 .cap-logo {
+  margin-left: 204px;
   font-style: italic;
   font-weight: bold;
+}
+
+.cap-logo a {
+  color: rgb(255, 30, 0);
+  text-decoration: none;
 }

@@ -2,7 +2,7 @@
   font-family: sans-serif;
 }
 
-/* table {
+table {
   display: table-row;
   border: indigo;
   border-width: 10px;
@@ -10,8 +10,12 @@
   border-collapse: separate;
   box-sizing: border-box;
   border-spacing: 6px;
-} */
+}
 
-/* .track-name {
-
-} */
+.track-name {
+  font-size: 26px;
+  font-weight: bold;
+  text-indent: 1.5em;
+  margin-top: 15px;
+  margin-left: 0px;
+}

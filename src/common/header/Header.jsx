@@ -8,7 +8,7 @@ export const Header = () => {
     <>
       <div id="cap">
         <p className="cap-logo">
-          <a href="#/">Formula 1</a>
+          <a href="#/">ormula 1</a>
         </p>
       </div>
       <div id="nav">
